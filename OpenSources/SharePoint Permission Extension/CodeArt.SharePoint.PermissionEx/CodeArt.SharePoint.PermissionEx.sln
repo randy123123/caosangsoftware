@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReferenceDll", "ReferenceDll", "{4B63F20C-7105-429D-BF50-6E2BE81F3397}"
+	ProjectSection(SolutionItems) = preProject
+		ReferenceDll\Microsoft.SharePoint.dll = ReferenceDll\Microsoft.SharePoint.dll
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deploy", "Deploy", "{157C4493-7ED0-4A89-8A16-6D577337058D}"
+	ProjectSection(SolutionItems) = preProject
+		Deploy\CabLib.dll = Deploy\CabLib.dll
+		Deploy\solutionid.txt = Deploy\solutionid.txt
+		Deploy\uninstall_features.cmd = Deploy\uninstall_features.cmd
+		Deploy\wsp_build.cmd = Deploy\wsp_build.cmd
+		Deploy\wsp_install.cmd = Deploy\wsp_install.cmd
+		Deploy\wsp_install14.cmd = Deploy\wsp_install14.cmd
+		Deploy\wsp_update.cmd = Deploy\wsp_update.cmd
+		Deploy\wsp_update14.cmd = Deploy\wsp_update14.cmd
+		Deploy\WSPBuilder.exe = Deploy\WSPBuilder.exe
+		Deploy\WSPBuilder.exe.config = Deploy\WSPBuilder.exe.config
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeArt.SharePoint.PermissionEx", "CodeArt.SharePoint.PermissionEx\CodeArt.SharePoint.PermissionEx.csproj", "{2027AC1C-0495-42FC-A339-C6521A444DBC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeArt.SharePoint.PermissionEx.AppPages", "CodeArt.SharePoint.PermissionEx.AppPages\CodeArt.SharePoint.PermissionEx.AppPages.csproj", "{38557D18-1A4E-4AEA-A0FC-0CADFFA8F5B8}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs06
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = CodeArt.SharePoint.PermissionEx.AppPages\\CodeArt.SharePoint.PermissionEx.AppPages.csproj
+		SccProjectName1 = CodeArt.SharePoint.PermissionEx.AppPages
+		SccLocalPath1 = CodeArt.SharePoint.PermissionEx.AppPages
+		SccProjectUniqueName2 = CodeArt.SharePoint.PermissionEx\\CodeArt.SharePoint.PermissionEx.csproj
+		SccProjectName2 = CodeArt.SharePoint.PermissionEx
+		SccLocalPath2 = CodeArt.SharePoint.PermissionEx
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2027AC1C-0495-42FC-A339-C6521A444DBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2027AC1C-0495-42FC-A339-C6521A444DBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2027AC1C-0495-42FC-A339-C6521A444DBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2027AC1C-0495-42FC-A339-C6521A444DBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38557D18-1A4E-4AEA-A0FC-0CADFFA8F5B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38557D18-1A4E-4AEA-A0FC-0CADFFA8F5B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38557D18-1A4E-4AEA-A0FC-0CADFFA8F5B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38557D18-1A4E-4AEA-A0FC-0CADFFA8F5B8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

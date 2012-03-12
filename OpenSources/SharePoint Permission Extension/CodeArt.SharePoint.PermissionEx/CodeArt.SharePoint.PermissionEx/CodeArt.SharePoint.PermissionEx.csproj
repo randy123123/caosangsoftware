@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2027AC1C-0495-42FC-A339-C6521A444DBC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CodeArt.SharePoint.PermissionEx</RootNamespace>
+    <AssemblyName>CodeArt.SharePoint.PermissionEx</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>CodeArt.SharePoint.PermissionEx.snk</AssemblyOriginatorKeyFile>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.SharePoint, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ReferenceDll\Microsoft.SharePoint.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\BaseSPListWebPart.cs" />
+    <Compile Include="Common\BaseSPWebPart.cs" />
+    <Compile Include="Common\ConfigManager.cs" />
+    <Compile Include="Common\Constant.cs" />
+    <Compile Include="Common\EventUtil.cs" />
+    <Compile Include="Common\JsEncoder.cs" />
+    <Compile Include="Common\Script.cs" />
+    <Compile Include="Common\SerializeUtil.cs" />
+    <Compile Include="Common\WPResource.cs" />
+    <Compile Include="ContentTypePermission\ContentTypeCreateSetting.cs" />
+    <Compile Include="ContentTypePermission\NewMenuWithPermission.cs" />
+    <Compile Include="ContentTypePermission\ContentTypesRightSettingPart.cs" />
+    <Compile Include="Util.cs" />
+    <Compile Include="Ext.cs" />
+    <Compile Include="FieldPermission\EditControlListFieldIterator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FieldPermission\FieldPermission.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FieldPermission\FieldRightSettingPart.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FieldPermission\ListFieldPermissionSetting.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PeopleEditorEx.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewPermission\ListViewPermissionSetting.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ViewPermission\PermissionListViewSelector.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ViewPermission\PermissionListViewSelector2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ViewPermission\ViewPermissionControlPart.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ViewPermission\ViewPermission.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ViewPermission\ViewRightsSettingPart.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="12\TEMPLATE\FEATURES\CodeArt_ViewPermissionEx\ViewPermissoinControlPart.webpart" />
+    <None Include="CodeArt.SharePoint.PermissionEx.snk" />
+    <None Include="copyDll.cmd" />
+    <None Include="GAC.cmd" />
+    <None Include="GAC14.cmd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="12\TEMPLATE\CONTROLTEMPLATES\CodeArt_PermissionEx_Templates.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="12\TEMPLATE\FEATURES\CodeArt_FieldPermissionEx\FieldPermissionEx.xml" />
+    <Content Include="12\TEMPLATE\FEATURES\CodeArt_FieldPermissionEx\feature.xml" />
+    <Content Include="12\TEMPLATE\FEATURES\CodeArt_ViewPermissionEx\WebParts.xml" />
+    <Content Include="12\TEMPLATE\FEATURES\CodeArt_ViewPermissionEx\feature.xml" />
+    <Content Include="12\TEMPLATE\FEATURES\CodeArt_ViewPermissionEx\ViewPermissionEx.xml" />
+    <Content Include="12\TEMPLATE\FEATURES\CodeArt_ContentTypePermissionEx\ContentTypePermissioEx.xml" />
+    <Content Include="12\TEMPLATE\FEATURES\CodeArt_ContentTypePermissionEx\feature.xml" />
+    <Content Include="gacutil.exe" />
+    <Content Include="installWhenDev.txt" />
+    <Content Include="Readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\CodeartPermissionEx.resx" />
+    <EmbeddedResource Include="Resources\CodeartPermissionEx.zh-cn.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="12\Resources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,1 @@
+bin\Debug\Dev4Side.SP2010.FilteredLookup.wsp

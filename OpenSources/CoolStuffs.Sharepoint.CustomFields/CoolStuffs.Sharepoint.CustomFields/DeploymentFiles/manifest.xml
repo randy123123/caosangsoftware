@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<!--  Manifest for a solution package (wsp).  To customize:
+1) Replace NEW_GUID with a unique GUID
+2) Replace "MyFeature" with the name of your own feature
+3) Replace "MyTarget" with the name of your own target
+-->
+
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="{6733C1F8-1873-4de2-8F49-2B7E38FD89F9}" >
+  <Assemblies>
+	  <Assembly DeploymentTarget="GlobalAssemblyCache" Location="CoolStuffs.Sharepoint.CustomFields.dll">
+		  <SafeControls>
+			  <SafeControl	Assembly="CoolStuffs.Sharepoint.CustomFields, Version=1.0.0.0, Culture=neutral, PublicKeyToken=968ece0422c73ea5" 
+							Namespace="CoolStuffs.Sharepoint.CustomFields.QueryBasedLookUp.Field" 
+							TypeName="*" 
+							Safe="True"/>
+			  <SafeControl	Assembly="CoolStuffs.Sharepoint.CustomFields, Version=1.0.0.0, Culture=neutral, PublicKeyToken=968ece0422c73ea5" 
+							Namespace="CoolStuffs.Sharepoint.CustomFields.CascadingDropDowns.Field" 
+							TypeName="*" 
+							Safe="True"/>
+		  </SafeControls>
+	  </Assembly>
+	  <Assembly DeploymentTarget="GlobalAssemblyCache" Location="CoolStuffs.Sharepoint.Constants.dll">
+		  <SafeControls>
+			  <SafeControl	Assembly="CoolStuffs.Sharepoint.Constants, Version=1.0.0.0, Culture=neutral, PublicKeyToken=968ece0422c73ea5"
+							Namespace="CoolStuffs.Sharepoint.Constants"
+							TypeName="*"
+							Safe="True"/>
+		  </SafeControls>
+	  </Assembly>
+  </Assemblies>
+  <RootFiles>
+    <RootFile Location="TEMPLATE\CONTROLTEMPLATES\ParentDropDownListFieldControl.ascx"></RootFile>
+    <RootFile Location="TEMPLATE\CONTROLTEMPLATES\ParentDropDownListFieldEditControl.ascx"></RootFile>
+    <RootFile Location="TEMPLATE\CONTROLTEMPLATES\ChildDropDownListFieldControl.ascx"></RootFile>
+    <RootFile Location="TEMPLATE\CONTROLTEMPLATES\ChildDropDownListFieldEditControl.ascx"></RootFile>
+    <RootFile Location="TEMPLATE\XML\FLDTYPES_parentdropdownlist.xml"></RootFile>
+    <RootFile Location="TEMPLATE\XML\FLDTYPES_childdropdownlist.xml"></RootFile>
+    <RootFile Location="TEMPLATE\CONTROLTEMPLATES\QueryLookUpFieldControl.ascx"></RootFile>
+    <RootFile Location="TEMPLATE\CONTROLTEMPLATES\QueryLookUpFieldEditControl.ascx"></RootFile>
+    <RootFile Location="TEMPLATE\XML\FLDTYPES_QueryLookUp.xml"></RootFile>
+    <RootFile Location="TEMPLATE\IMAGES\bubble_bottom.gif"></RootFile>
+    <RootFile Location="TEMPLATE\IMAGES\bubble_middle.gif"></RootFile>
+    <RootFile Location="TEMPLATE\IMAGES\bubble_top.gif"></RootFile>
+    <RootFile Location="TEMPLATE\IMAGES\bubble-tooltip.css"></RootFile>
+	<RootFile Location="TEMPLATE\IMAGES\CoolStuffs\collaborate.GIF"></RootFile>
+  </RootFiles>
+</Solution>

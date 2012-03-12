@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoolStuffs.Sharepoint.CustomFields", "CoolStuffs.Sharepoint.CustomFields\CoolStuffs.Sharepoint.CustomFields.csproj", "{12229B7A-BB72-4157-A4E8-72BD37CB7E73}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoolStuffs.Sharepoint.Constants", "CoolStuffs.Sharepoint.Constants\CoolStuffs.Sharepoint.Constants.csproj", "{DF45D9EA-5E9D-4740-915C-006B9738E40F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{12229B7A-BB72-4157-A4E8-72BD37CB7E73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12229B7A-BB72-4157-A4E8-72BD37CB7E73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12229B7A-BB72-4157-A4E8-72BD37CB7E73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12229B7A-BB72-4157-A4E8-72BD37CB7E73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF45D9EA-5E9D-4740-915C-006B9738E40F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF45D9EA-5E9D-4740-915C-006B9738E40F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF45D9EA-5E9D-4740-915C-006B9738E40F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF45D9EA-5E9D-4740-915C-006B9738E40F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs02.codeplex.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = CoolStuffs.Sharepoint.Constants\\CoolStuffs.Sharepoint.Constants.csproj
+		SccProjectName1 = CoolStuffs.Sharepoint.Constants
+		SccLocalPath1 = CoolStuffs.Sharepoint.Constants
+		SccProjectUniqueName2 = CoolStuffs.Sharepoint.CustomFields\\CoolStuffs.Sharepoint.CustomFields.csproj
+		SccProjectName2 = CoolStuffs.Sharepoint.CustomFields
+		SccLocalPath2 = CoolStuffs.Sharepoint.CustomFields
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="WebPartPopulation" Url="_catalogs/wp" RootWebOnly="TRUE">
+    <File Url="ViewPermissoinControlPart.webpart" Type="GhostableInLibrary">
+      <Property Name="Group" Value="CodeArt.PermissionEx"></Property>
+      <Property Name="QuickAddGroups" Value="CodeArt.PermissionEx" />
+    </File>    
+  </Module>
+    </Elements>

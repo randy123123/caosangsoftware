@@ -1,0 +1,27 @@
+;
+;
+.OPTION EXPLICIT     ; Generate errors 
+.Set CabinetNameTemplate=CoolStuffs.Sharepoint.CustomFields.wsp     
+.set DiskDirectoryTemplate=CDROM ; All cabinets go in a single directory
+.Set CompressionType=MSZIP;** All files are compressed in cabinet files
+.Set UniqueFiles="ON"
+.Set Cabinet=on
+.Set DiskDirectory1=Package
+"manifest.xml"  manifest.xml
+"..\CascadingDropDowns\ParentDropDownList\ParentDropDownListFieldControl.ascx" TEMPLATE\CONTROLTEMPLATES\ParentDropDownListFieldControl.ascx
+"..\CascadingDropDowns\ParentDropDownList\ParentDropDownListFieldEditControl.ascx" TEMPLATE\CONTROLTEMPLATES\ParentDropDownListFieldEditControl.ascx
+"..\CascadingDropDowns\ChildDropDownList\ChildDropDownListFieldControl.ascx" TEMPLATE\CONTROLTEMPLATES\ChildDropDownListFieldControl.ascx
+"..\CascadingDropDowns\ChildDropDownList\ChildDropDownListFieldEditControl.ascx" TEMPLATE\CONTROLTEMPLATES\ChildDropDownListFieldEditControl.ascx
+"..\CascadingDropDowns\ParentDropDownList\FLDTYPES_parentdropdownlist.xml" TEMPLATE\XML\FLDTYPES_parentdropdownlist.xml
+"..\CascadingDropDowns\ChildDropDownList\FLDTYPES_childdropdownlist.xml" TEMPLATE\XML\FLDTYPES_childdropdownlist.xml
+"..\QueryBasedLookUp\QueryLookUpFieldControl.ascx" TEMPLATE\CONTROLTEMPLATES\QueryLookUpFieldControl.ascx
+"..\QueryBasedLookUp\QueryLookUpFieldEditControl.ascx" TEMPLATE\CONTROLTEMPLATES\QueryLookUpFieldEditControl.ascx
+"..\QueryBasedLookUp\FLDTYPES_QueryLookUp.xml" TEMPLATE\XML\FLDTYPES_QueryLookUp.xml
+"..\images\bubble_bottom.gif" TEMPLATE\IMAGES\bubble_bottom.gif
+"..\images\bubble_middle.gif" TEMPLATE\IMAGES\bubble_middle.gif
+"..\images\bubble_top.gif" TEMPLATE\IMAGES\bubble_top.gif
+"..\images\collaborate.GIF" TEMPLATE\IMAGES\CoolStuffs\collaborate.GIF
+"..\css\bubble-tooltip.css" TEMPLATE\IMAGES\bubble-tooltip.css
+"Assemblies\GAC\CoolStuffs.Sharepoint.CustomFields.dll" CoolStuffs.Sharepoint.CustomFields.dll
+"..\..\CoolStuffs.Sharepoint.Constants\Assemblies\GAC\CoolStuffs.Sharepoint.Constants.dll" CoolStuffs.Sharepoint.Constants.dll
+
