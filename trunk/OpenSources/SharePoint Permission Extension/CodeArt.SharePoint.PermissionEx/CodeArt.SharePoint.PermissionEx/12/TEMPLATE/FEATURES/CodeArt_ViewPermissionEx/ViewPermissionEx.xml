@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<CustomAction 
+		  Id="CodeArt_ViewPermissionEx"		 
+		  GroupId="GeneralSettings"
+		  Location="Microsoft.SharePoint.ListEdit"
+		  Sequence="106"
+		  Title="$Resources:codeArtPermissionEx,ViewPermissionEx">
+		<UrlAction Url="~site/_layouts/CodeArt/ViewPermissionSetting.aspx?List={ListId}"/>
+	</CustomAction>
+</Elements>

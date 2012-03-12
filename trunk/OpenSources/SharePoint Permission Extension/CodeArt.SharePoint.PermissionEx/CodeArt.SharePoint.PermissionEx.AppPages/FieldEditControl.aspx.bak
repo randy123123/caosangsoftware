@@ -1,0 +1,33 @@
+﻿<%@ Assembly Name="Microsoft.SharePoint.ApplicationPages, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"%> 
+<%@ Page Language="C#" Inherits="Microsoft.SharePoint.ApplicationPages.NewListPage" MasterPageFile="~/_layouts/application.master"      %>
+<%@ Import Namespace="Microsoft.SharePoint.ApplicationPages" %> <%@ Register Tagprefix="SharePoint" Namespace="Microsoft.SharePoint.WebControls" Assembly="Microsoft.SharePoint, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %> <%@ Register Tagprefix="Utilities" Namespace="Microsoft.SharePoint.Utilities" Assembly="Microsoft.SharePoint, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %> <%@ Import Namespace="Microsoft.SharePoint" %>
+<%@ Register Tagprefix="WebPartPages" Namespace="Microsoft.SharePoint.WebPartPages" Assembly="Microsoft.SharePoint, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<%@ Register Assembly="CodeArt.SharePoint, Version=1.0.0.0, Culture=neutral, PublicKeyToken=2c606279787b575f" Namespace="CodeArt.SharePoint.WebParts" TagPrefix="codeArt" %>
+
+<script runat="server">
+    
+//----------------------------------------------------------------
+//Code Art .
+//
+//文件描述:
+//
+//创 建 人: jianyi0115@163.com
+//创建日期: 2008-1-20
+//
+//修订记录: 
+//
+//----------------------------------------------------------------
+    
+     
+</script>
+
+
+<asp:Content ContentPlaceHolderId="PlaceHolderPageTitleInTitleArea" runat="server">
+列表字段权限设置
+ </asp:Content>
+
+<asp:Content ID="Content6" ContentPlaceHolderId="PlaceHolderMain" runat="server">  
+
+<codeArt:FieldRightSettingPart runat="server" id="fSetting" />
+
+</asp:Content>

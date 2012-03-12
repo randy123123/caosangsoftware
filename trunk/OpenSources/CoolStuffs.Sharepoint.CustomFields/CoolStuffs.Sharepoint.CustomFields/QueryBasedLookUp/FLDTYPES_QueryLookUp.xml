@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FieldTypes>
+	<FieldType>
+		<Field Name="TypeName">QueryLookUpDropDown</Field>
+		<Field Name="ParentType">Text</Field>
+		<Field Name="TypeDisplayName">Query Based LookUp Filtering</Field>
+		<Field Name="TypeShortDescription">LookUp (Query Based Filtering)</Field>
+		<Field Name="UserCreatable">TRUE</Field>
+		<Field Name="ShowInListCreate">TRUE</Field>
+		<Field Name="ShowInSurveyCreate">TRUE</Field>
+		<Field Name="Sortable">TRUE</Field>
+		<Field Name="Filterable">TRUE</Field>
+		<Field Name="ShowInDocumentLibraryCreate">TRUE</Field>
+		<Field Name="ShowInColumnTemplateCreate">TRUE</Field>
+		<Field Name="FieldEditorUserControl">/_controltemplates/QueryLookUpFieldEditControl.ascx</Field>
+		<Field Name="FieldTypeClass">CoolStuffs.Sharepoint.CustomFields.QueryBasedLookUp.Field.QueryLookUp, CoolStuffs.Sharepoint.CustomFields, Version=1.0.0.0, Culture=neutral, PublicKeyToken=968ece0422c73ea5</Field>
+
+
+		<PropertySchema>
+			<Fields>
+				<Field Name="SiteUrl" Hidden="TRUE" DisplayName="Site Url" MaxLength="500" DisplaySize="100" Type="Text"></Field>
+				<Field Name="LookUpListName" Hidden="TRUE" DisplayName="List to perform look-up on" MaxLength="500" DisplaySize="100" Type="Text"></Field>
+				<Field Name="LookUpDisplayColumnText" Hidden="TRUE" DisplayName="Display Text of Drop Down" MaxLength="500" DisplaySize="100" Type="Text"></Field>
+				<Field Name="LookUpDisplayColumnValue" Hidden="TRUE" DisplayName="Selected Value of Drop Down" MaxLength="500" DisplaySize="100" Type="Text"></Field>
+				<Field Name="ActualQuery" Hidden="TRUE" DisplayName="CAML Query to Refine Look-Up on" MaxLength="500" DisplaySize="100" Type="Text"></Field>
+				<Field Name="SQLQuery" Hidden="TRUE" DisplayName="SQL query for UI understanding" MaxLength="500" DisplaySize="100" Type="Text"></Field>
+				<Field Name="BadQueryFlag" Hidden="TRUE" DisplayName="SQL query for UI understanding" MaxLength="500" DisplaySize="100" Type="Text"></Field>
+			</Fields>
+		</PropertySchema>
+
+		<RenderPattern Name="DisplayPattern">
+			<RenderPattern Name="DisplayPattern">
+				<Switch>
+					<Expr>
+						<Column />
+					</Expr>
+					<Case Value="" />
+					<Default>
+						<HTML><![CDATA[]]></HTML>
+						<Column HTMLEncode="TRUE" />
+					</Default>
+				</Switch>
+			</RenderPattern>
+		</RenderPattern>
+	</FieldType>
+</FieldTypes>

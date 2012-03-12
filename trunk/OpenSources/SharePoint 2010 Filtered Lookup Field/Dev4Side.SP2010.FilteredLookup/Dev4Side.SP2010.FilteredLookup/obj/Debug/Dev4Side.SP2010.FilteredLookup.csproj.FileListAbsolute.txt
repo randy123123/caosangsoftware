@@ -1,0 +1,6 @@
+D:\CSSOnlineHG\OpenSources\SP2010FilteredLookup\Dev4Side.SP2010.FilteredLookup\Dev4Side.SP2010.FilteredLookup\bin\Debug\Dev4Side.SP2010.FilteredLookup.dll
+D:\CSSOnlineHG\OpenSources\SP2010FilteredLookup\Dev4Side.SP2010.FilteredLookup\Dev4Side.SP2010.FilteredLookup\bin\Debug\Dev4Side.SP2010.FilteredLookup.pdb
+D:\CSSOnlineHG\OpenSources\SP2010FilteredLookup\Dev4Side.SP2010.FilteredLookup\Dev4Side.SP2010.FilteredLookup\bin\Debug\Microsoft.Sharepoint.Sandbox.dll
+D:\CSSOnlineHG\OpenSources\SP2010FilteredLookup\Dev4Side.SP2010.FilteredLookup\Dev4Side.SP2010.FilteredLookup\obj\Debug\ResolveAssemblyReference.cache
+D:\CSSOnlineHG\OpenSources\SP2010FilteredLookup\Dev4Side.SP2010.FilteredLookup\Dev4Side.SP2010.FilteredLookup\obj\Debug\Dev4Side.SP2010.FilteredLookup.dll
+D:\CSSOnlineHG\OpenSources\SP2010FilteredLookup\Dev4Side.SP2010.FilteredLookup\Dev4Side.SP2010.FilteredLookup\obj\Debug\Dev4Side.SP2010.FilteredLookup.pdb

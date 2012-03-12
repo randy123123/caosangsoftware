@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FieldTypes>
+	<FieldType>
+		<Field Name="TypeName">ParentDropDownList</Field>
+		<Field Name="ParentType">Text</Field>
+		<Field Name="TypeDisplayName">Parent Drop Down List</Field>
+		<Field Name="TypeShortDescription">Parent Drop Down List</Field>
+		<Field Name="UserCreatable">TRUE</Field>
+		<Field Name="ShowInListCreate">TRUE</Field>
+		<Field Name="ShowInSurveyCreate">TRUE</Field>
+		<Field Name="Sortable">TRUE</Field>
+		<Field Name="Filterable">TRUE</Field>
+		<Field Name="ShowInDocumentLibraryCreate">TRUE</Field>
+		<Field Name="ShowInColumnTemplateCreate">TRUE</Field>
+		<Field Name="FieldEditorUserControl">/_controltemplates/ParentDropDownListFieldEditControl.ascx</Field>
+		<Field Name="FieldTypeClass">CoolStuffs.Sharepoint.CustomFields.CascadingDropDowns.Field.ParentDropDownListField,CoolStuffs.Sharepoint.CustomFields,Version=1.0.0.0,Culture=neutral,PublicKeyToken=968ece0422c73ea5</Field>
+
+		<PropertySchema>
+			<Fields>
+				<Field Name="ParentSiteUrl" Hidden="TRUE" DisplayName="ParentSiteUrl" MaxLength="500" DisplaySize="100" Type="Text"></Field>
+				<Field Name="ParentListName" Hidden="TRUE" DisplayName="ParentListName" MaxLength="500" DisplaySize="100" Type="Text"></Field>
+				<Field Name="ParentListTextField" Hidden="TRUE" DisplayName="ParentListTextField" MaxLength="40" DisplaySize="40" Type="Text"></Field>
+				<Field Name="ParentListValueField" Hidden="TRUE" DisplayName="ParentListValueField" MaxLength="40" DisplaySize="40" Type="Text"></Field>
+			</Fields>
+		</PropertySchema>
+
+		<RenderPattern Name="DisplayPattern">
+			<RenderPattern Name="DisplayPattern">
+				<Switch>
+					<Expr>
+						<Column />
+					</Expr>
+					<Case Value="" />
+					<Default>
+						<HTML><![CDATA[]]></HTML>
+						<Column HTMLEncode="TRUE" />
+					</Default>
+				</Switch>
+			</RenderPattern>
+		</RenderPattern>
+
+	</FieldType>
+
+</FieldTypes>

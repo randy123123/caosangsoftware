@@ -1,0 +1,15 @@
+﻿1.运行 CodeArt.SharePoint.PermissionEx\CodeArt.SharePoint.PermissionEx/GAC.cmd
+2.运行 CodeArt.SharePoint.PermissionEx\CodeArt.SharePoint.PermissionEx.AppPages/DeployDLL81.cmd
+3.运行 CodeArt.SharePoint.PermissionEx\CodeArt.SharePoint.PermissionEx.AppPages/DeployLayouts.cmd
+4.iisreset
+
+
+
+
+
+$site = Get-SPSite("http://localhost")
+$web = $site.OpenWeb("s2")
+$web.UIVersion = 3
+$web.Update()
+$web.Dispose()
+$site.Dispose()
