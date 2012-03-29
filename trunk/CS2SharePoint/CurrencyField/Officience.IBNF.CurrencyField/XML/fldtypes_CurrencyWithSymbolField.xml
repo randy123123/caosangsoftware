@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FieldTypes>
+    <FieldType>
+        <Field Name="TypeName">CurrencyWithSymbol</Field>
+        <Field Name="ParentType">Text</Field>
+        <Field Name="TypeDisplayName">Currency With Symbol</Field>
+        <Field Name="TypeShortDescription">Currency (Include currency symbol)</Field>
+        <Field Name="UserCreatable">TRUE</Field>
+        <Field Name="ShowInListCreate">TRUE</Field>
+        <Field Name="ShowInSurveyCreate">TRUE</Field>
+        <Field Name="Sortable">TRUE</Field>
+        <Field Name="Filterable">TRUE</Field>
+        <Field Name="ShowInDocumentLibraryCreate">TRUE</Field>
+        <Field Name="ShowInColumnTemplateCreate">TRUE</Field>
+        <Field Name="FieldEditorUserControl">/_controltemplates/CurrencyWithSymbol/FieldEditor.ascx</Field>
+        <Field Name="FieldTypeClass">Officience.IBNF.CurrencyField.CurrencyWithSymbolField, Officience.IBNF.CurrencyField, Version=1.0.0.0, Culture=neutral, PublicKeyToken=aa9abbe34842e666</Field>
+        <PropertySchema>
+            <Fields>
+                <Field Name="SiteName" Hidden="TRUE" DisplayName="Site Name" MaxLength="500" DisplaySize="100" Type="Text"></Field>
+                <Field Name="CurrencyListName" Hidden="TRUE" DisplayName="List to perform get currency symbol on" MaxLength="500" DisplaySize="100" Type="Text"></Field>
+                <Field Name="CurrencySymbolColumn" Hidden="TRUE" DisplayName="Currency symbol column" MaxLength="500" DisplaySize="100" Type="Text"></Field>
+                <Field Name="InputType" Hidden="TRUE" DisplayName="Input type" MaxLength="500" DisplaySize="100" Type="Text"></Field>
+                <Field Name="NumberFormat" Hidden="TRUE" DisplayName="Number Format" MaxLength="500" DisplaySize="100" Type="Text"></Field>
+            </Fields>
+        </PropertySchema>
+    </FieldType>
+</FieldTypes>
