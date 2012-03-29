@@ -309,6 +309,12 @@ namespace Officience.SharePointHelper
             this.Refresh();
             Application.DoEvents();
         }
+
+        public void ProgressBarClear()
+        {
+            ProgressBarValue = ProgressBarMaxValue - 1;
+            ProgressBarNext();
+        }
         #endregion Commons
 
         private void comboBoxServer_KeyDown(object sender, KeyEventArgs e)

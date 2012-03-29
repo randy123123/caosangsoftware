@@ -48,5 +48,9 @@ namespace Officience.SharePointHelper
         {
             Form.ProgressBarNext();
         }
+        public void ProgressBarClear()
+        {
+            Form.ProgressBarClear();
+        }
     }
 }
