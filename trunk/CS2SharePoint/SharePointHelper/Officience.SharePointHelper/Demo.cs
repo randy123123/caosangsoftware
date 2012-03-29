@@ -9,7 +9,7 @@ using System.ComponentModel;
 
 namespace Officience.SharePointHelper
 {
-    public partial class FormSharePointHelper
+    public class Demo : FormFunction, IFormFunction
     {
         /*
         Note:   To add new function, only need copy code 'AddFunctions("Your functions").Click'
@@ -17,17 +17,18 @@ namespace Officience.SharePointHelper
                 function name and press TAB to auto generate your function. After that you can
                 write your code like my demo function.
         */
-        public void Demo_DefineFunctions()
+
+        public override void DefineFunctions() //IFormFunctions
         {
-            AddFunctions("Demo").Click += new EventHandler(Demo);
+            AddFunctions("Demo").Click += new EventHandler(DemoFunction);
             AddFunctions("Demo Dialog Properties").Click += new EventHandler(DemoDiaglogProperties);
             AddFunctions("Demo progressBar").Click += new EventHandler(DemoProgressBar);
         }
 
-        void Demo(object sender, EventArgs e)
+        void DemoFunction(object sender, EventArgs e)
         {
             //Your Code here...
-            //[Demo]            
+            //[DemoFunction]            
             try
             {
                 //SPList listOrderForm = List("Order Form");
