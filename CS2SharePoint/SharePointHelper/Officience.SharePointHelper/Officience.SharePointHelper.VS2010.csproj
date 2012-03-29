@@ -50,9 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Add-your-define-functions-here.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="Forms\FormFunctions.cs" />
     <Compile Include="Forms\FormSharePointHelper.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,12 +65,8 @@
     </Compile>
     <Compile Include="Forms\Program.cs" />
     <Compile Include="Forms\UtilitiesClass.cs" />
-    <Compile Include="Functions.Demo.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Functions.FVIntranet.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="Demo.cs" />
+    <Compile Include="FVIntranet.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\FormSharePointHelper.resx">
       <DependentUpon>FormSharePointHelper.cs</DependentUpon>

@@ -11,7 +11,7 @@ using Microsoft.SharePoint.Navigation;
 
 namespace Officience.SharePointHelper
 {
-    public partial class FormSharePointHelper
+    public class FVIntranet : FormFunction, IFormFunction
     {
         /*
         Note:   To add new function, only need copy code 'AddFunctions("Your functions").Click'
@@ -19,11 +19,17 @@ namespace Officience.SharePointHelper
                 function name and press TAB to auto generate your function. After that you can
                 write your code like my demo function.
         */
-        public void FVIntranet_DefineFunctions()
+        public override void DefineFunctions() //IFormFunctions
         {
             //AddFunctions("TestQueryByUser").Click += new EventHandler(TestQueryByUser);
             AddFunctions("[TN] Move document to new list").Click += new EventHandler(MoveDocumentToNewList);
             AddFunctions("[TN] Test Query").Click += new EventHandler(TestQuery);
+            AddFunctions("aa").Click += new EventHandler(aaa);
+        }
+
+        void aaa(object sender, EventArgs e)
+        {
+            WriteLine(Web.Title);
         }
 
         void TestQuery(object sender, EventArgs e)
@@ -192,7 +198,7 @@ namespace Officience.SharePointHelper
                      <FieldRef Name='ID' />
                   </IsNotNull>
                </Where>";
-            using (SPSite site = new SPSite(comboBoxServer.Text))
+            using (SPSite site = new SPSite(Web.Url))
             {
                 using (SPWeb web = site.OpenWeb())
                 {

@@ -10,6 +10,7 @@ using System.IO;
 using Microsoft.SharePoint;
 using System.Text.RegularExpressions;
 using System.Xml.Serialization;
+using System.Reflection;
 
 namespace Officience.SharePointHelper
 {
@@ -70,7 +71,7 @@ namespace Officience.SharePointHelper
                 ProgressBarNext();
                 Web = OpenWeb(comboBoxServer.Text);
                 ProgressBarNext();
-                DefineFunctions();
+                AddDefineFunctions();
                 ProgressBarNext();
                 AddHanlderForFunctions();
                 ProgressBarNext();
@@ -90,6 +91,20 @@ namespace Officience.SharePointHelper
                 EndFuntion();
                 ProgressBarNext();
                 ActiveControls(false);
+            }
+        }
+
+        private void AddDefineFunctions()
+        {
+            Assembly thisAsm = Assembly.GetExecutingAssembly();
+            List<Type> types = thisAsm.GetTypes().Where
+                        (t => ((typeof(IFormFunction).IsAssignableFrom(t)
+                             && t.IsClass && !t.IsAbstract))).ToList();
+            foreach (Type t in types)
+            {
+                IFormFunction formFunction = (IFormFunction)Activator.CreateInstance(t);
+                formFunction.SetForm(this);
+                formFunction.DefineFunctions();
             }
         }
 
@@ -187,7 +202,7 @@ namespace Officience.SharePointHelper
         #endregion Forms
 
         #region Commons
-        private ToolStripItem AddFunctions(string Text)
+        public ToolStripItem AddFunctions(string Text)
         {
             return menuFuntions.DropDownItems.Add(Text);
         }
@@ -274,7 +289,7 @@ namespace Officience.SharePointHelper
             progressBarLabel.Visible = true;
             ProgressBarNext();
         }
-        private void ProgressBarNext()
+        public void ProgressBarNext()
         {
             ProgressBarValue++;
             progressBarLabel.Text = String.Format("Progress: '{0}' - Completed: {1}%", progressBarLabel.Tag, ProgressBarValue * 100 / ProgressBarMaxValue);
