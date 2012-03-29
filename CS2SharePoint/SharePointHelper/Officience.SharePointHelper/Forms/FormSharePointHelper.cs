@@ -46,25 +46,45 @@ namespace Officience.SharePointHelper
 
         private void ActiveControls(bool enable)
         {
-            comboBoxServer.Enabled = buttonConnect.Enabled = !enable;
+            comboBoxServer.Enabled = !enable;
             menuFuntions.Enabled = buttonExport.Enabled = enable;
             contextMenuItems.Enabled = enable;
+            if (enable)
+                buttonConnect.Text = "Disconnect";
+            else
+                buttonConnect.Text = "Connect";
         }
 
         private void buttonConnect_Click(object sender, EventArgs e)
         {
-            ProgressBarInit(String.Format("Connecting to {0}", comboBoxServer.Text), 5);
-            StartFuntion();
-            ProgressBarNext();
-            Web = OpenWeb(comboBoxServer.Text);
-            ProgressBarNext();
-            DefineFunctions();
-            ProgressBarNext();
-            AddHanlderForFunctions();
-            ProgressBarNext();
-            EndFuntion();
-            ProgressBarNext();
-            ActiveControls(true);
+            if (buttonConnect.Text == "Connect")
+            {
+                ProgressBarInit(String.Format("Connecting to {0}", comboBoxServer.Text), 5);
+                StartFuntion();
+                ProgressBarNext();
+                Web = OpenWeb(comboBoxServer.Text);
+                ProgressBarNext();
+                DefineFunctions();
+                ProgressBarNext();
+                AddHanlderForFunctions();
+                ProgressBarNext();
+                EndFuntion();
+                ProgressBarNext();
+                ActiveControls(true);
+            }
+            else
+            {
+                ProgressBarInit(String.Format("Disconnecting to {0}", comboBoxServer.Text), 4);
+                StartFuntion();
+                ProgressBarNext();
+                CloseWeb(comboBoxServer.Text);
+                ProgressBarNext();
+                menuFuntions.DropDownItems.Clear();
+                ProgressBarNext();
+                EndFuntion();
+                ProgressBarNext();
+                ActiveControls(false);
+            }
         }
         private void menuFuntions_DropDownItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
@@ -247,5 +267,13 @@ namespace Officience.SharePointHelper
             Application.DoEvents();
         }
         #endregion Commons
+
+        private void comboBoxServer_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                buttonConnect_Click(null,null);
+            }
+        }
     }
 }
