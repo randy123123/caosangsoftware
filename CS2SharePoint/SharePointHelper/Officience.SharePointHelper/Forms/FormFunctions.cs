@@ -16,8 +16,6 @@ namespace Officience.SharePointHelper
     {
         public FormSharePointHelper Form { get; set; }
         public FormFunction() { }
-        public FormFunction(FormSharePointHelper form) { SetForm(form); }
-        public virtual void DefineFunctions() { }
         public void SetForm(FormSharePointHelper form) { Form = form; }
 
         public SPWeb Web { get { return Form.Web; } }

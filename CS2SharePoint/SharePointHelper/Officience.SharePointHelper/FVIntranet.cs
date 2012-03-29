@@ -19,7 +19,7 @@ namespace Officience.SharePointHelper
                 function name and press TAB to auto generate your function. After that you can
                 write your code like my demo function.
         */
-        public override void DefineFunctions() //IFormFunctions
+        public void DefineFunctions() //IFormFunctions
         {
             //AddFunctions("TestQueryByUser").Click += new EventHandler(TestQueryByUser);
             AddFunctions("[TN] Move document to new list").Click += new EventHandler(MoveDocumentToNewList);
