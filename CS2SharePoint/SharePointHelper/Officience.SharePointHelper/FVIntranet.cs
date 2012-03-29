@@ -24,12 +24,6 @@ namespace Officience.SharePointHelper
             //AddFunctions("TestQueryByUser").Click += new EventHandler(TestQueryByUser);
             AddFunctions("[TN] Move document to new list").Click += new EventHandler(MoveDocumentToNewList);
             AddFunctions("[TN] Test Query").Click += new EventHandler(TestQuery);
-            AddFunctions("aa").Click += new EventHandler(aaa);
-        }
-
-        void aaa(object sender, EventArgs e)
-        {
-            WriteLine(Web.Title);
         }
 
         void TestQuery(object sender, EventArgs e)
