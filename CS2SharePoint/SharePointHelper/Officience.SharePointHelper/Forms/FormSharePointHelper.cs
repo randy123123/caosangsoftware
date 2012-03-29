@@ -17,10 +17,12 @@ namespace Officience.SharePointHelper
     {
         #region Members
         public const int LOG_ROW = 23;
+        public const string FILE_CONFIG = @"ServerUrl.Config";
         StringBuilder fullLog = new StringBuilder();
         int outputItemCount = -1;
         public SPWeb Web = null;
         bool allowUnsafeUpdatesOfSite = false;
+        ServerConfig serverConfig;        
         #endregion Members
 
         #region Forms
@@ -31,14 +33,17 @@ namespace Officience.SharePointHelper
         private void FormSharePointHelper_Load(object sender, EventArgs e)
         {
             this.saveFileDialogExport.InitialDirectory = System.Reflection.Assembly.GetExecutingAssembly().Location;
-            ServerConfig servers = new ServerConfig();
-            string s = File.ReadAllText(@"ServerUrl.Config");
-            servers = GenericSerialize<ServerConfig>.DeSerialize(s);
-            foreach (Server server in servers.ListServers)
+            serverConfig = new ServerConfig();
+            if (File.Exists(FILE_CONFIG))
             {
-                int index = comboBoxServer.Items.Add(server.Url);
-                if (server.Default)
-                    comboBoxServer.SelectedIndex = index;
+                string s = File.ReadAllText(FILE_CONFIG);
+                serverConfig = GenericSerialize<ServerConfig>.DeSerialize(s);
+                foreach (Server server in serverConfig.ListServers)
+                {
+                    int index = comboBoxServer.Items.Add(server.Url);
+                    if (server.Default)
+                        comboBoxServer.SelectedIndex = index;
+                }
             }
             ActiveControls(false);
             labelWorking.Visible = false;
@@ -60,6 +65,7 @@ namespace Officience.SharePointHelper
             if (buttonConnect.Text == "Connect")
             {
                 ProgressBarInit(String.Format("Connecting to {0}", comboBoxServer.Text), 5);
+                AddWebUrlIfNotExist();
                 StartFuntion();
                 ProgressBarNext();
                 Web = OpenWeb(comboBoxServer.Text);
@@ -84,6 +90,28 @@ namespace Officience.SharePointHelper
                 EndFuntion();
                 ProgressBarNext();
                 ActiveControls(false);
+            }
+        }
+
+        private void AddWebUrlIfNotExist()
+        {
+            Server ser = serverConfig.ListServers.FirstOrDefault(item => item.Url == comboBoxServer.Text);
+            if (ser == null)
+            {
+                string filePath = FILE_CONFIG;
+                serverConfig.ListServers.ForEach(item => item.Default = false);
+                serverConfig.ListServers.Add(new Server(comboBoxServer.Text, true));
+                //Update file in bin folder
+                if (File.Exists(filePath))
+                    File.Delete(filePath);
+                File.AppendAllText(filePath, GenericSerialize<ServerConfig>.Serialize(serverConfig));
+                //Update file in solution folder
+                filePath = String.Format(@"..\..\{0}", filePath);
+                if (File.Exists(filePath))
+                {
+                    File.Delete(filePath);
+                    File.AppendAllText(filePath, GenericSerialize<ServerConfig>.Serialize(serverConfig));
+                }
             }
         }
         private void menuFuntions_DropDownItemClicked(object sender, ToolStripItemClickedEventArgs e)
