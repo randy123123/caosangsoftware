@@ -20,7 +20,8 @@ namespace Officience.SharePointHelper
 
         public void DefineFunctions() //IFormFunctions
         {
-            AddFunctions("Demo").Click += new EventHandler(DemoFunction);
+            AddFunctions("Demo function").Click += new EventHandler(DemoFunction);
+            AddFunctions("Demo function with progressBar").Click += new EventHandler(DemoFunctionWithProgressBar);
             AddFunctions("Demo Dialog Properties").Click += new EventHandler(DemoDiaglogProperties);
             AddFunctions("Demo progressBar").Click += new EventHandler(DemoProgressBar);
         }
@@ -43,6 +44,28 @@ namespace Officience.SharePointHelper
             {
                 WriteLine("ERROR: {0}", ex.Message);
                 WriteLine(ex.StackTrace);
+            }
+        }
+
+        void DemoFunctionWithProgressBar(object sender, EventArgs e)
+        {         
+            try
+            {
+                ProgressBarInit("Demo function with progressBar", Web.Lists.Count - 1);
+
+                WriteLine("Web.Title = '{0}'", Web.Title);
+                WriteLine("Web.Url = '{0}'", Web.Url);
+                foreach (SPList list in Web.Lists)
+                {
+                    WriteLine(" + {0}", list.Title);
+                    ProgressBarNext();
+                }
+            }
+            catch (Exception ex)
+            {
+                WriteLine("ERROR: {0}", ex.Message);
+                WriteLine(ex.StackTrace);
+                ProgressBarClear();
             }
         }
 
