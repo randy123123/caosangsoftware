@@ -18,7 +18,7 @@ namespace Officience.SharePointHelper
                 write your code like my demo function.
         */
 
-        public override void DefineFunctions() //IFormFunctions
+        public void DefineFunctions() //IFormFunctions
         {
             AddFunctions("Demo").Click += new EventHandler(DemoFunction);
             AddFunctions("Demo Dialog Properties").Click += new EventHandler(DemoDiaglogProperties);
