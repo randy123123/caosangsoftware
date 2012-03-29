@@ -68,6 +68,7 @@
             this.comboBoxServer.Name = "comboBoxServer";
             this.comboBoxServer.Size = new System.Drawing.Size(482, 21);
             this.comboBoxServer.TabIndex = 1;
+            this.comboBoxServer.KeyDown += new System.Windows.Forms.KeyEventHandler(this.comboBoxServer_KeyDown);
             // 
             // buttonConnect
             // 
@@ -85,16 +86,16 @@
             this.menuStripFuntions.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.menuStripFuntions.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuFuntions});
-            this.menuStripFuntions.Location = new System.Drawing.Point(0, 402);
+            this.menuStripFuntions.Location = new System.Drawing.Point(0, 391);
             this.menuStripFuntions.Name = "menuStripFuntions";
-            this.menuStripFuntions.Size = new System.Drawing.Size(673, 24);
+            this.menuStripFuntions.Size = new System.Drawing.Size(665, 24);
             this.menuStripFuntions.TabIndex = 3;
             this.menuStripFuntions.Text = "menuStrip1";
             // 
             // menuFuntions
             // 
             this.menuFuntions.Name = "menuFuntions";
-            this.menuFuntions.Size = new System.Drawing.Size(183, 20);
+            this.menuFuntions.Size = new System.Drawing.Size(197, 20);
             this.menuFuntions.Text = "--> Select your function to excute";
             this.menuFuntions.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuFuntions_DropDownItemClicked);
             // 
@@ -196,9 +197,9 @@
             // progressBarLabel
             // 
             this.progressBarLabel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.progressBarLabel.Location = new System.Drawing.Point(0, 384);
+            this.progressBarLabel.Location = new System.Drawing.Point(0, 373);
             this.progressBarLabel.Name = "progressBarLabel";
-            this.progressBarLabel.Size = new System.Drawing.Size(673, 18);
+            this.progressBarLabel.Size = new System.Drawing.Size(665, 18);
             this.progressBarLabel.TabIndex = 10;
             this.progressBarLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -206,7 +207,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(673, 426);
+            this.ClientSize = new System.Drawing.Size(665, 415);
             this.Controls.Add(this.progressBarLabel);
             this.Controls.Add(this.progressBar);
             this.Controls.Add(this.labelWorking);
@@ -227,8 +228,8 @@
             this.Name = "FormSharePointHelper";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Officience.SharePointHelper";
-            this.Load += new System.EventHandler(this.FormSharePointHelper_Load);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormSharePointHelper_FormClosing);
+            this.Load += new System.EventHandler(this.FormSharePointHelper_Load);
             this.menuStripFuntions.ResumeLayout(false);
             this.menuStripFuntions.PerformLayout();
             this.contextMenuItems.ResumeLayout(false);
