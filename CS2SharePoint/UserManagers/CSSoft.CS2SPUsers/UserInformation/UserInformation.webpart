@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="CSSoft.CS2SPUsers.UserInformation.UserInformation, $SharePoint.Project.AssemblyFullName$" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">User Informations (AD)</property>
+        <property name="Description" type="string">Get the informations of user in Active Directory (AD)</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>
