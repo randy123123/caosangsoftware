@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.VisualWebPart" DefaultFile="UserInformationUserControl.ascx" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="UserInformation\" Type="ElementManifest" />
+    <ProjectItemFile Source="UserInformation.webpart" Target="UserInformation\" Type="ElementFile" />
+    <ProjectItemFile Source="UserInformationUserControl.ascx" Target="CONTROLTEMPLATES\CSSoft.CS2SPUsers\UserInformation\" Type="TemplateFile" />
+  </Files>
+  <SafeControls>
+    <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="CSSoft.CS2SPUsers.UserInformation" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+  </SafeControls>
+</ProjectItem>
