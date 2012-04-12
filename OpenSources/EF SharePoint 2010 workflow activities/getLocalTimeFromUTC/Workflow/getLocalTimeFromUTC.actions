@@ -1,0 +1,19 @@
+﻿<WorkflowInfo>
+  <Actions Sequential="then" Parallel="and">
+    <Action Name="Get local datetime from UTC datetime"
+    ClassName="EFSPWFActivities.getLocalTimeFromUTC"
+    Assembly="EFSPWFActivities.getLocalTimeFromUTC, Version=2.0.0.0, Culture=neutral, PublicKeyToken=4176182b8007acd7"
+    AppliesTo="all"
+    Category="EF Workflow Activities">
+      <RuleDesigner Sentence="Get local datetime from UTC datetime %1, store in %2">
+        <FieldBind Field="UtcDatetime" Text="Utc Datetime" Id="1" DesignerType="Date" />
+        <FieldBind Field="LocalDatetime" Text="Local Datetime" Id="2" DesignerType="ParameterNames" />
+      </RuleDesigner>
+      <Parameters>
+        <Parameter Name="__Context" Type="Microsoft.SharePoint.WorkflowActions.WorkflowContext, Microsoft.SharePoint.WorkflowActions" Direction="In" DesignerType="Hide" />
+        <Parameter Name="UtcDatetime" Type="System.DateTime, mscorlib" Direction="In" InitialValue="" Description="Utc Datetime" />
+        <Parameter Name="LocalDatetime" Type="System.DateTime, mscorlib" Direction="Out" InitialValue="" Description="Local Datetime" />
+      </Parameters>
+    </Action>
+  </Actions>
+</WorkflowInfo>

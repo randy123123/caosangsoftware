@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <WorkflowActions>
+    <Action Name="get Field Value From Previous Version"
+            SandboxedFunction="true"
+            Assembly="$SharePoint.Project.AssemblyFullName$"
+            ClassName="EFSBWFActivities.getFieldValueFromPreviousVersionSB"
+            FunctionName="Execute"
+            AppliesTo="all"
+            UsesCurrentItem="true"
+            Category="EF Workflow Activities (Sandboxed)">
+      <RuleDesigner Sentence="get Value in Field: %1 from Previous Version, store in: %2">
+        <FieldBind Field="FieldName" Text="Field Name" DesignerType="FieldNames" Id="1"/>
+        <FieldBind Field="FieldValue" Text="Field Value" DesignerType="ParameterNames" Id="2"/>
+      </RuleDesigner>
+      <Parameters>
+        <Parameter Name="__Context" Type="Microsoft.SharePoint.WorkflowActions.WorkflowContext, Microsoft.SharePoint.WorkflowActions" Direction="In" DesignerType="Hide" />
+        <Parameter Name="FieldName" Type="System.String, mscorlib" Direction="In" InitialValue="" />
+        <Parameter Name="FieldValue" Type="System.String, mscorlib" Direction="Out" DesignerType="ParameterNames" />
+      </Parameters>
+    </Action>
+  </WorkflowActions>
+</Elements>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="efbed83a-4e94-40d7-b256-e48b86412e46" solutionId="efbed83a-4e94-40d7-b256-e48b86412e46" resetWebServer="false" name="EFSBWFActivities.CalculateBusinessHoursSB" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="f2782927-bcfb-4ebb-804d-0ba50161ea04" />
+  </features>
+</package>

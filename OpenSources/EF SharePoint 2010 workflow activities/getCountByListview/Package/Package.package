@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="9ebdbe89-37bc-404f-a096-9db8ef8bc500" solutionId="9ebdbe89-37bc-404f-a096-9db8ef8bc500" resetWebServer="false" name="EFSPWFActivities.getCountByListview" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="d67f2df5-25ca-4ff0-b724-58827d900f25" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="be49769d-2123-44ea-9727-cf3706158dc7" />
+  </projectItems>
+</package>

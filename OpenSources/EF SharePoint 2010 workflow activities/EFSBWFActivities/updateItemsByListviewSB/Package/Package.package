@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="c9f798b3-1b35-4eff-992f-801276e822c5" solutionId="c9f798b3-1b35-4eff-992f-801276e822c5" resetWebServer="false" name="EFSBWFActivities.updateItemsByListviewSB" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="52dc5301-bdcd-45e2-bf64-49dc7fee87e0" />
+  </features>
+</package>

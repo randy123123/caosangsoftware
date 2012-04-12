@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <WorkflowActions>
+    <Action Name="Delete List Items by CAML (Sandboxed)"
+            SandboxedFunction="true"
+            Assembly="$SharePoint.Project.AssemblyFullName$"
+            ClassName="EFSBWFActivities.deleteItemsByCamlSB"
+            FunctionName="Execute"
+            AppliesTo="all"
+            UsesCurrentItem="false"
+            Category="EF Workflow Activities Sandboxed">
+      <RuleDesigner Sentence="delete items in list: %1, by caml where clause %2">
+        <FieldBind Field="ListTitle" Text="List Title" DesignerType="ListNames" Id="1"/>
+        <FieldBind Field="VarCAML" Text="CAML string variable" DesignerType="TextArea" Id="2"/>
+      </RuleDesigner>
+      <Parameters>
+        <Parameter Name="__Context" Type="Microsoft.SharePoint.WorkflowActions.WorkflowContext, Microsoft.SharePoint.WorkflowActions" Direction="In" DesignerType="Hide" />
+        <Parameter Name="ListTitle" Type="System.String, mscorlib" Direction="In" />
+        <Parameter Name="VarCAML" Type="System.String, mscorlib" Direction="In" />
+      </Parameters>
+    </Action>
+  </WorkflowActions>
+</Elements>

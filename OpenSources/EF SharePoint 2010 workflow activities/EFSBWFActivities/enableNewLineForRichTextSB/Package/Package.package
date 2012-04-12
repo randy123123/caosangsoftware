@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="2b160dc5-0283-440a-a1fc-e8aac6450ba8" solutionId="2b160dc5-0283-440a-a1fc-e8aac6450ba8" resetWebServer="false" name="EFSBWFActivities.enableNewLineForRichTextSB" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="1455c5ef-7228-4aef-9d4b-20c46a37a388" />
+  </features>
+</package>

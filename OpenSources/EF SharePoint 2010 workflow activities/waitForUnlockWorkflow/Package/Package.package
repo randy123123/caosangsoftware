@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="3f774295-9981-47a1-9a13-b894991dc43e" solutionId="3f774295-9981-47a1-9a13-b894991dc43e" resetWebServer="false" name="EFSPWFActivities.waitForUnlockWorkflow" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <assemblies>
+    <projectOutputAssembly location="EFSPWFActivities.waitForUnlockWorkflow.dll" deploymentTarget="GlobalAssemblyCache" />
+  </assemblies>
+  <features>
+    <featureReference itemId="76aa9678-dab5-48f2-b545-a3d4bc8dd2b3" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="5d7f2030-9580-4d84-8d52-293c00856d94" />
+  </projectItems>
+</package>

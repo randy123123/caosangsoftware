@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <WorkflowActions>
+    <Action Name="Wait until current workflow is unlocked (Sandboxed)"
+            SandboxedFunction="true"
+            Assembly="$SharePoint.Project.AssemblyFullName$"
+            ClassName="EFSBWFActivities.waitForUnlockWorkflowSB"
+            FunctionName="Execute"
+            AppliesTo="all"
+            UsesCurrentItem="false"
+            Category="EF Workflow Activities Sandboxed">
+      <RuleDesigner Sentence="Wait until current workflow is unlocked (maximum %1 seconds)">
+        <FieldBind Id="1" Field="NumberOfSeconds" DesignerType="Integer" Text="number of seconds" />
+      </RuleDesigner>
+      <Parameters>
+        <Parameter Name="__Context" Type="Microsoft.SharePoint.WorkflowActions.WorkflowContext, Microsoft.SharePoint.WorkflowActions" Direction="In" DesignerType="Hide" />
+        <Parameter Name="NumberOfSeconds" Type="System.Int32, mscorlib" InitialValue="60" Direction="In" />
+      </Parameters>
+    </Action>
+  </WorkflowActions>
+</Elements>

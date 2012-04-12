@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="650d303f-5802-4c82-8918-0999f76f3c93" solutionId="650d303f-5802-4c82-8918-0999f76f3c93" resetWebServer="false" name="EFSBWFActivities.getCountByCamlSB" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="5aa67593-9c98-4081-830b-21a3c5588d8f" />
+  </features>
+</package>

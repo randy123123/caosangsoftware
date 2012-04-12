@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="648898b8-8d4c-48c6-8568-821cbd37db13" solutionId="648898b8-8d4c-48c6-8568-821cbd37db13" resetWebServer="false" name="EFSPWFActivities.deleteItemsByCAML" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="856a6e65-cc1c-4ea9-861f-ed6423abfe8b" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="38823c7b-1bf7-4fd4-890a-126a70f653e4" />
+  </projectItems>
+</package>

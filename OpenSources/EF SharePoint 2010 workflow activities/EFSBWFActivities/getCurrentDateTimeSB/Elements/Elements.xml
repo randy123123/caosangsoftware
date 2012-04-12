@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <WorkflowActions>
+    <Action Name="get current datetime (Sandboxed)"
+            SandboxedFunction="true"
+            Assembly="$SharePoint.Project.AssemblyFullName$"
+            ClassName="EFSBWFActivities.getCurrentDateTimeSB"
+            FunctionName="Execute"
+            AppliesTo="all"
+            UsesCurrentItem="false"
+            Category="EF Workflow Activities Sandboxed">
+      <RuleDesigner Sentence="get current datetime into %1, format: %2">
+        <FieldBind Field="varCurrentDatetime" Text="variable" DesignerType="ParameterNames" Id="1"/>
+        <FieldBind Field="timeFormat" Text="default" DesignerType="TextArea" Id="2" />
+      </RuleDesigner>
+      <Parameters>
+        <Parameter Name="__Context" Type="Microsoft.SharePoint.WorkflowActions.WorkflowContext, Microsoft.SharePoint.WorkflowActions" Direction="In" DesignerType="Hide" />
+        <Parameter Name="varCurrentDatetime" Type="System.String, mscorlib" Direction="Out" />
+        <Parameter Name="timeFormat" Type="System.String, mscorlib" InitialValue="yyyy-MM-dd HH:mm:ss" Direction="In"  />
+      </Parameters>
+    </Action>
+  </WorkflowActions>
+</Elements>

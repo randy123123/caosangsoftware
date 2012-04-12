@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="eb46966d-3a82-4505-9597-aa5dc783171c" solutionId="eb46966d-3a82-4505-9597-aa5dc783171c" resetWebServer="false" name="EFSPWFActivities.enableNewLineForRichText" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="e21d7c30-a6b2-4490-a34e-ca22d348b9ed" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="16e17d66-4293-40ee-9f9b-b3ea9736e51e" />
+  </projectItems>
+</package>

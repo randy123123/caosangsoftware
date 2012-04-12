@@ -1,0 +1,28 @@
+﻿<WorkflowInfo>
+  <Actions Sequential="then" Parallel="and">
+    <Action Name="Update List Items by CAML"
+    ClassName="EFSPWFActivities.updateItemsByCAML"
+    Assembly="EFSPWFActivities.updateItemsByCAML, Version=2.0.0.0, Culture=neutral, PublicKeyToken=49077f0d5e641308"
+    AppliesTo="all"
+    Category="EF Workflow Activities">
+      <RuleDesigner Sentence="update items in list: %1, field name: %2, new value: %3 as new version: %5, by caml where clause %4">
+        <FieldBind Field="ListTitle" Text="List" DesignerType="ListNames" Id="1"/>
+        <FieldBind Field="FieldName" Text="Field Name" DesignerType="TextArea" Id="2"/>
+        <FieldBind Field="FieldValue" Text="Field Value" DesignerType="TextArea" Id="3"/>
+        <FieldBind Field="VarCAML" Text="CAML string" DesignerType="TextArea" Id="4"/>
+        <FieldBind Field="NewVersion" DesignerType="Dropdown" Text="yes or no" Id="5">
+          <Option Name="yes" Value="yes"/>
+          <Option Name="no" Value="no"/>
+        </FieldBind>
+      </RuleDesigner>
+      <Parameters>
+        <Parameter Name="__Context" Type="Microsoft.SharePoint.WorkflowActions.WorkflowContext" Direction="In" DesignerType="Hide" />
+        <Parameter Name="ListTitle" Type="System.String, mscorlib" Direction="In" />
+        <Parameter Name="FieldName" Type="System.String, mscorlib" Direction="In" />
+        <Parameter Name="FieldValue" Type="System.String, mscorlib" Direction="In" />
+        <Parameter Name="VarCAML" Type="System.String, mscorlib" Direction="In" />
+        <Parameter Name="NewVersion" Type="System.String, mscorlib" Direction="In" />
+      </Parameters>
+    </Action>
+  </Actions>
+</WorkflowInfo>

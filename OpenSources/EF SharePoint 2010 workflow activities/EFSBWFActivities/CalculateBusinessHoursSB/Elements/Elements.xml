@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <WorkflowActions>
+    <Action Name="Calculate Business Hours Between DateTimes (Sandboxed)"
+            SandboxedFunction="true"
+            Assembly="$SharePoint.Project.AssemblyFullName$"
+            ClassName="EFSBWFActivities.CalculateBusinessHoursSB"
+            FunctionName="Execute"
+            AppliesTo="all"
+            UsesCurrentItem="false"
+            Category="EF Workflow Activities Sandboxed">
+      <RuleDesigner Sentence="Calculate Business Hours between datetimes %1 and %2 (Business start from %3, end at %4, Output to %5)">
+        <FieldBind Field="Date1Value" Text="start date" Id="1" DesignerType="Date" />
+        <FieldBind Field="Date2Value" Text="end date" Id="2" DesignerType="Date" />
+        <FieldBind Field="StartingHour" Text="start hour" Id="3" DesignerType="TextArea" />
+        <FieldBind Field="EndingHour" Text="end hour" Id="4" DesignerType="TextArea" />
+        <FieldBind Field="TimeVariable" Text="number of hours" Id="5" DesignerType="ParameterNames" />
+      </RuleDesigner>
+      <Parameters>
+        <Parameter Name="__Context" Type="Microsoft.SharePoint.WorkflowActions.WorkflowContext, Microsoft.SharePoint.WorkflowActions" Direction="In" DesignerType="Hide" />
+        <Parameter Name="Date1Value" Type="System.DateTime, mscorlib" Direction="In" InitialValue="" Description="Start datetime" />
+        <Parameter Name="Date2Value" Type="System.DateTime, mscorlib" Direction="In" InitialValue="" Description="End datetime" />
+        <Parameter Name="StartingHour" Type="System.String, mscorlib" Direction="In" InitialValue="9" Description="Office starting hour" />
+        <Parameter Name="EndingHour" Type="System.String, mscorlib" Direction="In" InitialValue="17.5" Description="Office ending hour" />
+        <Parameter Name="TimeVariable"  Type="System.Double, mscorlib" Direction="Out" Description="Workflow variable output by this action"/>
+      </Parameters>
+    </Action>
+  </WorkflowActions>
+</Elements>

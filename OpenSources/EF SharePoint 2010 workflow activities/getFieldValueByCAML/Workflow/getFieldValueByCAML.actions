@@ -1,0 +1,23 @@
+﻿<WorkflowInfo>
+  <Actions Sequential="then" Parallel="and">
+    <Action Name="Get field value from top item by CAML"
+    ClassName="EFSPWFActivities.getFieldValueByCAML"
+    Assembly="EFSPWFActivities.getFieldValueByCAML, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c80256606c027ffe"
+    AppliesTo="all"
+    Category="EF Workflow Activities">
+      <RuleDesigner Sentence="In list: %1, by CAML: %2, get field value from field: %3, and then store it in: %4">
+        <FieldBind Field="ListTitle" Text="List" DesignerType="ListNames" Id="1"/>
+        <FieldBind Field="VarCAML" Text="CAML String" DesignerType="TextArea" Id="2"/>
+        <FieldBind Field="FieldName" Text="Field Name" DesignerType="TextArea" Id="3"/>
+        <FieldBind Field="FieldValue" Text="Field Value" DesignerType="ParameterNames" Id="4"/>
+      </RuleDesigner>
+      <Parameters>
+        <Parameter Name="__Context" Type="Microsoft.SharePoint.WorkflowActions.WorkflowContext" Direction="In" DesignerType="Hide" />
+        <Parameter Name="ListTitle" Type="System.String, mscorlib" Direction="In" />
+        <Parameter Name="VarCAML" Type="System.String, mscorlib" Direction="In" />
+        <Parameter Name="FieldName" Type="System.String, mscorlib" Direction="In" />
+        <Parameter Name="FieldValue" Type="System.String, mscorlib" Direction="Out" />
+      </Parameters>
+    </Action>
+  </Actions>
+</WorkflowInfo>

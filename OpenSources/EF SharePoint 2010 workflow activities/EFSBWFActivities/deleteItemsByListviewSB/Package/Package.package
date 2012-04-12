@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="ab499425-c90c-46ab-8344-cfbb70b4012a" solutionId="ab499425-c90c-46ab-8344-cfbb70b4012a" resetWebServer="false" name="EFSBWFActivities.deleteItemsByListviewSB" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="96b3eff2-6199-46d4-be20-e8257ae6a447" />
+  </features>
+</package>
