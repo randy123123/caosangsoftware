@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="bbff8fcb-a117-4cbb-aefe-473d62555d65" solutionId="bbff8fcb-a117-4cbb-aefe-473d62555d65" resetWebServer="false" name="EFSPWFActivities.getLocalTimeFromUTC" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="c7d950a8-f59f-4779-be43-434e0f5e57b7" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="ddb269ec-0171-4a77-a951-d2a7937db7ff" />
+  </projectItems>
+</package>

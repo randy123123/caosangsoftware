@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<WorkflowInfo>
+  <Actions Sequential="then" Parallel="and">
+    <Action Name="alter task data"
+    ClassName="EFSPWFActivities.alterTaskByTaskID"
+    Assembly="EFSPWFActivities.alterTaskByTaskID, Version=2.0.0.0, Culture=neutral, PublicKeyToken=9adbdbfe01149bde"
+    AppliesTo="all"
+    Category="EF Workflow Activities">
+      <RuleDesigner Sentence="Alter task %1 by task ID %2.">
+        <FieldBind Field="TaskListName" Text="task list" DesignerType="ListNames" Id="1"/>
+        <FieldBind Field="TaskID" Text="Task ID" DesignerType="ParameterNames" Id="2"/>
+      </RuleDesigner>
+      <Parameters>
+        <Parameter Name="__Context" Type="Microsoft.SharePoint.WorkflowActions.WorkflowContext, Microsoft.SharePoint.WorkflowActions" Direction="In" />
+        <Parameter Name="TaskListName" Type="System.String, mscorlib" Direction="In" />
+        <Parameter Name="TaskID" Type="System.String, mscorlib" Direction="Out" />
+      </Parameters>
+    </Action>
+  </Actions>
+</WorkflowInfo>

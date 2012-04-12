@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="059d70b3-9e59-46d2-b124-bbf6846d79c6" solutionId="059d70b3-9e59-46d2-b124-bbf6846d79c6" resetWebServer="false" name="EFSBWFActivities.getCurrentDateTimeSB" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="52cf9897-8d14-46f1-b47f-550fb6de036a" />
+  </features>
+</package>

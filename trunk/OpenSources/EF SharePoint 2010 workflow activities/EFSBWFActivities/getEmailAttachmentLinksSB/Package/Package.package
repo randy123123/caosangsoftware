@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="59db8e3f-3897-4ebd-afa0-13ca5ea7b729" solutionId="59db8e3f-3897-4ebd-afa0-13ca5ea7b729" resetWebServer="false" name="EFSBWFActivities.getEmailAttachmentLinksSB" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="c31ca563-43a8-40e0-8f33-64aa5fea216f" />
+  </features>
+</package>

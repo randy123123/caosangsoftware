@@ -1,0 +1,19 @@
+﻿<WorkflowInfo>
+  <Actions Sequential="then" Parallel="and">
+    <Action Name="get current date or time"
+    ClassName="EFSPWFActivities.getCurrentDateTime"
+    Assembly="EFSPWFActivities.getCurrentDateTime, Version=2.0.0.0, Culture=neutral, PublicKeyToken=638fce08de07966c"
+    AppliesTo="all"
+    Category="EF Workflow Activities">
+      <RuleDesigner Sentence="put current time into %1, format: %2">
+        <FieldBind Field="varCurrentDatetime" Text="variable" DesignerType="ParameterNames" Id="1"/>
+        <FieldBind Field="timeFormat" Text="default" DesignerType="TextArea" Id="2" />
+      </RuleDesigner>
+      <Parameters>
+        <Parameter Name="__Context" Type="Microsoft.SharePoint.WorkflowActions.WorkflowContext, Microsoft.SharePoint.WorkflowActions" Direction="In" />
+        <Parameter Name="varCurrentDatetime" Type="System.String, mscorlib" Direction="Out" />
+        <Parameter Name="timeFormat" Type="System.String, mscorlib" InitialValue="yyyy-MM-dd HH:mm:ss" Direction="In"  />
+      </Parameters>
+    </Action>
+  </Actions>
+</WorkflowInfo>

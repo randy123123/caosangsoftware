@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="a006939d-7448-4c1a-81fc-44fa44c4e7b0" solutionId="a006939d-7448-4c1a-81fc-44fa44c4e7b0" resetWebServer="false" name="EFSPWFActivities.getFieldValueByCAML" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="693d728f-eb77-4453-8104-dd629dd79c40" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="da4e8a02-30b8-4f71-98b6-bf191eeef8f1" />
+  </projectItems>
+</package>

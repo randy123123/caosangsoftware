@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="643c9360-e7d0-447c-9390-a89a4da409b2" solutionId="643c9360-e7d0-447c-9390-a89a4da409b2" resetWebServer="false" name="EFSPWFActivities.waitForSeconds" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="178ff407-1adb-4d8d-ba39-9155b3dbfb1c" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="6b1fa962-9a50-4c4b-b861-155704671c14" />
+  </projectItems>
+</package>

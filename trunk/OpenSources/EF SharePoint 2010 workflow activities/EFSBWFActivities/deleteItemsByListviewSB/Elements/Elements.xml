@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <WorkflowActions>
+    <Action Name="Delete List Items by ListView (Sandboxed)"
+            SandboxedFunction="true"
+            Assembly="$SharePoint.Project.AssemblyFullName$"
+            ClassName="EFSBWFActivities.deleteItemsByListviewSB"
+            FunctionName="Execute"
+            AppliesTo="all"
+            UsesCurrentItem="false"
+            Category="EF Workflow Activities Sandboxed">
+      <RuleDesigner Sentence="delete items in listview %1, list: %2">
+        <FieldBind Field="ListViewTitle" Text="ListView Title" DesignerType="TextArea" Id="1"/>
+        <FieldBind Field="ListTitle" Text="List Title" DesignerType="ListNames" Id="2"/>
+      </RuleDesigner>
+      <Parameters>
+        <Parameter Name="__Context" Type="Microsoft.SharePoint.WorkflowActions.WorkflowContext, Microsoft.SharePoint.WorkflowActions" Direction="In" DesignerType="Hide" />
+        <Parameter Name="ListViewTitle" Type="System.String, mscorlib" Direction="In" />
+        <Parameter Name="ListTitle" Type="System.String, mscorlib" Direction="In" />
+      </Parameters>
+    </Action>
+  </WorkflowActions>
+</Elements>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" Id="a5fea048-3331-4f44-94a8-1211686eb931" solutionId="a5fea048-3331-4f44-94a8-1211686eb931" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" name="wfTest">
+    <features>
+        <featureReference itemId="6d772308-7ef9-4b5e-92d6-3ab20c09753a" />
+    </features>
+</package>

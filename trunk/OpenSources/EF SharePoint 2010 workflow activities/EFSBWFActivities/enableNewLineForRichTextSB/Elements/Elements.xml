@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <WorkflowActions>
+    <Action Name="enable NewLine character for RichText field (Sandboxed)"
+            SandboxedFunction="true"
+            Assembly="$SharePoint.Project.AssemblyFullName$"
+            ClassName="EFSBWFActivities.enableNewLineForRichTextSB"
+            FunctionName="Execute"
+            AppliesTo="all"
+            UsesCurrentItem="false"
+            Category="EF Workflow Activities Sandboxed">
+      <RuleDesigner Sentence="enable NewLine char in %1, store in %2">
+        <FieldBind Field="varSourceString" Text="source" DesignerType="TextArea" Id="1"/>
+        <FieldBind Field="varDestString" Text="dest" DesignerType="ParameterNames" Id="2" />
+      </RuleDesigner>
+      <Parameters>
+        <Parameter Name="__Context" Type="Microsoft.SharePoint.WorkflowActions.WorkflowContext, Microsoft.SharePoint.WorkflowActions" Direction="In" DesignerType="Hide" />
+        <Parameter Name="varSourceString" Type="System.String, mscorlib" Direction="In"  />
+        <Parameter Name="varDestString" Type="System.String, mscorlib" Direction="Out" />
+      </Parameters>
+    </Action>
+  </WorkflowActions>
+</Elements>

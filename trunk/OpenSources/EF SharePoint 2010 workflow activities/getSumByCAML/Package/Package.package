@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="e4ae0b52-63b5-4d81-bcc0-9a8e659f1753" solutionId="e4ae0b52-63b5-4d81-bcc0-9a8e659f1753" resetWebServer="false" name="EFSPWFActivities.getSumByCAML" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="ab512349-ec22-448f-8d6c-ad42cafcce08" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="5e201fe9-4ab6-4766-b084-8d42a773ae87" />
+  </projectItems>
+</package>

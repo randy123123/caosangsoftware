@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <WorkflowActions>
+    <Action Name="Update List Items by Listview (Sandboxed)"
+            SandboxedFunction="true"
+            Assembly="$SharePoint.Project.AssemblyFullName$"
+            ClassName="EFSBWFActivities.updateItemsByListviewSB"
+            FunctionName="Execute"
+            AppliesTo="all"
+            UsesCurrentItem="false"
+            Category="EF Workflow Activities Sandboxed">
+      <RuleDesigner Sentence="update items in view:%1, list: %2, update field: %3, new value: %4 as new version: %5">
+        <FieldBind Field="ListViewTitle" Text="ListView Title" DesignerType="TextArea" Id="1"/>
+        <FieldBind Field="ListTitle" Text="List Title" DesignerType="ListNames" Id="2"/>
+        <FieldBind Field="FieldName" Text="Field Name" DesignerType="TextArea" Id="3"/>
+        <FieldBind Field="FieldValue" Text="Field Value" DesignerType="TextArea" Id="4"/>
+        <FieldBind Field="NewVersion" Text="" DesignerType="Bool" Id="5"/>
+      </RuleDesigner>
+      <Parameters>
+        <Parameter Name="__Context" Type="Microsoft.SharePoint.WorkflowActions.WorkflowContext, Microsoft.SharePoint.WorkflowActions" Direction="In" DesignerType="Hide" />
+        <Parameter Name="ListViewTitle" Type="System.String, mscorlib" Direction="In" />
+        <Parameter Name="ListTitle" Type="System.String, mscorlib" Direction="In" />
+        <Parameter Name="FieldName" Type="System.String, mscorlib" Direction="In" />
+        <Parameter Name="FieldValue" Type="System.String, mscorlib" Direction="In" />
+        <Parameter Name="NewVersion" Type="System.Boolean, mscorlib" InitialValue="Yes" Direction="In" />
+      </Parameters>
+    </Action>
+  </WorkflowActions>
+  </Elements>

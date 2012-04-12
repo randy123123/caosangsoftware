@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="c722aff8-706f-4737-91b1-7eac75122fd1" solutionId="c722aff8-706f-4737-91b1-7eac75122fd1" resetWebServer="false" name="EFSPWFActivities.CalculateBusinessHours" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <assemblies>
+    <projectOutputAssembly location="EFSPWFActivities.CalculateBusinessHours.dll" deploymentTarget="GlobalAssemblyCache" />
+  </assemblies>
+  <features>
+    <featureReference itemId="fd3c97c6-890a-4890-9793-9a53bac2a186" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="2d90d41b-de0a-4426-a8b4-7aa831cc8ee2" />
+  </projectItems>
+</package>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="8b8c3f3f-5595-46ab-b6ce-6e1ea62881e9" solutionId="8b8c3f3f-5595-46ab-b6ce-6e1ea62881e9" resetWebServer="false" name="EFSPWFActivities.getRelevantTaskID" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <assemblies>
+    <projectOutputAssembly location="EFSPWFActivities.getRelevantTaskID.dll" deploymentTarget="GlobalAssemblyCache" />
+  </assemblies>
+  <features>
+    <featureReference itemId="9f914bab-3134-4226-b6f8-3fae624cfd48" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="731d6a37-e56c-4ff2-8a0e-c3f79065c906" />
+  </projectItems>
+</package>

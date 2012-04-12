@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="ce030dc1-4adb-4aa8-a88a-801338d2e5af" solutionId="ce030dc1-4adb-4aa8-a88a-801338d2e5af" resetWebServer="false" name="EFSPWFActivities.getUserLoginsByGroupName" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <assemblies>
+    <projectOutputAssembly location="EFSPWFActivities.getUserLoginsByGroupName.dll" deploymentTarget="GlobalAssemblyCache" />
+  </assemblies>
+  <features>
+    <featureReference itemId="be18cb2e-1cd3-4b90-b321-fc4a540e1e58" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="dae87789-ed51-4a3e-8c34-bae4e514bcb8" />
+  </projectItems>
+</package>

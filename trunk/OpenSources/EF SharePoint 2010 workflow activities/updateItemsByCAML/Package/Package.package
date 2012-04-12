@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="bcd68531-27bb-429c-a0f3-1b813c2fc6c9" solutionId="bcd68531-27bb-429c-a0f3-1b813c2fc6c9" resetWebServer="false" name="EFSPWFActivities.updateItemsByCAML" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="bc1c6271-d91a-406f-b882-b1503eaa8713" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="e2496f95-a0be-4d1d-9df3-0523d2e36705" />
+  </projectItems>
+</package>

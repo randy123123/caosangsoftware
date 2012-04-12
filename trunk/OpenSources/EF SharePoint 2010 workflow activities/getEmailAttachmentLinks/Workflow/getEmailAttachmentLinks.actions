@@ -1,0 +1,21 @@
+﻿<WorkflowInfo>
+  <Actions Sequential="then" Parallel="and">
+    <Action Name="get Email Attachment Links"
+    ClassName="EFSPWFActivities.getEmailAttachmentLinks"
+    Assembly="EFSPWFActivities.getEmailAttachmentLinks, Version=2.1.0.0, Culture=neutral, PublicKeyToken=9a9a5e4d577cfaac"
+    AppliesTo="all"
+    Category="EF Workflow Activities">
+      <RuleDesigner Sentence="get Email Attachment Links from Email Library %1, ID: %2, store in %3">
+        <FieldBind Field="EmailLibTitle" Text="Email Lib" DesignerType="ListNames" Id="1"/>
+        <FieldBind Field="EmailID" Text="Email item ID" DesignerType="TextArea" Id="2"/>
+        <FieldBind Field="AttachmentLinksHTML" Text="AttachmentLinksHTML" DesignerType="ParameterNames" Id="3"/>
+      </RuleDesigner>
+      <Parameters>
+        <Parameter Name="__Context" Type="Microsoft.SharePoint.WorkflowActions.WorkflowContext" Direction="In" DesignerType="Hide" />
+        <Parameter Name="EmailLibTitle" Type="System.String, mscorlib" Direction="In" />
+        <Parameter Name="EmailID" Type="System.String, mscorlib" Direction="In" />
+        <Parameter Name="AttachmentLinksHTML" Type="System.String, mscorlib" Direction="Out" />
+      </Parameters>
+    </Action>
+  </Actions>
+</WorkflowInfo>

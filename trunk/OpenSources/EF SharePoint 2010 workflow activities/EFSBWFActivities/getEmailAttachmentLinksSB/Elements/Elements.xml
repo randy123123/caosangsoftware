@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <WorkflowActions>
+    <Action Name="get Email Attachment Links (Sandboxed)"
+            SandboxedFunction="true"
+            Assembly="$SharePoint.Project.AssemblyFullName$"
+            ClassName="EFSBWFActivities.getEmailAttachmentLinksSB"
+            FunctionName="Execute"
+            AppliesTo="all"
+            UsesCurrentItem="true"
+            Category="EF Workflow Activities Sandboxed">
+      <RuleDesigner Sentence="get Email Attachment Links from Email Library %1, ID: %2, store in %3">
+        <FieldBind Field="EmailLibTitle" Text="Email Lib Title" DesignerType="ListNames" Id="1"/>
+        <FieldBind Field="EmailID" Text="Email item ID" DesignerType="TextArea" Id="2"/>
+        <FieldBind Field="AttachmentLinksHTML" Text="AttachmentLinksHTML" DesignerType="ParameterNames" Id="3"/>
+      </RuleDesigner>
+      <Parameters>
+        <Parameter Name="__Context" Type="Microsoft.SharePoint.WorkflowActions.WorkflowContext, Microsoft.SharePoint.WorkflowActions" Direction="In" DesignerType="Hide" />
+        <Parameter Name="EmailLibTitle" Type="System.String, mscorlib" Direction="In" />
+        <Parameter Name="EmailID" Type="System.String, mscorlib" Direction="In" />
+        <Parameter Name="AttachmentLinksHTML" Type="System.String, mscorlib" Direction="Out" />
+      </Parameters>
+    </Action>
+  </WorkflowActions>
+</Elements>
