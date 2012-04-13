@@ -40,6 +40,14 @@
     <AssemblyOriginatorKeyFile>Properties\CSSoft.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Office.Server, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Microsoft.Office.Server.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Server.UserProfiles, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Microsoft.Office.Server.UserProfiles.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>C:\Program Files\Common Files\Microsoft Shared\Web Server Extensions\14\ISAPI\Microsoft.SharePoint.dll</HintPath>
@@ -66,6 +74,7 @@
     <Compile Include="Core\CS2Convert.cs" />
     <Compile Include="Core\CS2Secret.cs" />
     <Compile Include="Core\CS2Week.cs" />
+    <Compile Include="SharePoint\CS2User.cs" />
     <Compile Include="SharePoint\CS2Web.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
