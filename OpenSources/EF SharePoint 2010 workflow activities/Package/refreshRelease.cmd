@@ -1,7 +1,7 @@
 @SET basepath="D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\"
 
 cd "D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\Package"
-e:
+REM e:
 
 @SET solutionName=EFSPWFActivities
 
