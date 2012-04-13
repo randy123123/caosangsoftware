@@ -1,7 +1,7 @@
 @SET STSADM="c:\program files\common files\microsoft shared\web server extensions\14\bin\stsadm"
 
 cd "D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\Package"
-e:
+REM e:
 
 net stop "SharePoint 2010 Administration"
 
