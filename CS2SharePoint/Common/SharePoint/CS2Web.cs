@@ -29,6 +29,10 @@ namespace CSSoft
         #endregion SPWeb
         
         #region SPList
+        public static SPList GetRootList(string listName)
+        {
+            return CurrentSite.RootWeb.Lists[listName];
+        }
         public static SPList GetList(string listName)
         {
             return CurrentWeb.Lists[listName];
@@ -53,6 +57,8 @@ namespace CSSoft
                 if (To != null)
                     foreach (MailAddress email in To)
                         mailMessage.To.Add(email);
+                else
+                    return false;
                 //CC
                 if (CC != null)
                     foreach (MailAddress email in CC)
