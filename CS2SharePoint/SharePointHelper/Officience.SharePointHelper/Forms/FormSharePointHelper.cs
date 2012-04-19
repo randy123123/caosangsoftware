@@ -46,15 +46,16 @@ namespace Officience.SharePointHelper
                         comboBoxServer.SelectedIndex = index;
                 }
             }
+
+            AddDefineFunctions();
+            AddHanlderForFunctions();
+
             ActiveControls(false);
             labelWorking.Visible = false;
         }
 
         private void ActiveControls(bool enable)
         {
-            comboBoxServer.Enabled = !enable;
-            menuFuntions.Enabled = buttonExport.Enabled = enable;
-            contextMenuItems.Enabled = enable;
             if (enable)
                 buttonConnect.Text = "Disconnect";
             else
@@ -65,15 +66,11 @@ namespace Officience.SharePointHelper
         {
             if (buttonConnect.Text == "Connect")
             {
-                ProgressBarInit(String.Format("Connecting to {0}", comboBoxServer.Text), 5);
+                ProgressBarInit(String.Format("Connecting to {0}", comboBoxServer.Text), 3);
                 AddWebUrlIfNotExist();
                 StartFuntion();
                 ProgressBarNext();
                 Web = OpenWeb(comboBoxServer.Text);
-                ProgressBarNext();
-                AddDefineFunctions();
-                ProgressBarNext();
-                AddHanlderForFunctions();
                 ProgressBarNext();
                 EndFuntion();
                 ProgressBarNext();
@@ -148,7 +145,7 @@ namespace Officience.SharePointHelper
         }
         private void FormSharePointHelper_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (buttonConnect.Enabled == false)
+            if (buttonConnect.Text == "Disconnect")
                 CloseWeb(comboBoxServer.Text);
         }
         private void buttonExport_Click(object sender, EventArgs e)
@@ -190,13 +187,11 @@ namespace Officience.SharePointHelper
         private void EndFuntion()
         {
             labelWorking.Visible = false;
-            menuFuntions.Enabled = buttonExport.Enabled = buttonExit.Enabled = true;
         }
 
         private void StartFuntion()
         {
             labelWorking.Visible = true;
-            menuFuntions.Enabled = buttonExport.Enabled = buttonExit.Enabled = false;
             this.Refresh();
         }
         #endregion Forms

@@ -66,7 +66,7 @@
     <Compile Include="Forms\Program.cs" />
     <Compile Include="Forms\UtilitiesClass.cs" />
     <Compile Include="Demo.cs" />
-    <Compile Include="FVIntranet.cs" />
+    <Compile Include="your-class-struct.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\FormSharePointHelper.resx">
       <DependentUpon>FormSharePointHelper.cs</DependentUpon>
