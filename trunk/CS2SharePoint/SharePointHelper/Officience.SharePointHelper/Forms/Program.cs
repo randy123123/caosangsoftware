@@ -7,17 +7,20 @@ namespace Officience.SharePointHelper
 {
     static class Program
     {
+        private static FormSharePointHelper formSharePointHelper;
         [STAThread]
         static void Main()
         {
             Application.ThreadException += new System.Threading.ThreadExceptionEventHandler(Application_ThreadException);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormSharePointHelper());
+            formSharePointHelper = new FormSharePointHelper();
+            Application.Run(formSharePointHelper);
         }
         private static void Application_ThreadException(object sender, System.Threading.ThreadExceptionEventArgs e)
         {
-            MessageBox.Show(String.Format("ERROR !!!\n\n [Message]\n{0} \n\n [StackTrace]\n{1}", e.Exception.Message, e.Exception.StackTrace));
+            formSharePointHelper.WriteLine("ERROR: {0}", e.Exception.Message);
+            formSharePointHelper.WriteLine(e.Exception.StackTrace);
         }
     }
 }
