@@ -21,7 +21,7 @@ namespace Officience.SharePointHelper
         */
         public void DefineFunctions() //IFormFunctions
         {
-            AddFunctions("Test").Click += new EventHandler(Test);
+            AddFunctions("[your-class-struct] Test").Click += new EventHandler(Test);
         }
 
         void Test(object sender, EventArgs e)
