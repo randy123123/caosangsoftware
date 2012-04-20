@@ -1,7 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CS2SPCustomFields", "CurrencyField\CSSoft.CS2SPCustomFields.CurrencyField.csproj", "{8A75D9A0-F88F-483B-A5D5-60A9E84A1A49}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrencyField", "CurrencyField\CurrencyField.csproj", "{8A75D9A0-F88F-483B-A5D5-60A9E84A1A49}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoField", "AutoField\AutoField.csproj", "{68338FCE-906B-4442-96B1-FC75FC9ED740}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,12 @@ Global
 		{8A75D9A0-F88F-483B-A5D5-60A9E84A1A49}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A75D9A0-F88F-483B-A5D5-60A9E84A1A49}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8A75D9A0-F88F-483B-A5D5-60A9E84A1A49}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{68338FCE-906B-4442-96B1-FC75FC9ED740}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68338FCE-906B-4442-96B1-FC75FC9ED740}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68338FCE-906B-4442-96B1-FC75FC9ED740}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{68338FCE-906B-4442-96B1-FC75FC9ED740}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68338FCE-906B-4442-96B1-FC75FC9ED740}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68338FCE-906B-4442-96B1-FC75FC9ED740}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
