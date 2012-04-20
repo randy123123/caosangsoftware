@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="4d82867b-0248-4e26-b0b3-f31191a12162" solutionId="4d82867b-0248-4e26-b0b3-f31191a12162" resetWebServer="false" name="CSSoft.CS2SPCustomFields.CurrencyField" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="4d82867b-0248-4e26-b0b3-f31191a12162" solutionId="4d82867b-0248-4e26-b0b3-f31191a12162" resetWebServer="false" name="CSSoft.CurrencyField" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
   <projectItems>
     <projectItemReference itemId="304ed8b1-961b-4b5a-be08-b80c8d738e81" />
     <projectItemReference itemId="24c2bf39-5fa7-409d-9d81-c6cc5ec4ee3b" />
