@@ -41,9 +41,5 @@
     <asp:Button ID="ButtonChange" runat="server" onclick="ButtonChange_Click" Text="Change" />
 </td>
 </tr>
-<tr>
-    <td colspan="2" align="center">
-    <asp:Literal ID="Message" runat="server"></asp:Literal>
-    </td>
-</tr>
 </table>
+<asp:Literal ID="Message" runat="server"></asp:Literal>

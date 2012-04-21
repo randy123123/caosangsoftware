@@ -12,6 +12,7 @@ namespace CSSoft.CS2SPUsers.UserInformation
 {
     public partial class UserInformationUserControl : UserControl
     {
+        private static readonly log4net.ILog logger = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
         protected void Page_Load(object sender, EventArgs e)
         {
             SPSecurity.RunWithElevatedPrivileges(delegate()
