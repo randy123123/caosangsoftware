@@ -24,6 +24,10 @@ namespace Officience.SharePointHelper
         {
             return Form.AddFunctions(Text);
         }
+        public void DisableFunctions(string Text)
+        {
+            Form.DisableFunctions(Text);
+        }
         public void WriteLine(string fomat, params object[] args)
         {
             Form.WriteLine(fomat, args);
