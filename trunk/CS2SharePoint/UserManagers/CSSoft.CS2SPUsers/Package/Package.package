@@ -2,6 +2,7 @@
 <package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="e2120ad1-f8aa-4fc3-9ae4-84dec47619a2" solutionId="e2120ad1-f8aa-4fc3-9ae4-84dec47619a2" resetWebServer="false" name="CSSoft.CS2SPUsers" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
   <assemblies>
     <projectOutputAssembly location="CSSoft.SharePoint.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\..\Common\CSSoft.csproj" />
+    <customAssembly location="log4net.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="..\..\Lib\log4net.dll" />
   </assemblies>
   <features>
     <featureReference itemId="22f27183-3dee-477f-8fa9-a6b70cdfa9e7" />

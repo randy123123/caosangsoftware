@@ -40,6 +40,10 @@
     <AssemblyOriginatorKeyFile>Properties\CSSoft.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\log4net.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Office.Server, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\Lib\Microsoft.Office.Server.dll</HintPath>
@@ -92,6 +96,10 @@
     <None Include="AddMenuChangePassword\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{57106e16-7898-4a53-b1c0-6123ba207a38}</SharePointProjectItemId>
     </None>
+    <None Include="Layouts\CSSoft\log4net.config" />
+    <None Include="Layouts\CSSoft\Log\CS2SPUsers.dat">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Layouts\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{f56aefde-e2de-45ce-905a-a460b7b3a197}</SharePointProjectItemId>
     </None>
@@ -125,7 +133,9 @@
     <Content Include="Features\FeatureCS2SPUsers\FeatureCS2SPUsers.Template.xml">
       <DependentUpon>FeatureCS2SPUsers.feature</DependentUpon>
     </Content>
-    <Content Include="Layouts\CSSoft\ChangePassword.aspx" />
+    <Content Include="Layouts\CSSoft\ChangePassword.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
     <Content Include="UserChangePassword\Elements.xml" />
     <Content Include="UserChangePassword\UserChangePasswordUserControl.ascx">
       <SubType>ASPXCodeBehind</SubType>
@@ -135,6 +145,7 @@
       <SubType>ASPXCodeBehind</SubType>
     </Content>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" />
 </Project>
