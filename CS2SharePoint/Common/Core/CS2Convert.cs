@@ -22,12 +22,7 @@ namespace CSSoft
         }
         public static bool IsEmail(string emailInput)
         {
-            try
-            {
-                Regex rgx = new Regex(@"^[a-zA-Z][\w\.-]*[a-zA-Z0-9]@[a-zA-Z0-9][\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]$");
-                return rgx.IsMatch(emailInput);
-            }
-            catch { return false; }
+            return CS2Regex.IsEmail(emailInput);
         }
         public static bool IsDateTime(string dateInput, string dateFormat)
         {
@@ -40,12 +35,7 @@ namespace CSSoft
         }
         public static bool IsTime(string timeInput)
         {
-            try
-            {
-                Regex rgx = new Regex("^([0-1][0-9]|[2][0-3]):([0-5][0-9])$");
-                return rgx.IsMatch(timeInput);
-            }
-            catch { return false; }
+            return CS2Regex.IsTime(timeInput);
         }
         public static bool CompareTimeGreaterThan(string time1, string time2, string timeFormat)
         {
