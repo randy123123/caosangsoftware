@@ -11,6 +11,8 @@ using Microsoft.SharePoint;
 using System.Text.RegularExpressions;
 using System.Xml.Serialization;
 using System.Reflection;
+using CSSoft;
+using System.Collections;
 
 namespace Officience.SharePointHelper
 {
@@ -38,7 +40,7 @@ namespace Officience.SharePointHelper
             if (File.Exists(FILE_CONFIG))
             {
                 string s = File.ReadAllText(FILE_CONFIG);
-                serverConfig = GenericSerialize<ServerConfig>.DeSerialize(s);
+                serverConfig = CS2Serialize<ServerConfig>.DeSerialize(s);
                 foreach (Server server in serverConfig.ListServers)
                 {
                     int index = comboBoxServer.Items.Add(server.Url);
@@ -48,7 +50,7 @@ namespace Officience.SharePointHelper
             }
 
             AddDefineFunctions();
-            AddHanlderForFunctions();
+            //AddHanlderForFunctions();
 
             ActiveControls(false);
             labelWorking.Visible = false;
@@ -116,13 +118,13 @@ namespace Officience.SharePointHelper
                 //Update file in bin folder
                 if (File.Exists(filePath))
                     File.Delete(filePath);
-                File.AppendAllText(filePath, GenericSerialize<ServerConfig>.Serialize(serverConfig));
+                File.AppendAllText(filePath, CS2Serialize<ServerConfig>.Serialize(serverConfig));
                 //Update file in solution folder
                 filePath = String.Format(@"..\..\{0}", filePath);
                 if (File.Exists(filePath))
                 {
                     File.Delete(filePath);
-                    File.AppendAllText(filePath, GenericSerialize<ServerConfig>.Serialize(serverConfig));
+                    File.AppendAllText(filePath, CS2Serialize<ServerConfig>.Serialize(serverConfig));
                 }
             }
         }
@@ -130,13 +132,18 @@ namespace Officience.SharePointHelper
         {
             StartFuntion();
             WriteLine("'{0}' --> Start at '{1}'", e.ClickedItem.Text, DateTime.Now.ToString("hh:mm:ss.fff tt"));
+            e.ClickedItem.Click -= new EventHandler(menuItemAfterClick);
+            e.ClickedItem.Click += new EventHandler(menuItemAfterClick);
             this.Refresh();
         }
-        private void AddHanlderForFunctions()
-        {
-            foreach (ToolStripItem item in menuFuntions.DropDownItems)
-                item.Click += new EventHandler(menuItemAfterClick);
-        }
+        //private void AddHanlderForFunctions()
+        //{
+        //    foreach (ToolStripItem item in menuFuntions.DropDownItems)
+        //    {
+        //        item.Click -= new EventHandler(menuItemAfterClick);
+        //        item.Click += new EventHandler(menuItemAfterClick);
+        //    }
+        //}
 
         void menuItemAfterClick(object sender, EventArgs e)
         {
@@ -199,7 +206,25 @@ namespace Officience.SharePointHelper
         #region Commons
         public ToolStripItem AddFunctions(string Text)
         {
-            return menuFuntions.DropDownItems.Add(Text);
+            ToolStripItem item = menuFuntions.DropDownItems.Add(Text);
+            ResortFunctions();
+            return item;
+        }
+        public void DisableFunctions(string Text)
+        {
+            foreach (ToolStripItem item in menuFuntions.DropDownItems)
+                if (item.Text == Text) { item.Enabled = false; break; }
+        }
+        public void ResortFunctions()
+        {
+            ArrayList oAList = new ArrayList(menuFuntions.DropDownItems);
+            oAList.Sort(new ToolStripItemComparer());
+            menuFuntions.DropDownItems.Clear();
+
+            foreach (ToolStripItem oItem in oAList)
+            {
+                menuFuntions.DropDownItems.Add(oItem);
+            }
         }
         public void WriteLine(string fomat, params object[] args)
         {
@@ -318,6 +343,15 @@ namespace Officience.SharePointHelper
             {
                 buttonConnect_Click(null,null);
             }
+        }
+    }
+    public class ToolStripItemComparer : IComparer
+    {
+        public int Compare(Object x, Object y)
+        {
+            ToolStripItem oItem1 = (ToolStripItem)x;
+            ToolStripItem oItem2 = (ToolStripItem)y;
+            return String.Compare(oItem1.Text, oItem2.Text, true);
         }
     }
 }
