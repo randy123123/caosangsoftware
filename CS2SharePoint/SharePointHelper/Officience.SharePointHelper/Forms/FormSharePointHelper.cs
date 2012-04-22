@@ -191,12 +191,12 @@ namespace Officience.SharePointHelper
             this.Close();
         }
 
-        private void EndFuntion()
+        public void EndFuntion()
         {
             labelWorking.Visible = false;
         }
 
-        private void StartFuntion()
+        public void StartFuntion()
         {
             labelWorking.Visible = true;
             this.Refresh();

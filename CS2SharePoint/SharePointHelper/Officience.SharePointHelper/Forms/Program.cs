@@ -21,6 +21,7 @@ namespace Officience.SharePointHelper
         {
             formSharePointHelper.WriteLine("ERROR: {0}", e.Exception.Message);
             formSharePointHelper.WriteLine(e.Exception.StackTrace);
+            formSharePointHelper.EndFuntion();
         }
     }
 }
