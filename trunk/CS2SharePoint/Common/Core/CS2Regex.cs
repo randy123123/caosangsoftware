@@ -29,12 +29,17 @@ namespace CSSoft
         }
        public static IEnumerable<string> Substring(string inputText, string startWithText, string endWithText)
        {
-           if (CS2Convert.ValueIs(startWithText, "[", "(", "{")) startWithText = String.Format(@"\{0}", startWithText);
-           if (CS2Convert.ValueIs(startWithText, "[", "(", "{")) endWithText = String.Format(@"\{0}", endWithText);
+           FixRegexSpecialCharacters(ref startWithText);
+           FixRegexSpecialCharacters(ref endWithText);
            string regularExpressionPattern = String.Format(@"{0}(.*?){1}", startWithText, endWithText);
            Regex re = new Regex(regularExpressionPattern);
            foreach (Match m in re.Matches(inputText))
-               yield return m.Value;
+               yield return m.Groups[1].Value; //because Groups[0] value include split text
+       }
+
+       public static void FixRegexSpecialCharacters(ref string value)
+       {
+           if (CS2Convert.ValueIs(value, "[", "(", "{")) value = String.Format(@"\{0}", value);
        }
     }
 }
