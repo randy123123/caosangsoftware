@@ -220,5 +220,15 @@ namespace CSSoft
             }
             catch { return null; }
         }
+        private static readonly string[] XMLSpecialChars = new string[] { "&", "<", ">", "\"", "'" };
+        private static readonly string[] XMLSpecialCharsReplace = new string[] { "&amp;", "&lt;", "&gt;", "&quot;", "&apos;" };
+        public static string ReplaceXMLSpecialChars(string value)
+        {
+            for (int i = 0; i < XMLSpecialChars.Count(); i++ )
+            {
+                value = value.Replace(XMLSpecialChars[i], XMLSpecialCharsReplace[i]);
+            }
+            return value;
+        }
     }
 }

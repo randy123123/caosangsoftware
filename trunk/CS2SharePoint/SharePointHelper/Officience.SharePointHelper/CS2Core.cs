@@ -23,21 +23,13 @@ namespace Officience.SharePointHelper
         public void DefineFunctions() //IFormFunctions
         {
             AddFunctions("[CS2Core] Read CS2SPUsers.dat").Click += new EventHandler(ReadCS2SPUsers);
-            AddFunctions("[CS2Core] Test Regex").Click += new EventHandler(TestRegex);
+            //AddFunctions("[CS2Core] Test Regex").Click += new EventHandler(TestRegex);
         }
 
         void TestRegex(object sender, EventArgs e)
         {
-            string DefaultFormat = "[Date(yyyyMMdd)]-[ItemCountInDate(000)]";
+            string DefaultFormat = "[Today(yyyyMMdd)]-[ItemCountInDate(000)]";
             IEnumerable<string> getFormat = CS2Regex.Substring(DefaultFormat, "[", "]");
-            foreach (string format in getFormat)
-                WriteLine(format);
-
-            DefaultFormat = "ABC-TEST-[Date(yyyyMMdd)]-[ItemCountInDate(000)]-AAA-DEF";
-            getFormat = CS2Regex.Substring(DefaultFormat, "-", "-");
-            foreach (string format in getFormat)
-                WriteLine(format);
-            getFormat = CS2Regex.Substring(DefaultFormat, "TEST", "AAA");
             foreach (string format in getFormat)
                 WriteLine(format);
         }
