@@ -39,6 +39,7 @@ namespace CSSoft.CS2SPCustomFields.AutoField
                 if (!IsPostBack)
                 {
                     TargetFieldFormat = _f.FieldFormat;
+                    TargetInitFieldMsg = _f.InitFieldMsg;
                 }
             }
 
@@ -46,6 +47,7 @@ namespace CSSoft.CS2SPCustomFields.AutoField
             if (!IsPostBack)
             {
                 TextBoxFieldFormat.Text = TargetFieldFormat;
+                TextBoxInitFieldMsg.Text = TargetInitFieldMsg;
             }
         }
         #endregion
@@ -58,7 +60,8 @@ namespace CSSoft.CS2SPCustomFields.AutoField
 
             if (_f != null)
             {
-                _f.FieldFormat = TextBoxFieldFormat.Text;
+                _f.FieldFormat = CS2Convert.ReplaceXMLSpecialChars(TextBoxFieldFormat.Text);
+                _f.InitFieldMsg = CS2Convert.ReplaceXMLSpecialChars(TextBoxInitFieldMsg.Text);
             }
         }
         #endregion
@@ -129,6 +132,15 @@ namespace CSSoft.CS2SPCustomFields.AutoField
                 return (o != null && !string.IsNullOrEmpty(o.ToString())) ? o.ToString() : AutoWithFormatField.DefaultFormat;
             }
             set { this.ViewState["TARGET_FIELD_FORMAT"] = value; }
+        }
+        private string TargetInitFieldMsg
+        {
+            get
+            {
+                object o = this.ViewState["TARGET_INIT_FIELD_MSG"];
+                return (o != null && !string.IsNullOrEmpty(o.ToString())) ? o.ToString() : AutoWithFormatField.DefaultInitFieldMsg;
+            }
+            set { this.ViewState["TARGET_INIT_FIELD_MSG"] = value; }
         }
         #endregion
     }

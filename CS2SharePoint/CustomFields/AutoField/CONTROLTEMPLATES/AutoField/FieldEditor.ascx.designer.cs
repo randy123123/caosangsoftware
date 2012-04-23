@@ -15,5 +15,6 @@ namespace CSSoft.CS2SPCustomFields.AutoField
     {
         protected global::System.Web.UI.UserControl FilterLookupFieldSection;
         protected global::System.Web.UI.WebControls.TextBox TextBoxFieldFormat;
+        protected global::System.Web.UI.WebControls.TextBox TextBoxInitFieldMsg;
     }
 }

@@ -17,6 +17,7 @@
         <PropertySchema>
             <Fields>
                 <Field Name="FieldFormat" Hidden="TRUE" DisplayName="Field Format" MaxLength="500" DisplaySize="100" Type="Text"></Field>
+                <Field Name="InitFieldMsg" Hidden="TRUE" DisplayName="Init field message" MaxLength="500" DisplaySize="100" Type="Text"></Field>
             </Fields>
         </PropertySchema>
     </FieldType>
