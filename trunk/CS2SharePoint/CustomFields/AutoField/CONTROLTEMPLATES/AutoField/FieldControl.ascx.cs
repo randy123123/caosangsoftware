@@ -15,13 +15,14 @@ namespace CSSoft.CS2SPCustomFields.AutoField
     public partial class AutoWithFormatFieldControl : BaseFieldControl
     {
         protected string parentFieldFormat;
+        protected string parentInitFieldMsg;
 
         public override object Value
         {
             get
             {
                 EnsureChildControls();
-                if (String.IsNullOrEmpty(LiteralFieldFormat.Text) || LiteralFieldFormat.Text == "[Auto]")
+                if (String.IsNullOrEmpty(LiteralFieldFormat.Text) || LiteralFieldFormat.Text == parentInitFieldMsg)
                 {
                     LiteralFieldFormat.Text = GenerateAutoValue();
                 }
@@ -31,7 +32,7 @@ namespace CSSoft.CS2SPCustomFields.AutoField
             {
                 EnsureChildControls();
                 LiteralFieldFormat.Text = (string)this.ItemFieldValue;
-                if(String.IsNullOrEmpty(LiteralFieldFormat.Text)) LiteralFieldFormat.Text = "[Auto]";
+                if (String.IsNullOrEmpty(LiteralFieldFormat.Text)) LiteralFieldFormat.Text = parentInitFieldMsg;
             }
         }
 
@@ -92,11 +93,12 @@ namespace CSSoft.CS2SPCustomFields.AutoField
             base.CreateChildControls();
 
             parentFieldFormat = Field.GetCustomProperty("FieldFormat").ToString();
+            parentInitFieldMsg = Field.GetCustomProperty("InitFieldMsg").ToString();
 
             if (ControlMode == Microsoft.SharePoint.WebControls.SPControlMode.Display)
                 return;
-
             LiteralFieldFormat = new Literal();
+            LiteralFieldFormat.Text = parentInitFieldMsg;
             this.Controls.Add(LiteralFieldFormat);
         }
     }

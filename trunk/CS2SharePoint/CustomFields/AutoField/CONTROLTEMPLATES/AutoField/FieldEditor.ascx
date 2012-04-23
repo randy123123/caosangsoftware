@@ -20,6 +20,16 @@
                   <asp:TextBox runat="server" ID="TextBoxFieldFormat" />
                 </td>
               </tr>
+               <tr>
+                <td class="ms-authoringcontrols" style="width: 100%; text-align: left; white-space: nowrap; padding-top: 10px;">
+                  <span>Init field message</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="ms-authoringcontrols" style="width: 100%; text-align: left; white-space: nowrap;">
+                  <asp:TextBox runat="server" ID="TextBoxInitFieldMsg" />
+                </td>
+              </tr>
             </table>
           </div>
         </Template_Control>

@@ -16,6 +16,7 @@ namespace CSSoft.CS2SPCustomFields.AutoField
     public partial class AutoWithFormatField : SPFieldText
     {
         public const string DefaultFormat = "[Today(yyyyMMdd)]-[ItemCountInDate(000)]";
+        public const string DefaultInitFieldMsg = "Auto generated value";
         public override BaseFieldControl FieldRenderingControl
         {
             get
@@ -84,6 +85,8 @@ namespace CSSoft.CS2SPCustomFields.AutoField
         {
             string _fieldFormat = GetFieldThreadDataValue("FieldFormat", true);
             base.SetCustomProperty("FieldFormat", _fieldFormat);
+            string _initFieldMsg = GetFieldThreadDataValue("InitFieldMsg", true);
+            base.SetCustomProperty("InitFieldMsg", _initFieldMsg);
         }
         #endregion
 
@@ -108,6 +111,7 @@ namespace CSSoft.CS2SPCustomFields.AutoField
         private void CleanUpThreadData()
         {
             Thread.FreeNamedDataSlot("FieldFormat");
+            Thread.FreeNamedDataSlot("InitFieldMsg");
         }
         #endregion
 
@@ -123,6 +127,22 @@ namespace CSSoft.CS2SPCustomFields.AutoField
             set
             {
                 SetFieldThreadDataValue("FieldFormat", (!string.IsNullOrEmpty(value) ? value : DefaultFormat));
+            }
+        }
+        #endregion
+
+        #region InitFieldMsg property
+        private string _initFieldMsg;
+        public string InitFieldMsg
+        {
+            get
+            {
+                if (_initFieldMsg == null) _initFieldMsg = GetFieldThreadDataValue("InitFieldMsg", false);
+                return (!string.IsNullOrEmpty(_initFieldMsg)) ? _initFieldMsg : DefaultInitFieldMsg;
+            }
+            set
+            {
+                SetFieldThreadDataValue("InitFieldMsg", (!string.IsNullOrEmpty(value) ? value : DefaultInitFieldMsg));
             }
         }
         #endregion
