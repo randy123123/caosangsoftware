@@ -6,58 +6,18 @@
 <%@ Import Namespace="Microsoft.SharePoint" %>
 <wssuc:InputFormSection runat="server" id="AutoFieldSection" Title="Special Column Settings">
   <Template_InputFormControls>
-    <wssuc:InputFormControl runat="server" LabelText="Specify detailed options for the currency field column">
+    <wssuc:InputFormControl runat="server" LabelText="Specify detailed options for the auto field column">
       <Template_Control>
           <div style="width: 100%; text-align: left; border-width: 0px;">
             <table style="width: 100%; border-width: 0px; border-collapse: collapse;" cellpadding="0" cellspacing="0">
               <tr>
                 <td class="ms-authoringcontrols" style="width: 100%; text-align: left; white-space: nowrap; padding-top: 10px;">
-                  <span>Get currency symbol from this site:</span>
+                  <span>Field format</span>
                 </td>
               </tr>
               <tr>
                 <td class="ms-authoringcontrols" style="width: 100%; text-align: left; white-space: nowrap;">
-                  <asp:DropDownList runat="server" ID="listTargetWeb" AutoPostBack="true" OnSelectedIndexChanged="SelectedTargetWebChanged" />
-                </td>
-              </tr>
-              <tr>
-                <td class="ms-authoringcontrols" style="width: 100%; text-align: left; white-space: nowrap; padding-top: 10px;">
-                  <span>In this list:</span>
-                </td>
-              </tr>
-              <tr>
-                <td class="ms-authoringcontrols" style="width: 100%; text-align: left; white-space: nowrap;">
-                  <asp:DropDownList runat="server" ID="listTargetList" AutoPostBack="true" OnSelectedIndexChanged="SelectedTargetListChanged" />
-                </td>
-              </tr>
-              <tr>
-                <td class="ms-authoringcontrols" style="width: 100%; text-align: left; white-space: nowrap; padding-top: 10px;">
-                  <span>In this column</span>
-                </td>
-              </tr>
-              <tr>
-                <td class="ms-authoringcontrols" style="width: 100%; text-align: left; white-space: nowrap;">
-                  <asp:DropDownList runat="server" ID="listTargetColumn" />
-                </td>
-              </tr>
-              <tr>
-                <td class="ms-authoringcontrols" style="width: 100%; text-align: left; white-space: nowrap; padding-top: 10px;">
-                  <span>Input type</span>
-                </td>
-              </tr>
-              <tr>
-                <td class="ms-authoringcontrols" style="width: 100%; text-align: left; white-space: nowrap;">
-                  <asp:DropDownList runat="server" ID="listInputType" />
-                </td>
-              </tr>
-              <tr>
-                <td class="ms-authoringcontrols" style="width: 100%; text-align: left; white-space: nowrap; padding-top: 10px;">
-                  <span>Number format</span>
-                </td>
-              </tr>
-              <tr>
-                <td class="ms-authoringcontrols" style="width: 100%; text-align: left; white-space: nowrap;">
-                  <asp:TextBox runat="server" ID="txtNumberFormat" />
+                  <asp:TextBox runat="server" ID="TextBoxFieldFormat" />
                 </td>
               </tr>
             </table>

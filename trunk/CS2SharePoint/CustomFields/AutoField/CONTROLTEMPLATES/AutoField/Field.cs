@@ -15,7 +15,7 @@ namespace CSSoft.CS2SPCustomFields.AutoField
 {
     public partial class AutoWithFormatField : SPFieldText
     {
-        public const string DefaultFormat = "[Date(yyyyMMdd)]-[ItemCountInDate(000)]";
+        public const string DefaultFormat = "[Today(yyyyMMdd)]-[ItemCountInDate(000)]";
         public override BaseFieldControl FieldRenderingControl
         {
             get

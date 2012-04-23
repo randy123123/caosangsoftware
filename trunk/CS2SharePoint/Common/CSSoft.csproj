@@ -75,6 +75,7 @@
     <Compile Include="Core\CS2Convert.cs" />
     <Compile Include="Core\CS2Secret.cs" />
     <Compile Include="Core\CS2Week.cs" />
+    <Compile Include="SharePoint\CS2ConfigList.cs" />
     <Compile Include="SharePoint\CS2User.cs" />
     <Compile Include="SharePoint\CS2Web.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

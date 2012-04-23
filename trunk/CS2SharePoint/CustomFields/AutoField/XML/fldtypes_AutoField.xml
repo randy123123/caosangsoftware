@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <FieldTypes>
     <FieldType>
-        <Field Name="TypeName">AutoField</Field>
+        <Field Name="TypeName">AutoFieldWithFormat</Field>
         <Field Name="ParentType">Text</Field>
         <Field Name="TypeDisplayName">Auto Field With Format</Field>
         <Field Name="TypeShortDescription">Auto Field (Auto generated value with format)</Field>

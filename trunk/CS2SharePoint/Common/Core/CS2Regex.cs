@@ -39,7 +39,8 @@ namespace CSSoft
 
        public static void FixRegexSpecialCharacters(ref string value)
        {
-           if (CS2Convert.ValueIs(value, "[", "(", "{")) value = String.Format(@"\{0}", value);
+           if (CS2Convert.ValueIs(value, RegexSpecialCharacters)) value = String.Format(@"\{0}", value);
        }
+       public static string[] RegexSpecialCharacters = new string[] { "[", "(", "{", "}", ")", "]" };
     }
 }
