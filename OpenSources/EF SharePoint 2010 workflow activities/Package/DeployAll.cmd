@@ -157,6 +157,16 @@ net stop "SharePoint 2010 Administration"
 %STSADM% -o deploysolution -name %solutionName%.%activityName%.wsp -immediate -force -allowgacdeployment
 %STSADM% -o execadmsvcjobs
 
+@SET activityName=getSumByCAML
+%STSADM% -o retractsolution -name %solutionName%.%activityName%.wsp -immediate
+%STSADM% -o execadmsvcjobs
+%STSADM% -o deletesolution -name %solutionName%.%activityName%.wsp -override
+%STSADM% -o execadmsvcjobs
+%STSADM% -o addsolution -filename "%activityName%\%solutionName%.%activityName%.wsp"
+%STSADM% -o execadmsvcjobs
+%STSADM% -o deploysolution -name %solutionName%.%activityName%.wsp -immediate -force -allowgacdeployment
+%STSADM% -o execadmsvcjobs
+
 @SET activityName=getCountByListview
 %STSADM% -o retractsolution -name %solutionName%.%activityName%.wsp -immediate
 %STSADM% -o execadmsvcjobs
