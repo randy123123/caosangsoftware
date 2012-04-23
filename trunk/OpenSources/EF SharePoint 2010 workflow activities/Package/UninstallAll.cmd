@@ -95,6 +95,12 @@ net stop "SharePoint 2010 Administration"
 %STSADM% -o deletesolution -name %activityName%.wsp -override
 %STSADM% -o execadmsvcjobs
 
+@SET activityName=getSumByCAML
+%STSADM% -o retractsolution -name %activityName%.wsp -immediate
+%STSADM% -o execadmsvcjobs
+%STSADM% -o deletesolution -name %activityName%.wsp -override
+%STSADM% -o execadmsvcjobs
+
 @SET activityName=getCountByListview
 %STSADM% -o retractsolution -name %activityName%.wsp -immediate
 %STSADM% -o execadmsvcjobs

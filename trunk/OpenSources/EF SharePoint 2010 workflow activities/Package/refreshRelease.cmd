@@ -80,6 +80,11 @@ mkdir %activityName%
 copy "%basepath%%activityName%\bin\Release\Deploy.cmd" "%activityName%\Deploy.cmd" /Y
 copy "%basepath%%activityName%\bin\Release\%solutionName%.%activityName%.wsp" "%activityName%\%solutionName%.%activityName%.wsp" /Y
 
+@SET activityName=getSumByCAML
+mkdir %activityName%
+copy "%basepath%%activityName%\bin\Release\Deploy.cmd" "%activityName%\Deploy.cmd" /Y
+copy "%basepath%%activityName%\bin\Release\%solutionName%.%activityName%.wsp" "%activityName%\%solutionName%.%activityName%.wsp" /Y
+
 @SET activityName=getCountByListview
 mkdir %activityName%
 copy "%basepath%%activityName%\bin\Release\Deploy.cmd" "%activityName%\Deploy.cmd" /Y
