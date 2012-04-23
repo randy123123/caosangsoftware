@@ -1,0 +1,16 @@
+2012-03-30 17:58:00,261 OFFY\tri.nguyenminh [1] INFO  CodePlex.SharePointInstaller.Installer [(null)] <(null)> - 
+***** Installing 'SP2010 Filtered Lookup' solution... 3/30/2012 5:57:59 PM *****
+
+2012-03-30 17:58:01,563 OFFY\tri.nguyenminh [9] INFO  CodePlex.SharePointInstaller.Installer [(null)] <(null)> - 
+Adding solution...
+2012-03-30 17:58:01,846 OFFY\tri.nguyenminh [9] INFO  CodePlex.SharePointInstaller.Installer [(null)] <(null)> - The 'SP2010 Filtered Lookup' solution was successfully added to store.
+2012-03-30 17:58:02,892 OFFY\tri.nguyenminh [9] INFO  CodePlex.SharePointInstaller.Installer [(null)] <(null)> - 
+Deploying solution...
+2012-03-30 17:58:31,633 OFFY\tri.nguyenminh [9] INFO  CodePlex.SharePointInstaller.Installer [(null)] <(null)> - PC-0252 : The solution was successfully deployed.
+
+2012-03-30 17:58:32,646 OFFY\tri.nguyenminh [9] INFO  CodePlex.SharePointInstaller.Installer [(null)] <(null)> - Activating feature(s)...
+2012-03-30 17:58:34,757 OFFY\tri.nguyenminh [9] INFO  CodePlex.SharePointInstaller.Installer [(null)] <(null)> - 
+Executing custom post-install commands...
+2012-03-30 17:58:35,775 OFFY\tri.nguyenminh [1] INFO  CodePlex.SharePointInstaller.Installer [(null)] <(null)> - 
+***** Installation Successfully Completed 3/30/2012 5:58:35 PM *****
+
