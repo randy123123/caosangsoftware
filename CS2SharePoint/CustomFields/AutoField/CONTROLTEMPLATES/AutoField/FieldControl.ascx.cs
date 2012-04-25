@@ -60,8 +60,8 @@ namespace CSSoft.CS2SPCustomFields.AutoField
             {
                 //Read data config
                 CS2ConfigList config = new CS2ConfigList();
-                string countingDate = config.GetConfig(GroupConfig, String.Format("LIST_{0}_Date", this.ListId));
-                string countingValue = config.GetConfig(GroupConfig, String.Format("LIST_{0}_Count", this.ListId));
+                string countingDate = config.GetConfig(GroupConfig, String.Format("LIST_{0}_{1}_Date", this.ListId, this.FieldName));
+                string countingValue = config.GetConfig(GroupConfig, String.Format("LIST_{0}_{1}_Count", this.ListId, this.FieldName));
                 //Load data
                 DateTime date = String.IsNullOrEmpty(countingDate) ? DateTime.Today : CS2Convert.ToDateTime(countingDate).Value;
                 int count = 0;
@@ -69,8 +69,8 @@ namespace CSSoft.CS2SPCustomFields.AutoField
                     count = CS2Convert.ToInt(countingValue);
                 count += 1;
                 if (String.IsNullOrEmpty(countingDate) || date != DateTime.Today)
-                    config.SetConfig(GroupConfig, String.Format("LIST_{0}_Date", this.ListId), DateTime.Today.ToString());
-                config.SetConfig(GroupConfig, String.Format("LIST_{0}_Count", this.ListId), count.ToString());
+                    config.SetConfig(GroupConfig, String.Format("LIST_{0}_{1}_Date", this.ListId, this.FieldName), DateTime.Today.ToString());
+                config.SetConfig(GroupConfig, String.Format("LIST_{0}_{1}_Count", this.ListId, this.FieldName), count.ToString());
                 if (hasFormat)
                     return count.ToString(valueFormat);
                 else
