@@ -22,7 +22,7 @@ namespace Officience.SharePointHelper
         */
         public void DefineFunctions() //IFormFunctions
         {
-            AddFunctions("[CS2Core] Read CS2SPUsers.dat").Click += new EventHandler(ReadCS2SPUsers);
+            AddMenu("[CS2Core] Read CS2SPUsers.dat").Click += new EventHandler(ReadCS2SPUsers);
             //AddFunctions("[CS2Core] Test Regex").Click += new EventHandler(TestRegex);
         }
 

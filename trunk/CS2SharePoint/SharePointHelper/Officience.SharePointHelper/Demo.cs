@@ -20,10 +20,10 @@ namespace Officience.SharePointHelper
 
         public void DefineFunctions() //IFormFunctions
         {
-            AddFunctions("Demo function").Click += new EventHandler(DemoFunction);
-            AddFunctions("Demo function with progressBar").Click += new EventHandler(DemoFunctionWithProgressBar);
-            AddFunctions("Demo Dialog Properties").Click += new EventHandler(DemoDiaglogProperties);
-            AddFunctions("Demo progressBar").Click += new EventHandler(DemoProgressBar);
+            AddMenu("Demo function").Click += new EventHandler(DemoFunction);
+            AddMenu("Demo function with progressBar").Click += new EventHandler(DemoFunctionWithProgressBar);
+            AddMenu("Demo Dialog Properties").Click += new EventHandler(DemoDiaglogProperties);
+            AddMenu("Demo progressBar").Click += new EventHandler(DemoProgressBar);
         }
 
         void DemoFunction(object sender, EventArgs e)

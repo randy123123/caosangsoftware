@@ -20,11 +20,11 @@ namespace Officience.SharePointHelper
 
         public SPWeb Web { get { return Form.Web; } }
 
-        public ToolStripItem AddFunctions(string Text)
+        public ToolStripItem AddMenu(string Text)
         {
             return Form.AddFunctions(Text);
         }
-        public void DisableFunctions(string Text)
+        public void DisableMenu(string Text)
         {
             Form.DisableFunctions(Text);
         }

@@ -21,8 +21,8 @@ namespace Officience.SharePointHelper
         */
         public void DefineFunctions() //IFormFunctions
         {
-            AddFunctions("[your-class-struct] Test").Click += new EventHandler(Test);
-            AddFunctions("[your-class-struct][1.0] Dynamic add menu").Click += new EventHandler(DynamicAddMenu);
+            AddMenu("[your-class-struct] Test").Click += new EventHandler(Test);
+            AddMenu("[your-class-struct][1.0] Dynamic add menu").Click += new EventHandler(DynamicAddMenu);
         }
 
         void Test(object sender, EventArgs e)
@@ -32,10 +32,10 @@ namespace Officience.SharePointHelper
 
         void DynamicAddMenu(object sender, EventArgs e)
         {
-            DisableFunctions(((ToolStripItem)sender).Text); //Disable click parent menu again
-            AddFunctions("[your-class-struct][1.1] Menu 1").Click +=new EventHandler(MenuClick);
-            AddFunctions("[your-class-struct][1.2] Menu 2").Click +=new EventHandler(MenuClick);
-            AddFunctions("[your-class-struct][1.3] Menu 3").Click +=new EventHandler(MenuClick);
+            DisableMenu(((ToolStripItem)sender).Text); //Disable click parent menu again
+            AddMenu("[your-class-struct][1.1] Menu 1").Click +=new EventHandler(MenuClick);
+            AddMenu("[your-class-struct][1.2] Menu 2").Click +=new EventHandler(MenuClick);
+            AddMenu("[your-class-struct][1.3] Menu 3").Click +=new EventHandler(MenuClick);
         }
 
         void MenuClick(object sender, EventArgs e)
