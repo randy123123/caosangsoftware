@@ -51,6 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SPTest.cs" />
     <Compile Include="CS2Core.cs" />
     <Compile Include="Forms\FormFunctions.cs" />
     <Compile Include="Forms\FormSharePointHelper.cs">
