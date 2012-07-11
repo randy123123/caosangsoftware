@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" Id="3b144df4-a9dc-4274-b9ef-0b48ee875088" solutionId="3b144df4-a9dc-4274-b9ef-0b48ee875088" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" name="CSSoft.ItemPermission">
+    <features>
+        <featureReference itemId="d86cca17-a8ad-4a64-b3e6-0b34f84b7fb4" />
+    </features>
+</package>
