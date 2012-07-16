@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="CSSoft.EmailMarketing.SendMailToCustomers, CSSoft.EmailMarketing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c99e7a59c8706863" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">Send mail to customers</property>
+        <property name="Description" type="string">Easy send mail to list customer</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>

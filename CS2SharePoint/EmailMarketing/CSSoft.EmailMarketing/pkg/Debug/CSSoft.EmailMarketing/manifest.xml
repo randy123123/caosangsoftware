@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="792caa35-e18b-48dd-91a6-d62c811445e1" SharePointProductVersion="14.0">
+  <Assemblies>
+    <Assembly Location="CSSoft.EmailMarketing.dll" DeploymentTarget="GlobalAssemblyCache">
+      <SafeControls>
+        <SafeControl Assembly="CSSoft.EmailMarketing, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c99e7a59c8706863" Namespace="CSSoft.EmailMarketing" TypeName="*" />
+      </SafeControls>
+    </Assembly>
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="CONTROLTEMPLATES\CSSoft.EmailMarketing\SendMailToCustomers\SendMailToCustomersUserControl.ascx" />
+    <TemplateFile Location="Layouts\EmailMarketing\ServicesLog.config" />
+    <TemplateFile Location="Layouts\EmailMarketing\EmailMarketingLog.config" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="EmailMarketing_EmailMarketingFeature\Feature.xml" />
+  </FeatureManifests>
+</Solution>

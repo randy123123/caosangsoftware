@@ -1,0 +1,9 @@
+D:\Robert Kahn\CSSoft\CS2SharePoint\EmailMarketing\EmailMarketingForSharepoint\bin\Debug\EmailMarketingForSharepoint.exe
+D:\Robert Kahn\CSSoft\CS2SharePoint\EmailMarketing\EmailMarketingForSharepoint\bin\Debug\EmailMarketingForSharepoint.pdb
+D:\Robert Kahn\CSSoft\CS2SharePoint\EmailMarketing\EmailMarketingForSharepoint\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Robert Kahn\CSSoft\CS2SharePoint\EmailMarketing\EmailMarketingForSharepoint\obj\x86\Debug\EmailMarketingForSharepoint.LogView.resources
+D:\Robert Kahn\CSSoft\CS2SharePoint\EmailMarketing\EmailMarketingForSharepoint\obj\x86\Debug\EmailMarketingForSharepoint.Properties.Resources.resources
+D:\Robert Kahn\CSSoft\CS2SharePoint\EmailMarketing\EmailMarketingForSharepoint\obj\x86\Debug\ResGen.read.1.tlog
+D:\Robert Kahn\CSSoft\CS2SharePoint\EmailMarketing\EmailMarketingForSharepoint\obj\x86\Debug\ResGen.write.1.tlog
+D:\Robert Kahn\CSSoft\CS2SharePoint\EmailMarketing\EmailMarketingForSharepoint\obj\x86\Debug\EmailMarketingForSharepoint.exe
+D:\Robert Kahn\CSSoft\CS2SharePoint\EmailMarketing\EmailMarketingForSharepoint\obj\x86\Debug\EmailMarketingForSharepoint.pdb
