@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Description="Easy send mail to list customer" Id="5959cd22-aa64-4d14-abb2-40a2d9a0e9e7" Scope="Site" Title="CSSoft.EmailMarketing">
+  <ElementManifests>
+    <ElementManifest Location="SendMailToCustomers\Elements.xml" />
+    <ElementFile Location="SendMailToCustomers\SendMailToCustomers.webpart" />
+  </ElementManifests>
+</Feature>

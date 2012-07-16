@@ -1,0 +1,5 @@
+D:\Robert Kahn\CSSoft\CS2SharePoint\EmailMarketing\CSSoft.EmailMarketing\bin\Debug\CSSoft.EmailMarketing.dll
+D:\Robert Kahn\CSSoft\CS2SharePoint\EmailMarketing\CSSoft.EmailMarketing\bin\Debug\CSSoft.EmailMarketing.pdb
+D:\Robert Kahn\CSSoft\CS2SharePoint\EmailMarketing\CSSoft.EmailMarketing\obj\Debug\ResolveAssemblyReference.cache
+D:\Robert Kahn\CSSoft\CS2SharePoint\EmailMarketing\CSSoft.EmailMarketing\obj\Debug\CSSoft.EmailMarketing.dll
+D:\Robert Kahn\CSSoft\CS2SharePoint\EmailMarketing\CSSoft.EmailMarketing\obj\Debug\CSSoft.EmailMarketing.pdb

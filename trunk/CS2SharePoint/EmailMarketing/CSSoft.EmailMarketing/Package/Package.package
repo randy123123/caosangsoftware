@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="792caa35-e18b-48dd-91a6-d62c811445e1" solutionId="792caa35-e18b-48dd-91a6-d62c811445e1" resetWebServer="false" name="CSSoft.EmailMarketing" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="5959cd22-aa64-4d14-abb2-40a2d9a0e9e7" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="7dfa24b2-8818-4159-b9d1-7a991978bd9a" />
+  </projectItems>
+</package>
