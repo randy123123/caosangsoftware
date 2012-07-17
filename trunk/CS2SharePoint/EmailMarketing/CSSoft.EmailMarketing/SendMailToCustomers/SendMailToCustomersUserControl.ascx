@@ -13,6 +13,7 @@ Select email template: <br />
     runat="server" ImageUrl="/_layouts/images/GMAILNEW.GIF" 
     ToolTip="Add new email template" />
 <br />
+<asp:Panel ID="ActionPanel" runat="server">
 Action:<br />
 <asp:ImageButton ID="ImageButtonStartReview" runat="server" 
     ImageUrl="/_layouts/images/ltslidelibrary.PNG" ToolTip="Review your mail" 
@@ -20,6 +21,10 @@ Action:<br />
 &nbsp;<asp:ImageButton ID="ImageButtonStartSendMail" runat="server" 
     ImageUrl="/_layouts/images/LTDISC.PNG" ToolTip="Send mail" Width="28px" 
     onclick="ImageButtonStartSendMail_Click" />
+</asp:Panel>
+
+<asp:Literal ID="Msg" runat="server"></asp:Literal>
+
 <asp:Panel ID="ReviewMail" runat="server" Visible="false">
 <hr />
 <b>Subject:</b> <asp:Literal ID="Subject" runat="server"></asp:Literal><br />

@@ -31,6 +31,15 @@ namespace CSSoft.EmailMarketing {
         protected global::System.Web.UI.WebControls.ImageButton AddNewTemplate;
         
         /// <summary>
+        /// ActionPanel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel ActionPanel;
+        
+        /// <summary>
         /// ImageButtonStartReview control.
         /// </summary>
         /// <remarks>
@@ -47,6 +56,15 @@ namespace CSSoft.EmailMarketing {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ImageButton ImageButtonStartSendMail;
+        
+        /// <summary>
+        /// Msg control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal Msg;
         
         /// <summary>
         /// ReviewMail control.
