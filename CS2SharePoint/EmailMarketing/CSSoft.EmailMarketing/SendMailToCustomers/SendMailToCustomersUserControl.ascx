@@ -10,7 +10,7 @@ Select email template: <br />
 <asp:DropDownList ID="EmailTemplate" runat="server" 
     onselectedindexchanged="EmailTemplate_SelectedIndexChanged" AutoPostBack="true" />
 <asp:ImageButton ID="AddNewTemplate" OnClientClick="return false;" 
-    runat="server" ImageUrl="/_layouts/images/GMAILNEW.GIF" 
+    runat="server" ImageUrl="/_layouts/images/GMAILNEW.GIF" Visible="false" 
     ToolTip="Add new email template" />
 <br />
 <asp:Panel ID="ActionPanel" runat="server">
