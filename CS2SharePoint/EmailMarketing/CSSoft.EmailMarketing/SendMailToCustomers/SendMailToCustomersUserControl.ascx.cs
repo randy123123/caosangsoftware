@@ -82,8 +82,13 @@ namespace CSSoft.EmailMarketing
 
                 SPList contactsList = CS2Web.GetList(ListContacts);
                 SPQuery query = new SPQuery();
+
+                SPFieldLookupValueCollection emailTo = CS2Convert.ToLookupValueCollection(item["To"]);
+                if (emailTo.Count > 0)
+                {
+                    query.Query = String.Format("<Where><Eq><FieldRef Name='ID' /><Value Type='Counter'>{0}</Value></Eq></Where>", emailTo[0].LookupId);
+                }
                 query.RowLimit = 1;
-                //query.Query = "<Where><Eq><FieldRef Name='Publish' /><Value Type='Boolean'>1</Value></Eq></Where>";
                 SPListItemCollection contacts = contactsList.GetItems(query);
                 if (contacts != null && contacts.Count > 0)
                 {

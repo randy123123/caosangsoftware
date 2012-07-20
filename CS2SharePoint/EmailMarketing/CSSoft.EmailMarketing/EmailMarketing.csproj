@@ -74,7 +74,9 @@
       <SharePointProjectItemId>{f3320ae5-996c-4465-aca8-f1165d72ac31}</SharePointProjectItemId>
     </None>
     <None Include="SendMailToCustomers\SendMailToCustomers.webpart" />
-    <None Include="SendMailToCustomers\Elements.xml" />
+    <None Include="SendMailToCustomers\Elements.xml">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="SendMailToCustomers\SendMailToCustomersUserControl.ascx">
