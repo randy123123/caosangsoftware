@@ -239,7 +239,7 @@ namespace CSSoft.SendMailService
                     catch { }
                     body = body.Replace(String.Format("{{{0}}}", property), propertyValue);
                 }
-
+                body = body.Replace("src=\"/", String.Format("src=\"{0}/", ServiceSettings.Default.PublicUrl));
                 SmtpClient SmtpServer = new SmtpClient(ServiceSettings.Default.SMTP);
                 SmtpServer.Port = ServiceSettings.Default.Port;
                 SmtpServer.Credentials = new System.Net.NetworkCredential(ServiceSettings.Default.Email, ServiceSettings.Default.Password);

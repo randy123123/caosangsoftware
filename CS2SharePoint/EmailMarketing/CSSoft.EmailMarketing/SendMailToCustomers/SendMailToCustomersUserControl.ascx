@@ -6,15 +6,19 @@
 <%@ Import Namespace="Microsoft.SharePoint" %> 
 <%@ Register Tagprefix="WebPartPages" Namespace="Microsoft.SharePoint.WebPartPages" Assembly="Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
 <%@ Control Language="C#" AutoEventWireup="true" CodeBehind="SendMailToCustomersUserControl.ascx.cs" Inherits="CSSoft.EmailMarketing.SendMailToCustomersUserControl" %>
-Select email template: <br />
+<asp:UpdatePanel runat="server" ID="updatePannelcircuitTab">
+	<ContentTemplate>
+<br /><br />
+<b>Select email template to send mail</b> <br />
 <asp:DropDownList ID="EmailTemplate" runat="server" 
     onselectedindexchanged="EmailTemplate_SelectedIndexChanged" AutoPostBack="true" />
-<asp:ImageButton ID="AddNewTemplate" OnClientClick="return false;" 
-    runat="server" ImageUrl="/_layouts/images/GMAILNEW.GIF" Visible="false" 
-    ToolTip="Add new email template" />
+<asp:ImageButton ID="AddNewTemplate" OnClientClick="location.reload(true); return false;"
+    runat="server" ImageUrl="/_layouts/images/recurrence.gif" 
+    ToolTip="Reload Page"/>
+<br />
 <br />
 <asp:Panel ID="ActionPanel" runat="server">
-Action:<br />
+Action:<br /><br />
 <asp:ImageButton ID="ImageButtonStartReview" runat="server" 
     ImageUrl="/_layouts/images/ltslidelibrary.PNG" ToolTip="Review your mail" 
     Width="28px" onclick="ImageButtonStartReview_Click" />
@@ -26,8 +30,13 @@ Action:<br />
 <asp:Literal ID="Msg" runat="server"></asp:Literal>
 
 <asp:Panel ID="ReviewMail" runat="server" Visible="false">
+<br />
 <hr />
+<br />
 <b>Subject:</b> <asp:Literal ID="Subject" runat="server"></asp:Literal><br />
 <b>Body:</b><br />
 <asp:Literal ID="Body" runat="server"></asp:Literal>
 </asp:Panel>
+
+</ContentTemplate>
+</asp:UpdatePanel>
