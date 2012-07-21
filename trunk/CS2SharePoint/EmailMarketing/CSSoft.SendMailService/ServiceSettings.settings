@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="SiteUrl" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">http://localhost/</Value>
+      <Value Profile="(Default)">http://gwserver/</Value>
     </Setting>
     <Setting Name="ListEmailTemplate" Type="System.String" Scope="Application">
       <Value Profile="(Default)">Email Template</Value>
@@ -31,6 +31,9 @@
     </Setting>
     <Setting Name="WaitingTime" Type="System.Int32" Scope="Application">
       <Value Profile="(Default)">60</Value>
+    </Setting>
+    <Setting Name="PublicUrl" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://business.goldenwave.vn/</Value>
     </Setting>
   </Settings>
 </SettingsFile>

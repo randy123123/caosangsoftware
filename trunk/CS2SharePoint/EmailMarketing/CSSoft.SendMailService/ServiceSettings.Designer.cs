@@ -25,7 +25,7 @@ namespace CSSoft.SendMailService {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://localhost/")]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://gwserver/")]
         public string SiteUrl {
             get {
                 return ((string)(this["SiteUrl"]));
@@ -110,6 +110,15 @@ namespace CSSoft.SendMailService {
         public int WaitingTime {
             get {
                 return ((int)(this["WaitingTime"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://business.goldenwave.vn/")]
+        public string PublicUrl {
+            get {
+                return ((string)(this["PublicUrl"]));
             }
         }
     }
