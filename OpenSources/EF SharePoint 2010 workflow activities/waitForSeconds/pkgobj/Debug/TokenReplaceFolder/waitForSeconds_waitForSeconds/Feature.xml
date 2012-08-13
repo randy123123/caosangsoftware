@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="7f9090cc-b08e-450e-b88a-175958db7d6d" ReceiverAssembly="EFSPWFActivities.waitForSeconds, Version=2.0.0.0, Culture=neutral, PublicKeyToken=f59cb881b1e0db40" ReceiverClass="EFSPWFActivities.Features.waitForSeconds.waitForSecondsEventReceiver" Scope="Farm" Title="EFSPWFActivities waitForSeconds"></Feature>

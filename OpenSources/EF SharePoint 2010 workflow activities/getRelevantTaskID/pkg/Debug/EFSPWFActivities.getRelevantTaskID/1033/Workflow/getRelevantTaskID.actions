@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<WorkflowInfo>
+  <Actions Sequential="then" Parallel="and">
+    <Action Name="get task id which connected to the current item"
+    ClassName="EFSPWFActivities.getRelevantTaskID"
+    Assembly="EFSPWFActivities.getRelevantTaskID, Version=2.0.0.0, Culture=neutral, PublicKeyToken=8e4c592483d89728"
+    AppliesTo="all"
+    Category="EF Workflow Activities">
+      <RuleDesigner Sentence="Get the latest task ID related to the current item from %1, store in %2">
+        <FieldBind Field="TaskListName" Text="task list" DesignerType="ListNames" Id="1"/>
+        <FieldBind Field="TaskID" Text="Task ID" DesignerType="ParameterNames" Id="2"/>
+      </RuleDesigner>
+      <Parameters>
+        <Parameter Name="__Context" Type="Microsoft.SharePoint.WorkflowActions.WorkflowContext, Microsoft.SharePoint.WorkflowActions" Direction="In" />
+        <Parameter Name="TaskListName" Type="System.String, mscorlib" Direction="In" />
+        <Parameter Name="TaskID" Type="System.String, mscorlib" Direction="Out" />
+      </Parameters>
+    </Action>
+  </Actions>
+</WorkflowInfo>

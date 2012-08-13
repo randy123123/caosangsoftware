@@ -1,0 +1,5 @@
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\wfState\bin\Debug\wfState.dll
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\wfState\bin\Debug\wfState.pdb
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\wfState\obj\Debug\ResolveAssemblyReference.cache
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\wfState\obj\Debug\wfState.dll
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\wfState\obj\Debug\wfState.pdb

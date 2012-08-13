@@ -1,0 +1,5 @@
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\deleteItemsByCAML\bin\Debug\EFSPWFActivities.deleteItemsByCAML.dll
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\deleteItemsByCAML\bin\Debug\EFSPWFActivities.deleteItemsByCAML.pdb
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\deleteItemsByCAML\obj\Debug\ResolveAssemblyReference.cache
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\deleteItemsByCAML\obj\Debug\EFSPWFActivities.deleteItemsByCAML.dll
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\deleteItemsByCAML\obj\Debug\EFSPWFActivities.deleteItemsByCAML.pdb

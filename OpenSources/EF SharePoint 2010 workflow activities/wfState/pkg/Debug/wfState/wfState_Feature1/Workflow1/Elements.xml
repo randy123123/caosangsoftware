@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- Customize the text in square brackets. 
+Remove brackets when filling in, e.g.
+Name="[NAME]" ==> Name="MyWorkflow" -->
+
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Workflow
+     Name="wfState - Workflow1"
+     Description="My SharePoint Workflow"
+     Id="a34a24a0-9f62-425a-ae33-6647796050a0"
+     CodeBesideClass="wfState.Workflow1.Workflow1"
+     CodeBesideAssembly="wfState, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6cbf7fd632b6ecc0">
+    <Categories/>
+    <MetaData>
+      <AssociationCategories>List</AssociationCategories>
+      <!-- Tags to specify InfoPath forms for the workflow; delete tags for forms that you do not have -->
+      <!--<Association_FormURN>[URN FOR ASSOCIATION FORM]</Association_FormURN>
+       <Instantiation_FormURN>[URN FOR INSTANTIATION FORM]</Instantiation_FormURN>
+      <Task0_FormURN>[URN FOR TASK (type 0) FORM]</Task0_FormURN>
+      <Task1_FormURN>[URN FOR TASK (type 1) FORM]</Task1_FormURN>-->
+      <!-- Modification forms: create a unique guid for each modification form -->
+      <!--<Modification_[UNIQUE GUID]_FormURN>[URN FOR MODIFICATION FORM]</Modification_[UNIQUE GUID]_FormURN>
+      <Modification_[UNIQUE GUID]_Name>[NAME OF MODIFICATION TO BE DISPLAYED AS A LINK ON WORKFLOW STATUS PAGE</Modification_[UNIQUE GUID]_Name>
+      -->
+      <StatusPageUrl>_layouts/WrkStat.aspx</StatusPageUrl>
+    </MetaData>
+  </Workflow>
+</Elements>

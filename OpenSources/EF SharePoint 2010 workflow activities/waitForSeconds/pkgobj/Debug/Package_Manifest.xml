@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="643c9360-e7d0-447c-9390-a89a4da409b2" SharePointProductVersion="14.0">
+  <Assemblies>
+    <Assembly Location="EFSPWFActivities.waitForSeconds.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="1033\Workflow\waitForSeconds.actions" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="waitForSeconds_waitForSeconds\Feature.xml" />
+  </FeatureManifests>
+</Solution>

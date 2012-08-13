@@ -1,0 +1,5 @@
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\getCountByCAML\bin\Debug\EFSPWFActivities.getCountByCAML.dll
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\getCountByCAML\bin\Debug\EFSPWFActivities.getCountByCAML.pdb
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\getCountByCAML\obj\Debug\ResolveAssemblyReference.cache
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\getCountByCAML\obj\Debug\EFSPWFActivities.getCountByCAML.dll
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\getCountByCAML\obj\Debug\EFSPWFActivities.getCountByCAML.pdb

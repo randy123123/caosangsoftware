@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="9ae37f83-4561-4cd7-9428-a51c0f4b6b93" SharePointProductVersion="14.0">
+  <Assemblies>
+    <Assembly Location="EFSPWFActivities.getEmailAttachmentLinks.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="1033\Workflow\getEmailAttachmentLinks.actions" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="getEmailAttachmentLinks_getEmailAttachmentLinks\Feature.xml" />
+  </FeatureManifests>
+</Solution>

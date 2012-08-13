@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="ce030dc1-4adb-4aa8-a88a-801338d2e5af" SharePointProductVersion="14.0">
+  <Assemblies>
+    <Assembly Location="EFSPWFActivities.getUserLoginsByGroupName.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="1033\Workflow\getUserLoginsByGroupName.actions" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="getUserLoginsByGroupName_getUserLoginsByGroupName\Feature.xml" />
+  </FeatureManifests>
+</Solution>

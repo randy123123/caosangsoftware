@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="ea34fbc3-4ddc-4ca7-85ee-62fdd5130c55" SharePointProductVersion="14.0">
+  <Assemblies>
+    <Assembly Location="EFSPWFActivities.getListIDByListTitle.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="1033\Workflow\getListIDByListTitle.actions" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="getListIDByListTitle_getListIDByListTitle\Feature.xml" />
+  </FeatureManifests>
+</Solution>

@@ -1,0 +1,5 @@
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\getCurrentDateTime\bin\Debug\EFSPWFActivities.getCurrentDateTime.dll
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\getCurrentDateTime\bin\Debug\EFSPWFActivities.getCurrentDateTime.pdb
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\getCurrentDateTime\obj\Debug\ResolveAssemblyReference.cache
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\getCurrentDateTime\obj\Debug\EFSPWFActivities.getCurrentDateTime.dll
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\getCurrentDateTime\obj\Debug\EFSPWFActivities.getCurrentDateTime.pdb

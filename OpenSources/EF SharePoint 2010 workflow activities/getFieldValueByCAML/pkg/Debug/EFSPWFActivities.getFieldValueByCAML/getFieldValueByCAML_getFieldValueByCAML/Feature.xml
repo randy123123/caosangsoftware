@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="84938090-7739-4cda-a747-96a35fefc118" ReceiverAssembly="EFSPWFActivities.getFieldValueByCAML, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c80256606c027ffe" ReceiverClass="EFSPWFActivities.Features.getFieldValueByCAML.getFieldValueByCAMLEventReceiver" Scope="Farm" Title="EFSPWFActivities getFieldValueByCAML"></Feature>

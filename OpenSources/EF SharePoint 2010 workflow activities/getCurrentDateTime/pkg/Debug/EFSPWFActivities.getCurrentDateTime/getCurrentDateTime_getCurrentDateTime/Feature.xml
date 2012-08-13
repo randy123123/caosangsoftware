@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="856a4108-b331-419e-8943-d0b87acd78fe" ReceiverAssembly="EFSPWFActivities.getCurrentDateTime, Version=2.0.0.0, Culture=neutral, PublicKeyToken=638fce08de07966c" ReceiverClass="EFSPWFActivities.Features.getCurrentDateTime.getCurrentDateTimeEventReceiver" Scope="Farm" Title="EFSPWFActivities getCurrentDateTime"></Feature>

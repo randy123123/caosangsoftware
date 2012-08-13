@@ -1,0 +1,5 @@
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\getCountByListview\bin\Debug\EFSPWFActivities.getCountByListview.dll
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\getCountByListview\bin\Debug\EFSPWFActivities.getCountByListview.pdb
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\getCountByListview\obj\Debug\ResolveAssemblyReference.cache
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\getCountByListview\obj\Debug\EFSPWFActivities.getCountByListview.dll
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\getCountByListview\obj\Debug\EFSPWFActivities.getCountByListview.pdb

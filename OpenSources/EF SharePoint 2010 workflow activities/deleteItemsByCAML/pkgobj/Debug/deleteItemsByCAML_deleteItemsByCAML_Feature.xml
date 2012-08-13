@@ -1,0 +1,2 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="1aacf4dc-7c18-427e-bec1-9545fb26ee65" ReceiverAssembly="EFSPWFActivities.deleteItemsByCAML, Version=2.0.0.0, Culture=neutral, PublicKeyToken=570dd3c749fea6fc" ReceiverClass="EFSPWFActivities.Features.deleteItemsByCAML.deleteItemsByCAMLEventReceiver" Scope="Farm" Title="EFSPWFActivities  deleteItemsByCAML"></Feature>

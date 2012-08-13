@@ -1,0 +1,6 @@
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\test\bin\Debug\test.exe.config
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\test\bin\Debug\test.exe
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\test\bin\Debug\test.pdb
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\test\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\test\obj\x86\Debug\test.exe
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\test\obj\x86\Debug\test.pdb

@@ -1,0 +1,6 @@
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\getEmailAttachmentLinks\bin\Debug\EFSPWFActivities.getEmailAttachmentLinks.dll
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\getEmailAttachmentLinks\bin\Debug\EFSPWFActivities.getEmailAttachmentLinks.pdb
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\getEmailAttachmentLinks\bin\Debug\Microsoft.Office.Server.OpenXml.dll
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\getEmailAttachmentLinks\obj\Debug\ResolveAssemblyReference.cache
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\getEmailAttachmentLinks\obj\Debug\EFSPWFActivities.getEmailAttachmentLinks.dll
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\getEmailAttachmentLinks\obj\Debug\EFSPWFActivities.getEmailAttachmentLinks.pdb

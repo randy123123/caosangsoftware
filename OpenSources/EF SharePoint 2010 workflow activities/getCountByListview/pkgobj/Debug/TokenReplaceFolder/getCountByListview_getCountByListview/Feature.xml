@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="cbae5c3e-0c83-45cb-91f6-52af3bfe707d" ReceiverAssembly="EFSPWFActivities.getCountByListview, Version=2.0.0.0, Culture=neutral, PublicKeyToken=8173ed5d98e1d176" ReceiverClass="EFSPWFActivities.Features.getCountByListview.getCountByListviewEventReceiver" Scope="Farm" Title="EFSPWFActivities getCountByListview"></Feature>

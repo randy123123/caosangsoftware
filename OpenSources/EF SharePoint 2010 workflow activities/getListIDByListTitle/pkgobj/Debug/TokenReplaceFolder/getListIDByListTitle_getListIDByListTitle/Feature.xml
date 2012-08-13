@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="7e84e841-80c2-4cca-883c-11c893f94ce8" ReceiverAssembly="EFSPWFActivities.getListIDByListTitle, Version=2.0.0.0, Culture=neutral, PublicKeyToken=50bdb811723600ca" ReceiverClass="EFSPWFActivities.Features.getListIDByListTitle.getListIDByListTitleEventReceiver" Scope="Farm" Title="EFSPWFActivities getListIDByListTitle"></Feature>

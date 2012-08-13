@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="bd1527a7-a8b4-4bca-9319-3d2418077c82" SharePointProductVersion="14.0">
+  <Assemblies>
+    <Assembly Location="EFSPWFActivities.getCurrentDateTime.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="1033\Workflow\getCurrentDateTime.actions" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="getCurrentDateTime_getCurrentDateTime\Feature.xml" />
+  </FeatureManifests>
+</Solution>

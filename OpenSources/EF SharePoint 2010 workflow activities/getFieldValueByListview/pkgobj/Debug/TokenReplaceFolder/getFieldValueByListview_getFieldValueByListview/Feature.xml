@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="eb02396b-0bef-465f-a1f8-9f5d1ddb36ad" ReceiverAssembly="EFSPWFActivities.getFieldValueByListview, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e816d4d656dbb5eb" ReceiverClass="EFSPWFActivities.Features.getFieldValueByListview.getFieldValueByListviewEventReceiver" Scope="Farm" Title="EFSPWFActivities getFieldValueByListview"></Feature>

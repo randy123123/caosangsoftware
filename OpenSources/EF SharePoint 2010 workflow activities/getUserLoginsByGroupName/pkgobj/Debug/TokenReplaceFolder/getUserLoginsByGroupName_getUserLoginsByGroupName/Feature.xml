@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="6a0be4f9-12d7-413f-812a-7bb0944eef88" ReceiverAssembly="EFSPWFActivities.getUserLoginsByGroupName, Version=2.0.0.0, Culture=neutral, PublicKeyToken=acba72888faca36a" ReceiverClass="EFSPWFActivities.Features.getUserLoginsByGroupNameEventReceiver" Scope="Farm" Title="EFSPWFActivities getUserLoginsByGroupName"></Feature>

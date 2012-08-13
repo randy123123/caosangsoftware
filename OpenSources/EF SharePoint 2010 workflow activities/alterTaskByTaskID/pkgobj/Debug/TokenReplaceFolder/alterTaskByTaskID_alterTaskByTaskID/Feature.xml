@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="16b78ba8-257b-4b8b-9908-b66a7b4144e2" ReceiverAssembly="EFSPWFActivities.alterTaskByTaskID, Version=2.0.0.0, Culture=neutral, PublicKeyToken=9adbdbfe01149bde" ReceiverClass="EFSPWFActivities.Features.alterTaskByTaskID.alterTaskByTaskIDEventReceiver" Scope="Farm" Title="EFSPWFActivities  alterTaskByTaskID"></Feature>

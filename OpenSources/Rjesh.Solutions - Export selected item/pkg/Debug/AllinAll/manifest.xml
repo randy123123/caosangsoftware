@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="18a6a292-7526-4cd9-a2f7-e20e19daf26e" SharePointProductVersion="14.0">
+  <Assemblies>
+    <Assembly Location="AllinAll.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="Layouts\ExportToExcel\ExportToExcel.aspx" />
+    <TemplateFile Location="Layouts\ExportToExcel\Exporttoexcel.js" />
+    <TemplateFile Location="Images\ExportToExcel\ExcelIcon.png" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="SI_MOSD_ReUsable_ExportToExcel\Feature.xml" />
+  </FeatureManifests>
+</Solution>

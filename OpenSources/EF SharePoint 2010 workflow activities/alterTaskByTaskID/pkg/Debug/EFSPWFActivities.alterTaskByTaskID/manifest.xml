@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="3f774295-9981-47a1-9a13-b894991dc43e" SharePointProductVersion="14.0">
+  <Assemblies>
+    <Assembly Location="EFSPWFActivities.alterTaskByTaskID.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="1033\Workflow\alterTaskByTaskID.actions" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="alterTaskByTaskID_alterTaskByTaskID\Feature.xml" />
+  </FeatureManifests>
+</Solution>

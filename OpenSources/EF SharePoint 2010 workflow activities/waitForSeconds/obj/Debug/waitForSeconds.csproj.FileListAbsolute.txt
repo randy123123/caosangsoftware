@@ -1,0 +1,5 @@
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\waitForSeconds\bin\Debug\EFSPWFActivities.waitForSeconds.dll
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\waitForSeconds\bin\Debug\EFSPWFActivities.waitForSeconds.pdb
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\waitForSeconds\obj\Debug\ResolveAssemblyReference.cache
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\waitForSeconds\obj\Debug\EFSPWFActivities.waitForSeconds.dll
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\waitForSeconds\obj\Debug\EFSPWFActivities.waitForSeconds.pdb

@@ -1,0 +1,1 @@
+bin\Release\Rjesh.Solutions.wsp
