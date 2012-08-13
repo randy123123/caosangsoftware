@@ -1,0 +1,6 @@
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\updateItemsByCAML\bin\Debug\EFSPWFActivities.updateItemsByCAML.dll
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\updateItemsByCAML\bin\Debug\EFSPWFActivities.updateItemsByCAML.pdb
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\updateItemsByCAML\bin\Debug\Microsoft.Office.Server.OpenXml.dll
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\updateItemsByCAML\obj\Debug\ResolveAssemblyReference.cache
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\updateItemsByCAML\obj\Debug\EFSPWFActivities.updateItemsByCAML.dll
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\updateItemsByCAML\obj\Debug\EFSPWFActivities.updateItemsByCAML.pdb

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="9ebdbe89-37bc-404f-a096-9db8ef8bc500" SharePointProductVersion="14.0">
+  <Assemblies>
+    <Assembly Location="EFSPWFActivities.getCountByListview.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="1033\Workflow\getCountByListview.actions" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="getCountByListview_getCountByListview\Feature.xml" />
+  </FeatureManifests>
+</Solution>

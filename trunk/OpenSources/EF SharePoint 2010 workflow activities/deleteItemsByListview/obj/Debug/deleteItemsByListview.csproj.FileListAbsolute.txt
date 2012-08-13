@@ -1,0 +1,5 @@
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\deleteItemsByListview\bin\Debug\EFSPWFActivities.deleteItemsByListview.dll
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\deleteItemsByListview\bin\Debug\EFSPWFActivities.deleteItemsByListview.pdb
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\deleteItemsByListview\obj\Debug\ResolveAssemblyReference.cache
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\deleteItemsByListview\obj\Debug\EFSPWFActivities.deleteItemsByListview.dll
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\deleteItemsByListview\obj\Debug\EFSPWFActivities.deleteItemsByListview.pdb

@@ -1,0 +1,19 @@
+﻿<WorkflowInfo>
+  <Actions Sequential="then" Parallel="and">
+    <Action Name="Delete List Items by ListView"
+    ClassName="EFSPWFActivities.deleteItemsByListview"
+    Assembly="EFSPWFActivities.deleteItemsByListview, Version=2.0.0.0, Culture=neutral, PublicKeyToken=736b31e8ed5183aa"
+    AppliesTo="all"
+    Category="EF Workflow Activities">
+      <RuleDesigner Sentence="delete items in listview %2, list: %1">
+        <FieldBind Field="ListTitle" Text="List" DesignerType="ListNames" Id="1"/>
+        <FieldBind Field="ListViewTitle" Text="ListView Title" DesignerType="TextArea" Id="2"/>
+      </RuleDesigner>
+      <Parameters>
+        <Parameter Name="__Context" Type="Microsoft.SharePoint.WorkflowActions.WorkflowContext" Direction="In" DesignerType="Hide" />
+        <Parameter Name="ListTitle" Type="System.String, mscorlib" Direction="In" />
+        <Parameter Name="ListViewTitle" Type="System.String, mscorlib" Direction="In" />
+      </Parameters>
+    </Action>
+  </Actions>
+</WorkflowInfo>

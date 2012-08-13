@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<WorkflowInfo>
+  <Actions Sequential="then" Parallel="and">
+    <Action Name="Get List GUID by List Title, like 'xxxx-xxxx'"
+    ClassName="EFSPWFActivities.getListIDByListTitle"
+    Assembly="EFSPWFActivities.getListIDByListTitle, Version=2.0.0.0, Culture=neutral, PublicKeyToken=50bdb811723600ca"
+    AppliesTo="all"
+    Category="EF Workflow Activities">
+      <RuleDesigner Sentence="get list guid from list: %1, store in %2">
+        <FieldBind Field="ListTitle" Text="List" DesignerType="ListNames" Id="1"/>
+        <FieldBind Field="ListID" Text="List ID" DesignerType="ParameterNames" Id="2"/>
+      </RuleDesigner>
+      <Parameters>
+        <Parameter Name="__Context" Type="Microsoft.SharePoint.WorkflowActions.WorkflowContext, Microsoft.SharePoint.WorkflowActions" Direction="In" />
+        <Parameter Name="ListTitle" Type="System.String, mscorlib" Direction="In" />
+        <Parameter Name="ListID" Type="System.String, mscorlib" Direction="Out" />
+      </Parameters>
+    </Action>
+  </Actions>
+</WorkflowInfo>

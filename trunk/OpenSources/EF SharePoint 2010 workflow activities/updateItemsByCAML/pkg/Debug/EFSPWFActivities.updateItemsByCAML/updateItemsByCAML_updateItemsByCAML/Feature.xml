@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="febbba21-0e12-45d3-92f5-fba15d9f6115" ReceiverAssembly="EFSPWFActivities.updateItemsByCAML, Version=2.0.0.0, Culture=neutral, PublicKeyToken=49077f0d5e641308" ReceiverClass="EFSPWFActivities.Features.updateItemsByCAML.updateItemsByCAMLEventReceiver" Scope="Farm" Title="EFSPWFActivities updateItemsByCAML"></Feature>

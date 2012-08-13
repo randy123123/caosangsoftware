@@ -1,0 +1,5 @@
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\enableNewLineForRichText\bin\Debug\EFSPWFActivities.enableNewLineForRichText.dll
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\enableNewLineForRichText\bin\Debug\EFSPWFActivities.enableNewLineForRichText.pdb
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\enableNewLineForRichText\obj\Debug\ResolveAssemblyReference.cache
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\enableNewLineForRichText\obj\Debug\EFSPWFActivities.enableNewLineForRichText.dll
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\enableNewLineForRichText\obj\Debug\EFSPWFActivities.enableNewLineForRichText.pdb

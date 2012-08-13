@@ -1,0 +1,5 @@
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\getFieldValueByListview\bin\Debug\EFSPWFActivities.getFieldValueByListview.dll
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\getFieldValueByListview\bin\Debug\EFSPWFActivities.getFieldValueByListview.pdb
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\getFieldValueByListview\obj\Debug\ResolveAssemblyReference.cache
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\getFieldValueByListview\obj\Debug\EFSPWFActivities.getFieldValueByListview.dll
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\getFieldValueByListview\obj\Debug\EFSPWFActivities.getFieldValueByListview.pdb

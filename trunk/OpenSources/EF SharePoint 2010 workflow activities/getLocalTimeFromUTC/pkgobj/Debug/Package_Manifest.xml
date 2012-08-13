@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="bbff8fcb-a117-4cbb-aefe-473d62555d65" SharePointProductVersion="14.0">
+  <Assemblies>
+    <Assembly Location="EFSPWFActivities.getLocalTimeFromUTC.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="1033\Workflow\getLocalTimeFromUTC.actions" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="getLocalTimeFromUTC_getLocalTimeFromUTC\Feature.xml" />
+  </FeatureManifests>
+</Solution>

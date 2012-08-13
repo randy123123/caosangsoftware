@@ -1,0 +1,16 @@
+2012-06-27 02:30:49,230 OFFY\tri.nguyenminh [1] INFO  CodePlex.SharePointInstaller.Installer [(null)] <(null)> - 
+***** Installing 'Imtech SharePoint Extended Lookup Fields' solution... 6/27/2012 2:30:48 AM *****
+
+2012-06-27 02:30:50,353 OFFY\tri.nguyenminh [9] INFO  CodePlex.SharePointInstaller.Installer [(null)] <(null)> - 
+Adding solution...
+2012-06-27 02:30:50,946 OFFY\tri.nguyenminh [9] INFO  CodePlex.SharePointInstaller.Installer [(null)] <(null)> - The 'Imtech SharePoint Extended Lookup Fields' solution was successfully added to store.
+2012-06-27 02:30:51,976 OFFY\tri.nguyenminh [9] INFO  CodePlex.SharePointInstaller.Installer [(null)] <(null)> - 
+Deploying solution...
+2012-06-27 02:31:08,489 OFFY\tri.nguyenminh [9] INFO  CodePlex.SharePointInstaller.Installer [(null)] <(null)> - PC-0252 : The solution was successfully deployed.
+
+2012-06-27 02:31:09,503 OFFY\tri.nguyenminh [9] INFO  CodePlex.SharePointInstaller.Installer [(null)] <(null)> - Activating feature(s)...
+2012-06-27 02:31:11,625 OFFY\tri.nguyenminh [9] INFO  CodePlex.SharePointInstaller.Installer [(null)] <(null)> - 
+Executing custom post-install commands...
+2012-06-27 02:31:12,654 OFFY\tri.nguyenminh [1] INFO  CodePlex.SharePointInstaller.Installer [(null)] <(null)> - 
+***** Installation Successfully Completed 6/27/2012 2:31:12 AM *****
+

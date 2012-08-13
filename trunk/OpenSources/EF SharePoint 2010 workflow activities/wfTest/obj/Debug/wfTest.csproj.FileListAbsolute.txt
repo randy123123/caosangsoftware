@@ -1,0 +1,7 @@
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\wfTest\bin\Debug\wfTest.dll
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\wfTest\bin\Debug\wfTest.pdb
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\wfTest\bin\Debug\EFSPWFActivities.getUserLoginsByGroupName.dll
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\wfTest\bin\Debug\EFSPWFActivities.getUserLoginsByGroupName.pdb
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\wfTest\obj\Debug\ResolveAssemblyReference.cache
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\wfTest\obj\Debug\wfTest.dll
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\wfTest\obj\Debug\wfTest.pdb

@@ -1,0 +1,2 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="e28fa78d-c238-4eb4-b6e2-c48d5be60b90" ReceiverAssembly="EFSPWFActivities.getLocalTimeFromUTC, Version=2.0.0.0, Culture=neutral, PublicKeyToken=4176182b8007acd7" ReceiverClass="EFSPWFActivities.Features.getLocalTimeFromUTC.getLocalTimeFromUTCEventReceiver" Scope="Farm" Title="EFSPWFActivities getLocalTimeFromUTC"></Feature>

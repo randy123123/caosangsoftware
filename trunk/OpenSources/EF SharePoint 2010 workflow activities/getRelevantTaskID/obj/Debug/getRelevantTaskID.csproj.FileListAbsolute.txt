@@ -1,0 +1,6 @@
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\getRelevantTaskID\bin\Debug\EFSPWFActivities.getRelevantTaskID.dll
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\getRelevantTaskID\bin\Debug\EFSPWFActivities.getRelevantTaskID.pdb
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\getRelevantTaskID\bin\Debug\Microsoft.Office.Server.OpenXml.dll
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\getRelevantTaskID\obj\Debug\ResolveAssemblyReference.cache
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\getRelevantTaskID\obj\Debug\EFSPWFActivities.getRelevantTaskID.dll
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\getRelevantTaskID\obj\Debug\EFSPWFActivities.getRelevantTaskID.pdb

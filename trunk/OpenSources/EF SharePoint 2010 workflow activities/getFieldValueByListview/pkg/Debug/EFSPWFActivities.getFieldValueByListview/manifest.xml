@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="fa822e46-36b7-4091-91c0-3dbe1a668139" SharePointProductVersion="14.0">
+  <Assemblies>
+    <Assembly Location="EFSPWFActivities.getFieldValueByListview.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="1033\Workflow\getFieldValueByListview.actions" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="getFieldValueByListview_getFieldValueByListview\Feature.xml" />
+  </FeatureManifests>
+</Solution>

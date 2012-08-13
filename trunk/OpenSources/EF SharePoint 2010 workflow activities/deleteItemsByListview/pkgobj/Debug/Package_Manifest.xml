@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="15c1dcd8-ec6d-4565-a14b-7fe9e4b215ca" SharePointProductVersion="14.0">
+  <Assemblies>
+    <Assembly Location="EFSPWFActivities.deleteItemsByListview.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="1033\Workflow\deleteItemsByListview.actions" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="deleteItemsByListview_deleteItemsByListview\Feature.xml" />
+  </FeatureManifests>
+</Solution>

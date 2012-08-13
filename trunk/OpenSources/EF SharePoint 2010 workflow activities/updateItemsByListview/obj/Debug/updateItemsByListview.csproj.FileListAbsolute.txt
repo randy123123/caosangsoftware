@@ -1,0 +1,5 @@
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\updateItemsByListview\bin\Debug\EFSPWFActivities.updateItemsByListview.dll
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\updateItemsByListview\bin\Debug\EFSPWFActivities.updateItemsByListview.pdb
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\updateItemsByListview\obj\Debug\ResolveAssemblyReference.cache
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\updateItemsByListview\obj\Debug\EFSPWFActivities.updateItemsByListview.dll
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\updateItemsByListview\obj\Debug\EFSPWFActivities.updateItemsByListview.pdb

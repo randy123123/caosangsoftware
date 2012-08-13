@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="a006939d-7448-4c1a-81fc-44fa44c4e7b0" SharePointProductVersion="14.0">
+  <Assemblies>
+    <Assembly Location="EFSPWFActivities.getFieldValueByCAML.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="1033\Workflow\getFieldValueByCAML.actions" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="getFieldValueByCAML_getFieldValueByCAML\Feature.xml" />
+  </FeatureManifests>
+</Solution>

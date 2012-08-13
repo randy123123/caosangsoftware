@@ -1,0 +1,19 @@
+﻿<WorkflowInfo>
+  <Actions Sequential="then" Parallel="and">
+    <Action Name="get User Login name list from a user group"
+    ClassName="EFSPWFActivities.getUserLoginsByGroupName"
+    Assembly="EFSPWFActivities.getUserLoginsByGroupName, Version=2.0.0.0, Culture=neutral, PublicKeyToken=acba72888faca36a"
+    AppliesTo="all"
+    Category="EF Workflow Activities">
+      <RuleDesigner Sentence="get User Login name list from user group %1, separated by ';', store in %2">
+        <FieldBind Field="UserGroupName" Text="The name of the user group" DesignerType="TextArea" Id="1"/>
+        <FieldBind Field="UserLoginNameList" Text="User LoginName List" DesignerType="ParameterNames" Id="2"/>
+      </RuleDesigner>
+      <Parameters>
+        <Parameter Name="__Context" Type="Microsoft.SharePoint.WorkflowActions.WorkflowContext, Microsoft.SharePoint.WorkflowActions" Direction="In" />
+        <Parameter Name="UserGroupName" Type="System.String, mscorlib" Direction="In" />
+        <Parameter Name="UserLoginNameList" Type="System.String, mscorlib" Direction="Out" />
+      </Parameters>
+    </Action>
+  </Actions>
+</WorkflowInfo>

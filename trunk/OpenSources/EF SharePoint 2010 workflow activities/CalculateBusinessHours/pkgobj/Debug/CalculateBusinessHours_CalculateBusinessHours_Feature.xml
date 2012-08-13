@@ -1,0 +1,2 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="10081bae-5484-4f84-88b7-a7d918651336" ReceiverAssembly="EFSPWFActivities.CalculateBusinessHours, Version=2.0.0.0, Culture=neutral, PublicKeyToken=ffe4309fce731f10" ReceiverClass="EFSPWFActivities.Features.CalculateBusinessHours.CalculateBusinessHoursEventReceiver" Scope="Farm" Title="EFSPWFActivities CalculateBusinessHours"></Feature>

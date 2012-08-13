@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <CustomAction
+    Id="Rjesh_Solutions_ExportSelected"
+    RegistrationType="List"
+    RegistrationId="100"
+    Location="CommandUI.Ribbon">
+    <CommandUIExtension>
+      <CommandUIDefinitions>
+        <CommandUIDefinition
+         Location="Ribbon.ListItem.New.Controls._children">
+          <Button
+           Id="Ribbon.ListItem.New.Controls.ExportToExcel"
+           Alt="Export only selected items to Excel"
+           Sequence="11"
+           Image32by32="/_layouts/images/Rjesh.Solutions/ExcelIcon.png"
+           Command="ExportToExcel"
+           LabelText="Export to Excel"
+           TemplateAlias="o1"/>
+        </CommandUIDefinition>
+      </CommandUIDefinitions>
+      <CommandUIHandlers>
+        <CommandUIHandler
+         Command="ExportToExcel"
+         CommandAction="javascript:Export();"
+         EnabledScript="javascript:exporttoexcelenable();"/>
+      </CommandUIHandlers>
+    </CommandUIExtension>
+  </CustomAction>
+  <CustomAction Id="Ribbon.Library.Actions.Scripts"
+                Location="ScriptLink"
+                ScriptSrc="/_Layouts/Rjesh.Solutions/Exporttoexcel.js" />
+</Elements>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="8b8c3f3f-5595-46ab-b6ce-6e1ea62881e9" SharePointProductVersion="14.0">
+  <Assemblies>
+    <Assembly Location="EFSPWFActivities.getRelevantTaskID.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="1033\Workflow\getRelevantTaskID.actions" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="getRelevantTaskID_getRelevantTaskID\Feature.xml" />
+  </FeatureManifests>
+</Solution>

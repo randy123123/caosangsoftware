@@ -1,0 +1,5 @@
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\alterTaskByTaskID\bin\Debug\EFSPWFActivities.alterTaskByTaskID.dll
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\alterTaskByTaskID\bin\Debug\EFSPWFActivities.alterTaskByTaskID.pdb
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\alterTaskByTaskID\obj\Debug\ResolveAssemblyReference.cache
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\alterTaskByTaskID\obj\Debug\EFSPWFActivities.alterTaskByTaskID.dll
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\alterTaskByTaskID\obj\Debug\EFSPWFActivities.alterTaskByTaskID.pdb

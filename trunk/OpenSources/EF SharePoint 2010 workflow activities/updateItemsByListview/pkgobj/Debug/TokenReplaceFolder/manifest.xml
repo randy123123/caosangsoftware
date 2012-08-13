@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="a48b4caf-5993-4801-b5b6-44aba08c1a7c" SharePointProductVersion="14.0">
+  <Assemblies>
+    <Assembly Location="EFSPWFActivities.updateItemsByListview.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="1033\Workflow\updateItemsByListview.actions" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="updateItemsByListview_updateItemsByListview\Feature.xml" />
+  </FeatureManifests>
+</Solution>

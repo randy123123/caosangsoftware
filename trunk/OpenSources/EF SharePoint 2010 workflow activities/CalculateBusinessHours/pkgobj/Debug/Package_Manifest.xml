@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="c722aff8-706f-4737-91b1-7eac75122fd1" SharePointProductVersion="14.0">
+  <Assemblies>
+    <Assembly Location="EFSPWFActivities.CalculateBusinessHours.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="1033\Workflow\CalculateBusinessHours.actions" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="CalculateBusinessHours_CalculateBusinessHours\Feature.xml" />
+  </FeatureManifests>
+</Solution>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="eb46966d-3a82-4505-9597-aa5dc783171c" SharePointProductVersion="14.0">
+  <Assemblies>
+    <Assembly Location="EFSPWFActivities.enableNewLineForRichText.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="1033\Workflow\enableNewLineForRichText.actions" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="enableNewLineForRichText_enableNewLineForRichText\Feature.xml" />
+  </FeatureManifests>
+</Solution>

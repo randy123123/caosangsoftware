@@ -1,0 +1,2 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="fad273d2-0c41-4f62-a8e1-ac1ed0f2e656" ReceiverAssembly="EFSPWFActivities.getEmailAttachmentLinks, Version=2.1.0.0, Culture=neutral, PublicKeyToken=9a9a5e4d577cfaac" ReceiverClass="EFSPWFActivities.Features.getEmailAttachmentLinks.getEmailAttachmentLinksEventReceiver" Scope="Farm" Title="EFSPWFActivities getEmailAttachmentLinks"></Feature>

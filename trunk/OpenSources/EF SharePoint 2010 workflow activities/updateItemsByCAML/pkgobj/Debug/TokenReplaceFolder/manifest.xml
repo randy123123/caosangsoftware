@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="bcd68531-27bb-429c-a0f3-1b813c2fc6c9" SharePointProductVersion="14.0">
+  <Assemblies>
+    <Assembly Location="EFSPWFActivities.updateItemsByCAML.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="1033\Workflow\updateItemsByCAML.actions" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="updateItemsByCAML_updateItemsByCAML\Feature.xml" />
+  </FeatureManifests>
+</Solution>

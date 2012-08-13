@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="044ada26-5b3b-49ca-9228-c96bcb669dc1" ReceiverAssembly="EFSPWFActivities.enableNewLineForRichText, Version=2.0.0.0, Culture=neutral, PublicKeyToken=2e3f83ae54f304cd" ReceiverClass="EFSPWFActivities.Features.enableNewLineForRichText.enableNewLineForRichTextEventReceiver" Scope="Farm" Title="EFSPWFActivities enableNewLineForRichText"></Feature>

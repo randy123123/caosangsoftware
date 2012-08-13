@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Title="Rjesh Feature" Id="458f9853-1435-4892-9697-e5fe29d54d28" Scope="Web">
+  <ElementManifests>
+    <ElementManifest Location="ExportToExcel\Elements.xml" />
+  </ElementManifests>
+</Feature>

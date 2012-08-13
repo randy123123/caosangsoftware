@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="e4ae0b52-63b5-4d81-bcc0-9a8e659f1753" SharePointProductVersion="14.0">
+  <Assemblies>
+    <Assembly Location="EFSPWFActivities.getSumByCAML.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="1033\Workflow\getSumByCAML.actions" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="getSumByCAML_getSumByCAML\Feature.xml" />
+  </FeatureManifests>
+</Solution>

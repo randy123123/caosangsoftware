@@ -1,0 +1,2 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="de50dd50-d340-44bc-8db6-cc822ed562b3" ReceiverAssembly="EFSPWFActivities.updateItemsByListview, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0d205775c4311a48" ReceiverClass="EFSPWFActivities.Features.updateItemsByListview.updateItemsByListviewEventReceiver" Scope="Farm" Title="EFSPWFActivities updateItemsByListview"></Feature>

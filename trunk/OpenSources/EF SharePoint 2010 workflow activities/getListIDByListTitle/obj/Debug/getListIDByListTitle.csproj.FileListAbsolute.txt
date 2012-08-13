@@ -1,0 +1,5 @@
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\getListIDByListTitle\bin\Debug\EFSPWFActivities.getListIDByListTitle.dll
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\getListIDByListTitle\bin\Debug\EFSPWFActivities.getListIDByListTitle.pdb
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\getListIDByListTitle\obj\Debug\ResolveAssemblyReference.cache
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\getListIDByListTitle\obj\Debug\EFSPWFActivities.getListIDByListTitle.dll
+D:\Robert Kahn\CSSoft\OpenSources\EF SharePoint 2010 workflow activities\getListIDByListTitle\obj\Debug\EFSPWFActivities.getListIDByListTitle.pdb
