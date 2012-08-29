@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Description="Export List To Excel " Id="9076ae53-5bf9-4872-9411-49a3064f262e" Scope="Site" Title="SharePoint Custom Ribbon" Version="1.1.0.0">
+  <UpgradeActions ReceiverAssembly="$SharePoint.Project.AssemblyFullName$" ReceiverClass="$SharePoint.Type.8db1b884-9fdf-4b95-aa29-a554549c40b6.FullName$" />
+  <ElementManifests>
+    <ElementManifest Location="CustomRibbonElement\Elements.xml" />
+  </ElementManifests>
+</Feature>
