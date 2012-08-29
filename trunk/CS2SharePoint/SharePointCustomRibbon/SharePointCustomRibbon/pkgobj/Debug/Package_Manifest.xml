@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="7c810d92-35ae-4189-b534-6be8b1aabece" SharePointProductVersion="14.0">
+  <Assemblies>
+    <Assembly Location="SharePointCustomRibbon.dll" DeploymentTarget="GlobalAssemblyCache">
+      <SafeControls>
+        <SafeControl Assembly="SharePointCustomRibbon, Version=1.0.0.0, Culture=neutral, PublicKeyToken=58f2a9d4a78cc603" Namespace="SharePointCustomRibbon.CustomRibbonElement" TypeName="*" />
+      </SafeControls>
+    </Assembly>
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="Layouts\SharePointCustomRibbon\Generate.aspx" />
+    <TemplateFile Location="Layouts\SharePointCustomRibbon\ShowItems.aspx" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="SharePointCustomRibbon_Feature1\Feature.xml" />
+  </FeatureManifests>
+</Solution>

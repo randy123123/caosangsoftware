@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <CustomAction Id="CustomRibbon.ExportExcelGroup"
+                Title ="New GAMA"
+                Location="CommandUI.Ribbon.ListView"
+                RegistrationType="List"
+                RegistrationId="100">
+        <CommandUIExtension>
+            <CommandUIDefinitions>
+                <CommandUIDefinition Location="Ribbon.ListItem.Groups._children">
+                    <Group
+                      Id="CustomRibbon.CustomTab.ExportExcelGroup"
+                      Description="Export"
+                      Title="Export"
+                      Sequence="56"
+                      Template="ExportExcelGroup">
+                        <Controls Id="CustomRibbon.CustomTab.ExportExcelGroup.Controls">
+                            <Button Id="CustomRibbon.CustomTab.ExportExcelGroup.ExportToExcelButton"
+                            Sequence="25"
+                            Image16by16="/_layouts/$Resources:core,Language;/images/formatmap16x16.png" Image16by16Top="-152" Image16by16Left="-32"
+                            Image32by32="/_layouts/$Resources:core,Language;/images/formatmap32x32.png" Image32by32Top="-352" Image32by32Left="0"
+                            Description=""
+                            Command="btnExportToExcelCommand"
+                            LabelText="Export To Excel"
+                            TemplateAlias="ExportToExcelButton" />
+                        </Controls>
+                    </Group>
+                </CommandUIDefinition>
+                <CommandUIDefinition Location="Ribbon.Templates._children">
+                    <GroupTemplate Id="ExportExcelGroup">
+                        <Layout Title="OneLarge" LayoutTitle="OneLarge">
+                            <Section Alignment="Top" Type="OneRow">
+                                <Row>
+                                    <ControlRef DisplayMode="Large" TemplateAlias="ExportToExcelButton" />
+                                </Row>
+                            </Section>
+                        </Layout>
+                    </GroupTemplate>
+                </CommandUIDefinition>
+                <CommandUIDefinition Location="Ribbon.ListItem.Scaling._children">
+                    <MaxSize Id="Ribbon.ListItem.Scaling.MaxSize"
+                             Sequence="45"
+                             GroupId="CustomRibbon.CustomTab.ExportExcelGroup"
+                             Size="OneLarge"/>
+                </CommandUIDefinition>
+            </CommandUIDefinitions>
+            <CommandUIHandlers>
+                <CommandUIHandler Command="btnExportToExcelCommand" CommandAction="javascript:var options = {url: '/_layouts/SharePointCustomRibbon/ShowItems.aspx?list=' + SP.ListOperation.Selection.getSelectedList() + '&amp;view=' + $('[id*=\'ListTitleViewSelectorMenu\'] span:first').text() + '&amp;url=' + $(location).attr('href'), tite: 'Export to Excel', allowMaximize: false, showClose: true, width: 300, height: 90 }; SP.UI.ModalDialog.showModalDialog(options); ">
+                </CommandUIHandler>
+            </CommandUIHandlers>
+        </CommandUIExtension>
+    </CustomAction>
+</Elements>

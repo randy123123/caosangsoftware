@@ -1,0 +1,14 @@
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\SharePointCustomRibbon\SharePointCustomRibbon\bin\Debug\SharePointCustomRibbon.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\SharePointCustomRibbon\SharePointCustomRibbon\bin\Debug\SharePointCustomRibbon.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\SharePointCustomRibbon\SharePointCustomRibbon\bin\Debug\Microsoft.Sharepoint.Sandbox.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\SharePointCustomRibbon\SharePointCustomRibbon\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\SharePointCustomRibbon\SharePointCustomRibbon\obj\Debug\SharePointCustomRibbon.csproj.ResolveComReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\SharePointCustomRibbon\SharePointCustomRibbon\obj\Debug\SharePointCustomRibbon.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\SharePointCustomRibbon\SharePointCustomRibbon\obj\Debug\SharePointCustomRibbon.pdb
+D:\Projects\Sharepoint Export\SharePointCustomRibbonSource\SharePointCustomRibbon\SharePointCustomRibbon\bin\Debug\SharePointCustomRibbon.dll
+D:\Projects\Sharepoint Export\SharePointCustomRibbonSource\SharePointCustomRibbon\SharePointCustomRibbon\bin\Debug\SharePointCustomRibbon.pdb
+D:\Projects\Sharepoint Export\SharePointCustomRibbonSource\SharePointCustomRibbon\SharePointCustomRibbon\bin\Debug\Microsoft.Sharepoint.Sandbox.dll
+D:\Projects\Sharepoint Export\SharePointCustomRibbonSource\SharePointCustomRibbon\SharePointCustomRibbon\obj\Debug\ResolveAssemblyReference.cache
+D:\Projects\Sharepoint Export\SharePointCustomRibbonSource\SharePointCustomRibbon\SharePointCustomRibbon\obj\Debug\SharePointCustomRibbon.csproj.ResolveComReference.cache
+D:\Projects\Sharepoint Export\SharePointCustomRibbonSource\SharePointCustomRibbon\SharePointCustomRibbon\obj\Debug\SharePointCustomRibbon.dll
+D:\Projects\Sharepoint Export\SharePointCustomRibbonSource\SharePointCustomRibbon\SharePointCustomRibbon\obj\Debug\SharePointCustomRibbon.pdb
