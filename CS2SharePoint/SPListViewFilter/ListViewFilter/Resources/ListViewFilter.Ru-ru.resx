@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Button_Apply" xml:space="preserve">
+    <value>Применить</value>
+  </data>
+  <data name="Button_OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="Button_Save" xml:space="preserve">
+    <value>Сохранить</value>
+  </data>
+  <data name="Caption_Caption" xml:space="preserve">
+    <value>Заголовок</value>
+  </data>
+  <data name="Caption_ControlType" xml:space="preserve">
+    <value>Тип котрола</value>
+  </data>
+  <data name="Caption_Field" xml:space="preserve">
+    <value>Поле</value>
+  </data>
+  <data name="Caption_Position" xml:space="preserve">
+    <value>Позиция</value>
+  </data>
+  <data name="Caption_SettingsDialog" xml:space="preserve">
+    <value>Настройка фильтра</value>
+  </data>
+  <data name="ControlType_Autocomplete" xml:space="preserve">
+    <value>Текстовой поле с автодополнением</value>
+  </data>
+  <data name="ControlType_Boolean" xml:space="preserve">
+    <value>Флаг</value>
+  </data>
+  <data name="ControlType_Date" xml:space="preserve">
+    <value>Дата</value>
+  </data>
+  <data name="ControlType_DateRange" xml:space="preserve">
+    <value>Интервал дат</value>
+  </data>
+  <data name="ControlType_DropDownList" xml:space="preserve">
+    <value>Выпадающий список</value>
+  </data>
+  <data name="ControlType_DropDownListWithSettings" xml:space="preserve">
+    <value>Выпадающий список со множественным выбором</value>
+  </data>
+  <data name="ControlType_PeoplePicker" xml:space="preserve">
+    <value>Пользователь или группа</value>
+  </data>
+  <data name="ControlType_PeoplePickerWithMultiSelect" xml:space="preserve">
+    <value>Пользователи</value>
+  </data>
+  <data name="ControlType_Taxonomy" xml:space="preserve">
+    <value>Метаданные</value>
+  </data>
+  <data name="ControlType_TaxonomyMultiValue" xml:space="preserve">
+    <value>Метаданные со множественным выбором</value>
+  </data>
+  <data name="ControlType_Text" xml:space="preserve">
+    <value>Текстовое поле</value>
+  </data>
+  <data name="ControlType_TextWithOptions" xml:space="preserve">
+    <value>Текстовое поле с параметрами</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Filter for SharePoint List</value>
+  </data>
+  <data name="FilterType_BeginWith" xml:space="preserve">
+    <value>Начинается с</value>
+  </data>
+  <data name="FilterType_Contains" xml:space="preserve">
+    <value>Содержит</value>
+  </data>
+  <data name="FilterType_Equal" xml:space="preserve">
+    <value>Равно</value>
+  </data>
+  <data name="FilterType_NotEqual" xml:space="preserve">
+    <value>Не равно</value>
+  </data>
+  <data name="FilterValue_All" xml:space="preserve">
+    <value>Все</value>
+  </data>
+  <data name="FilterValue_Blank" xml:space="preserve">
+    <value>Пустые значения</value>
+  </data>
+  <data name="FilterValue_False" xml:space="preserve">
+    <value>Нет</value>
+  </data>
+  <data name="FilterValue_IsNull" xml:space="preserve">
+    <value>Нет значения</value>
+  </data>
+  <data name="FilterValue_True" xml:space="preserve">
+    <value>Да</value>
+  </data>
+  <data name="Link_FieldSettings" xml:space="preserve">
+    <value>Настроить</value>
+  </data>
+  <data name="Link_SolutionDescription" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Link_SolutionDetails" xml:space="preserve">
+    <value>Подробнее...</value>
+  </data>
+  <data name="Text_ClickToSelect" xml:space="preserve">
+    <value>Нажмите для выбора</value>
+  </data>
+  <data name="Text_Error" xml:space="preserve">
+    <value>Ошибка</value>
+  </data>
+  <data name="Text_From" xml:space="preserve">
+    <value>От</value>
+  </data>
+  <data name="Text_Info" xml:space="preserve">
+    <value>Информация</value>
+  </data>
+  <data name="Text_NoFields" xml:space="preserve">
+    <value>Не указано ни одного поля для отображения в фильтре</value>
+  </data>
+  <data name="Text_NotConnected" xml:space="preserve">
+    <value>Веб-часть не соединена со списком</value>
+  </data>
+  <data name="Text_ShowEditPanel" xml:space="preserve">
+    <value>&lt;a href="#" onclick="javascript:MSOTlPn_ShowToolPane2('Edit','{0}');""&gt;Откройте область инструментов&lt;/a&gt; для настройки этого фильтра.</value>
+  </data>
+  <data name="Text_To" xml:space="preserve">
+    <value>до</value>
+  </data>
+  <data name="Text_UseSqlQueries" xml:space="preserve">
+    <value>Использовать SQL-запросы в базу данных содежимого</value>
+  </data>
+  <data name="Text_Warning" xml:space="preserve">
+    <value>Уведомление</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Настраиваемый фильтр для списка</value>
+  </data>
+  <data name="ToolTip_About" xml:space="preserve">
+    <value>О веб-части</value>
+  </data>
+  <data name="ToolTip_Advanced" xml:space="preserve">
+    <value>Дополнительно</value>
+  </data>
+  <data name="ToolTip_Settings" xml:space="preserve">
+    <value>Параметры</value>
+  </data>
+  <data name="ToolTip_View" xml:space="preserve">
+    <value>Вид</value>
+  </data>
+  <data name="WebPart_Category" xml:space="preserve">
+    <value>Фильтры</value>
+  </data>
+  <data name="WebPart_Description" xml:space="preserve">
+    <value>Настраиваемый фильтр для списка</value>
+  </data>
+  <data name="WebPart_Group" xml:space="preserve">
+    <value>Фильтры</value>
+  </data>
+  <data name="WebPart_Title" xml:space="preserve">
+    <value>Фильтр для списка</value>
+  </data>
+</root>

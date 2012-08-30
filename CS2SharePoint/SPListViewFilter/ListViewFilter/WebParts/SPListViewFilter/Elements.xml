@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="SPListViewFilter" List="113" Url="_catalogs/wp">
+    <File Path="SPListViewFilter\SPListViewFilter.webpart" Url="SPListViewFilter.webpart" Type="GhostableInLibrary">
+      <Property Name="Group" Value="SPListViewFilter" />
+    </File>
+  </Module>
+</Elements>

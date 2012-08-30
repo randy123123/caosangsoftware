@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="e1d543c2-4151-4bfe-a556-3042f61a2c7b" solutionId="e1d543c2-4151-4bfe-a556-3042f61a2c7b" resetWebServer="false" name="ListViewFilter" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="484784b9-8ea1-4d2c-ab27-24f8458753a8" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="628adb75-316d-44e5-b770-e48190cca830" />
+    <projectItemReference itemId="2c4390a7-5bb9-4228-89db-cd788d9928f1" />
+    <projectItemReference itemId="8cb720aa-545d-4951-bd46-8b6033073fa5" />
+  </projectItems>
+</package>
