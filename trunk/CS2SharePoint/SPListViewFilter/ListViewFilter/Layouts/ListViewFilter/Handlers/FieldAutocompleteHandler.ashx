@@ -1,0 +1,1 @@
+﻿<%@ WebHandler Language="C#"  Class="ListViewFilter.Layouts.ListViewFilter.Handlers.FieldAutocompleteHandler, ListViewFilter, Version=1.6.0.0, Culture=neutral, PublicKeyToken=c2efc42ca9f77dc7"   %>

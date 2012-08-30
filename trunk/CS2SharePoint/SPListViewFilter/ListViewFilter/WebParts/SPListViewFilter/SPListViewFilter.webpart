@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="ListViewFilter.WebParts.SPListViewFilter.SPListViewFilter, $SharePoint.Project.AssemblyFullName$" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">SPListViewFilter 1.6</property>
+        <property name="Description" type="string">$Resources:ListViewFilter,WebPart_Description;</property>
+        <property name="CatalogIconImageUrl" type="string">/_layouts/images/ListViewFilter/SPListViewFilterWebPart16.gif</property>
+        <property name="ChromeType" type="chrometype">None</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>

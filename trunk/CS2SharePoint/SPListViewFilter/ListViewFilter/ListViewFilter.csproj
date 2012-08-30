@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1B11DDAD-601B-4DB5-937C-65DBCF8C4873}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ListViewFilter</RootNamespace>
+    <AssemblyName>ListViewFilter</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{BB1F664B-9266-4fd6-B973-E1E44974B511};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <SandboxedSolution>False</SandboxedSolution>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <DocumentationFile>bin\Debug\ListViewFilter.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.SharePoint.Taxonomy, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\Common Files\Microsoft Shared\Web Server Extensions\14\ISAPI\Microsoft.SharePoint.Taxonomy.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Security" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationObjects\CAMLGenerator.cs" />
+    <Compile Include="ApplicationObjects\ControlManager.cs" />
+    <Compile Include="CAML.cs" />
+    <Compile Include="DataObjects\ListFilterField.cs" />
+    <Compile Include="DataObjects\ListFilterSettings.cs" />
+    <Compile Include="Enums.cs" />
+    <Compile Include="Extensions\SPFieldExtensions.cs" />
+    <Compile Include="Extensions\WebControlsExtensions.cs" />
+    <Compile Include="Extensions\XmlExtensions.cs" />
+    <Compile Include="Layouts\ListViewFilter\FieldSettingsConfig.aspx.cs">
+      <DependentUpon>FieldSettingsConfig.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\ListViewFilter\FieldSettingsConfig.aspx.designer.cs">
+      <DependentUpon>FieldSettingsConfig.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\ListViewFilter\Handlers\FieldAutocompleteHandler.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\ListViewFilter.En-us.Designer.cs">
+      <DependentUpon>ListViewFilter.En-us.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\ListViewFilter.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ListViewFilter.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\ListViewFilter.Ru-ru.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ListViewFilter.Ru-ru.resx</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\SPListViewFilter\SPListViewFilter.cs" />
+    <Compile Include="WebParts\SPListViewFilter\ToolParts\AboutToolPart.cs" />
+    <Compile Include="WebParts\SPListViewFilter\ToolParts\AdvancedSettings.cs" />
+    <Compile Include="WebParts\SPListViewFilter\ToolParts\FieldSettingsToolPart.cs" />
+    <Compile Include="WebParts\SPListViewFilter\ToolParts\ViewToolPart.cs" />
+    <Compile Include="Web\FieldFilterContainer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Features\ListViewFilterFeature\ListViewFilterFeature.feature">
+      <FeatureId>{484784b9-8ea1-4d2c-ab27-24f8458753a8}</FeatureId>
+    </None>
+    <None Include="Images\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{8cb720aa-545d-4951-bd46-8b6033073fa5}</SharePointProjectItemId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Layouts\ListViewFilter\Handlers\FieldAutocompleteHandler.ashx" />
+    <None Include="Layouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{628adb75-316d-44e5-b770-e48190cca830}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{e1d543c2-4151-4bfe-a556-3042f61a2c7b}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Resources\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2c4390a7-5bb9-4228-89db-cd788d9928f1}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\SPListViewFilter\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{7df82089-cbb0-4d3d-84dc-f0baa71f175a}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\SPListViewFilter\SPListViewFilter.webpart" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\ListViewFilter\iceq.png" />
+    <Content Include="Images\ListViewFilter\icbegins.png" />
+    <Content Include="Images\ListViewFilter\iccontains.png" />
+    <Content Include="Images\ListViewFilter\IconError.png" />
+    <Content Include="Images\ListViewFilter\IconInfo.gif" />
+    <Content Include="Images\ListViewFilter\icneq.png" />
+    <Content Include="Images\ListViewFilter\ListViewType-Grid.png" />
+    <Content Include="Images\ListViewFilter\ListViewType-StackPanel.png" />
+    <Content Include="Images\ListViewFilter\ListViewType-WrapPanel.png" />
+    <Content Include="Images\ListViewFilter\SimpleSPListView.png" />
+    <Content Include="Images\ListViewFilter\SPListViewFilterWebPart16.gif" />
+    <Content Include="Images\ListViewFilter\SPListViewFilterFeature.png" />
+    <Content Include="Resources\ListViewFilter.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ListViewFilter.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="Resources\ListViewFilter.Ru-ru.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ListViewFilter.Ru-ru.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Features\ListViewFilterFeature\ListViewFilterFeature.Template.xml">
+      <DependentUpon>ListViewFilterFeature.feature</DependentUpon>
+    </Content>
+    <Content Include="Layouts\ListViewFilter\FieldSettingsConfig.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="WebParts\SPListViewFilter\Elements.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\ListViewFilter.En-us.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ListViewFilter.En-us.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="false" />
+</Project>
