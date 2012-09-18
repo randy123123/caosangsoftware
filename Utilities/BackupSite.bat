@@ -18,10 +18,8 @@
 	@set FILE_NAME_REFIX=tringuyen_80_
 	@set DEL_AFTER_N_DAYS=10
 	@set FOLDER_BACKUP=D:\SharePointBackup
-
-:StartBackup
 	echo Batch back up SharePoint sites
-	echo StartBackup
+	echo ************
 	@set STSADM="c:\program files\common files\microsoft shared\web server extensions\12\bin\stsadm"
 	@cd c:\Program Files\Common Files\Microsoft Shared\web server extensions\12\BIN
 

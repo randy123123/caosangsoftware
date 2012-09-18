@@ -14,14 +14,12 @@
 	if "%~1" == "-help" goto EndBackup
 
 :UserConfig
-	@set SITE_URL_BACKUP=http://tringuyen
-	@set FILE_NAME_REFIX=tringuyen_80_
+	@set SITE_URL_BACKUP=http://pc-0252:8080
+	@set FILE_NAME_REFIX=pc-0252_80_
 	@set DEL_AFTER_N_DAYS=10
 	@set FOLDER_BACKUP=D:\SharePointBackup
-
-:StartBackup
 	echo Batch back up SharePoint sites
-	echo StartBackup
+	echo ************
 	@set STSADM="c:\program files\common files\microsoft shared\web server extensions\14\bin\stsadm"
 	@cd c:\Program Files\Common Files\Microsoft Shared\web server extensions\14\BIN
 
