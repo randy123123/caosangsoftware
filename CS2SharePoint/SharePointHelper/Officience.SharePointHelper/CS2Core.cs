@@ -12,7 +12,7 @@ using CSSoft;
 
 namespace Officience.SharePointHelper
 {
-    public class CS2Core : FormFunction, IFormFunction
+    public class CS2Core : FormFunction//, IFormFunction
     {
         /*
         Note:   To add new function, only need copy code 'AddFunctions("Your functions").Click'
