@@ -6,10 +6,11 @@ using System.Windows.Forms;
 using Microsoft.SharePoint;
 using System.IO;
 using System.ComponentModel;
+using CSSoft;
 
 namespace Officience.SharePointHelper
 {
-    public class SPTest : FormFunction, IFormFunction
+    public class SPTest : FormFunction//, IFormFunction
     {
         /*
         Note:   To add new function, only need copy code 'AddFunctions("Your functions").Click'
@@ -20,12 +21,35 @@ namespace Officience.SharePointHelper
 
         public void DefineFunctions() //IFormFunctions
         {
-            AddMenu("Get SPFieldMultiChoice").Click += new EventHandler(GetSPFieldMultiChoice);
+            AddMenu("TEST").Click += new EventHandler(TEST);
         }
-        void GetSPFieldMultiChoice(object sender, EventArgs e)
+        void TEST(object sender, EventArgs e)
         {
-            SPListItem Item = List("Test").GetItemById(3);
+            //SPListItem Item = List("Test").GetItemById(3);
+            //CSSoft.CS2Regex.Substring("","","")
             //SPFieldMultiChoice spfChoice = (SPFieldMultiChoice)Item.Fields["MultiChoiceColumn"];
+            OptionsDialog optionsDialog = new OptionsDialog();
+            ReadFile yourOptions = new ReadFile();
+            optionsDialog.Options.SelectedObject = yourOptions;
+            if (optionsDialog.ShowDialog() == DialogResult.OK)
+            {
+                string fileText = File.ReadAllText(yourOptions.File);
+                WriteLine(yourOptions.File);
+                foreach (string staticName in CS2Regex.Substring(fileText, "StaticName=\"", "\""))
+                {
+                    WriteLine(staticName);
+                }
+            }
+        }
+    }
+    public class ReadFile
+    {
+        [CategoryAttribute("FileName"), Description("Select your file")]
+        public string File { get; set; }
+
+        public ReadFile()    //Init default values
+        {
+            File = "";
         }
     }
 }

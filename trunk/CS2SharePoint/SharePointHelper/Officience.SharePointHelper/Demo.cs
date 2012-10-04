@@ -9,7 +9,7 @@ using System.ComponentModel;
 
 namespace Officience.SharePointHelper
 {
-    public class Demo : FormFunction, IFormFunction
+    public class Demo : FormFunction//, IFormFunction
     {
         /*
         Note:   To add new function, only need copy code 'AddFunctions("Your functions").Click'
