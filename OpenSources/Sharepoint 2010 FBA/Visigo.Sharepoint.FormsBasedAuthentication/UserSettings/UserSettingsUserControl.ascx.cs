@@ -3,8 +3,8 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using Microsoft.SharePoint;
-using Microsoft.Office.Server.UserProfiles;
 using System.IO;
+using System.Text.RegularExpressions;
 
 namespace Visigo.Sharepoint.FormsBasedAuthentication.UserSettings
 {
@@ -60,7 +60,28 @@ namespace Visigo.Sharepoint.FormsBasedAuthentication.UserSettings
 
         private bool IsValid()
         {
-
+            //Valid Full Name required
+            if (String.IsNullOrEmpty(txtFullName.Text))
+                Message.Text += String.Format("<div class='ErrorMessage' title='Error'>{0}</div>", "You must specify a value for 'Full Name' field.");
+            //Valid Email Address
+            Regex regex = new Regex(@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$");
+            Match match = regex.Match(txtEmailAddress.Text);
+            if (String.IsNullOrEmpty(txtEmailAddress.Text) || !match.Success)
+                Message.Text += String.Format("<div class='ErrorMessage' title='Error'>{0}</div>", "You must specify a email value for 'Email Address' field.");
+            //Value Picture
+            if (filePicture.HasFile)
+            {
+                if (filePicture.FileContent.Length > 1000000) // 1MB approx (actually less though)
+                {
+                    Message.Text += String.Format("<div class='ErrorMessage' title='Error'>{0}</div>", "The system will only allow image files with the size &lt 1MB for 'Email Address' field.");
+                }
+                else
+                {
+                    string fileExt = Path.GetExtension(filePicture.FileName).ToLower();
+                    if (!(fileExt.Equals(".gif") || fileExt.Equals(".jpg") || fileExt.Equals(".png") || fileExt.Equals(".jpg")))
+                        Message.Text += String.Format("<div class='ErrorMessage' title='Error'>{0}</div>", "The system will only allow image files of the type GIF, JPG, JPEG, or PNG for 'Email Address' field.");
+                }
+            }
             return Message.Text.Length == 0;
         }
 
