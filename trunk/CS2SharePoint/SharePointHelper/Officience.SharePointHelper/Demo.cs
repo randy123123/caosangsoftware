@@ -106,11 +106,26 @@ namespace Officience.SharePointHelper
 
         [CategoryAttribute("Group2"), Description("Your description for property Value2; if value equal DefaultValue, that value not bold"), DefaultValue(false)]
         public bool Value2 { get; set; }
+
+        [CategoryAttribute("Group1"), Description("List value")]
+        public List<ListValues> ListValue { get; set; }
                 
         public YourOptions()    //Init default values
         {
             Value1 = "Defaut value1";
             Value2 = false;
+            ListValue = new List<ListValues> { new ListValues{ Title = "Value 1", Value = 1} };
+        }
+    }
+    public class ListValues
+    {
+        [CategoryAttribute("Group1"), Description("Title value")]
+        public string Title { get; set; }
+        [CategoryAttribute("Group2"), Description("Your value")]
+        public int Value { get; set; }
+        public override string ToString()
+        {
+            return String.Format("{0}-{1}", Title,Value);
         }
     }
 }
