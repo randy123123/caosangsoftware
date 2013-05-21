@@ -13,11 +13,22 @@ using CSSoft;
 using System.Text.RegularExpressions;
 using System.Xml;
 using System.Threading;
+using iTextSharp.text;
+using iTextSharp.text.pdf;
+using iTextSharp.text.html.simpleparser;
 
 
 
 namespace Officience.SharePointHelper
 {
+    public static class TechToolsPath
+    {
+        public const string BidFileTemplate = @"C:\Program Files\Common Files\Microsoft Shared\Web Server Extensions\14\TEMPLATE\LAYOUTS\techtools\Templates\Bid Support.xls";
+
+        public static string TempPath { get { return Path.Combine(Path.GetTempPath(), "TechTools"); } }//String.Format(@"{0}TechTools\", Path.GetTempPath()); } }
+        public static string UserData { get { return Path.Combine(TempPath, "UserData"); } }
+    }
+
     public class Regions
     {
         public int Id { get; set; }
@@ -47,14 +58,109 @@ namespace Officience.SharePointHelper
             //AddMenu("Change Date Format").Click += new EventHandler(ChangeDateFormat);
             //AddMenu("Test").Click += new EventHandler(Test);
             //AddMenu("UpdateData").Click += new EventHandler(UpdateData);
-            AddMenu("Update GMap Latitude and Longitude").Click +=new EventHandler(UpdateGMapValues);
+            //AddMenu("Update GMap Latitude and Longitude").Click +=new EventHandler(UpdateGMapValues);
+            //AddMenu("Debug Code").Click += new EventHandler(DebugCode);
+            //AddMenu("Change request #9916").Click += new EventHandler(Fix9916);
+            AddMenu("Update GMap Latitude and Longitude").Click += new EventHandler(Update_TIMDI_GMapValues);
+        }
+
+        void Fix9916(object sender, EventArgs e)
+        {
+            foreach (SPListItem item in List("AllDocuments").Items)
+            {
+                item["RenewalDate"] = null;
+                item.SystemUpdate();
+                //DateTime? approvalDate = CS2Convert.ToDateTime(item["ApprovalDate"]);
+                //if (approvalDate != null)
+                //{
+                //    DateTime renewalDate = approvalDate.Value.AddYears(3).AddMonths(-2); //Review date = Approval date + 3 years - 2 months
+                //    WriteLine("{0}: ApprovalDate['{1}'] => RenewalDate['{2}']", item.Title, approvalDate.Value, renewalDate);
+                //    item["RenewalDate"] = renewalDate;
+                //    item.SystemUpdate();
+                //}
+            }
+        }
+
+        /// <summary>
+        /// Debugs the code.
+        /// </summary>
+        /// <param name="sender">The sender.</param>
+        /// <param name="e">The <see cref="System.EventArgs"/> instance containing the event data.</param>
+        void DebugCode(object sender, EventArgs e)
+        {
+            string path = @"C:\Users\Administrator\Desktop\test.htm";
+            HTMLToPdf(File.ReadAllText(path), Path.Combine(Path.GetDirectoryName(path), "test.pdf"));
+
+            //File.WriteAllBytes(Path.Combine(Path.GetDirectoryName(path), "test.pdf"), "");
+
+            //string MonthFormat = "MMM-yyyy";
+            //string value = DateTime.Today.ToString(MonthFormat);
+            //DateTime reValue = DateTime.Parse(value);
+
+            //List<char> FileNameSpecialChars = null;
+            //if (FileNameSpecialChars == null)
+            //{
+            //    FileNameSpecialChars = new List<char>();
+            //    FileNameSpecialChars.AddRange(System.IO.Path.GetInvalidFileNameChars());
+            //    FileNameSpecialChars.AddRange(System.IO.Path.GetInvalidPathChars());
+            //    FileNameSpecialChars.Distinct();
+            //}
+
+            //string g = "";
+            //int i = 0;
+            //int n = 50;
+            //List<string> group = new List<string>();
+            //for (int t = 0; t < n; t++)
+            //{
+            //    g += String.Format("{0},", t);
+            //    if (i++ % 5 == 4)
+            //    {
+            //        group.Add(g);
+            //        g = "";
+            //    }
+            //}
+            //if (i % 5 > 0)
+            //{
+            //    group.Add(g);
+            //}
+        }
+
+        public void HTMLToPdf(string HTML, string FileOutput)
+        {
+            Document document = new Document();
+            PdfWriter.GetInstance(document, new FileStream(FileOutput, FileMode.Create));
+            document.Open();
+            HTMLWorker hw = new HTMLWorker(document);
+            hw.Parse(new StringReader(HTML));
+            document.Close();
+        }
+
+        void Update_TIMDI_GMapValues(object sender, EventArgs e)
+        {
+            SPQuery query = new SPQuery();
+            query.Query = "<Where><And><Or><IsNull><FieldRef Name='Latitude' /></IsNull><Eq><FieldRef Name='Latitude' /><Value Type='Number'>0</Value></Eq></Or><Or><IsNull><FieldRef Name='Longitude' /></IsNull><Eq><FieldRef Name='Longitude' /><Value Type='Number'>0</Value></Eq></Or></And></Where>";
+            foreach (SPListItem item in List("SITE CORE SATIN").GetItems(query))//.Items)//
+            {
+                //string country = item.Title;
+                string address = String.Format("{0}, {1}, {2}", CS2Convert.ToString(item["Street"]), CS2Convert.ToString(item["City"]), CS2Convert.ToString(item["Country"]));
+                double latitude = 0;
+                double longitude = 0;
+                GetLocation(address, ref latitude, ref longitude);
+
+                if (longitude != 0 && longitude != 0)
+                {
+                    item["Latitude"] = latitude;
+                    item["Longitude"] = longitude;
+                    item.SystemUpdate(false);
+                }
+            }
         }
 
         void UpdateGMapValues(object sender, EventArgs e)
         {
             SPQuery query = new SPQuery();
             query.Query = "<Where><And><Or><IsNull><FieldRef Name='Latitude' /></IsNull><Eq><FieldRef Name='Latitude' /><Value Type='Number'>0</Value></Eq></Or><Or><IsNull><FieldRef Name='Longitude' /></IsNull><Eq><FieldRef Name='Longitude' /><Value Type='Number'>0</Value></Eq></Or></And></Where>";
-            foreach (SPListItem item in List("Access Reference").GetItems(query))//.Items)//
+            foreach (SPListItem item in List("Access Reference").Items)//.GetItems(query))//
             {
                 string country = item.Title;
                 double latitude = 0;
@@ -86,14 +192,14 @@ namespace Officience.SharePointHelper
                 {
                     latitude = Double.Parse(doc.SelectSingleNode(@"//lat").InnerText);
                     longitude = Double.Parse(doc.SelectSingleNode(@"//lng").InnerText);
-                    WriteLine("Country['{0}'] = [{1},{2}]", address, latitude, longitude);
+                    WriteLine("Address['{0}'] = [{1},{2}]", address, latitude, longitude);
                 }
                 else
                 {
                     if (retry < 2)
                     {
                         Thread.Sleep(200);
-                        GetLocation(address, ref latitude, ref longitude, --retry);
+                        GetLocation(address, ref latitude, ref longitude, ++retry);
                     }
                     else if (address.Contains('('))
                     {
